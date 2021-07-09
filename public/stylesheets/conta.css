@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body {
+  background-color: #444968;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+.menu-mobile {
+  cursor: pointer;
+  padding: 5px 15px;
+  border-right: solid 1px white;
+  color: white;
+}
+
+.menu-mobile__imagem {
+  width: 25px;
+}
+
+.pesquisa-e-compras {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.pesquisa {
+  margin-right: 20px;
+}
+
+/* MAIN */
+
+.config {
+  background-color: #1B1D2A;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0 16px 40px;
+}
+
+.config__article {
+  margin-bottom: 40px;
+}
+
+.config__article--com-borda {
+  padding-bottom: 20px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 20px;
+}
+
+.config__titulo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.config__texto {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 23px;
+}
+
+
+.config__caixa-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444968;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.config__informacao {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.config__texto--menor {
+  font-size: 16px;
+}
+
+.config__input {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  background-color: #444968;
+  padding: 0px;
+  border: none;
+  margin-top: 5px;
+}
+
+.config__caixa-info__botao {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.config__div-botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.config__botao {
+  width: 240px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #F27B13;
+  padding: 20px 10px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.config--excluir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.config__titulo--excluir {
+  text-transform: uppercase;
+}
+
+.config__strong {
+  text-transform: uppercase;
+}
+
+.config__botao--excluir {
+  width: 300px;
+  margin-top: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #000;
+  padding: 30px 15px 0px;
+}
+
+.media-social {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: solid 1px #fff;
+  margin-bottom: 10px;
+}
+
+.media-social__titulo {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.media-social__links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.termos-e-politicas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.termos-e-politicas__p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}

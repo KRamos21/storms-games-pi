@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/conta.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <title>Conta - Geral</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <button class="menu-mobile">
+      <img class="menu-mobile__imagem" src="./images/menu.svg" alt="Menu mobile">
+    </button>
+    <img class="logo--mobile" src="./images/logo-horizontal.svg" alt="Logo do website">
+    <div class="pesquisa-e-compras">
+      <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar">
+      <img class="carrinho-de-compras" src="./images/icone-compras.svg" alt="Carrinho de compras">
+    </div>
+  </header>
+
+  <main>
+    <section class="config">
+      <article class="config__article config__article--com-borda">
+        <h1 class="config__titulo">Configurações Gerais</h1>
+        <p class="config__texto">Gerencie os detalhes da conta que você compartilha conosco.</p>
+      </article>
+
+      <article class="config__article">
+        <h2 class="config__titulo">Informações da Conta</h2>
+        <p class="config__texto">ID: XXXXXX</p>
+  
+        <form class="config__caixa-info" action="">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="nomeDeUsuario">Nome de usuário:</label>
+            <input class="config__input" type="text" name="nomeDeUsuario" id="nomeDeUsuario" value="Lorem_ipsum">
+          </div>
+  
+            
+          <button class="config__caixa-info__botao" type="reset">
+            <img src="./images/pencil.png" alt="Lápis">
+          </button>
+        </form>
+  
+        <form class="config__caixa-info" action="">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="email">Endereço de e-mail:</label>
+            <input class="config__input" type="email" name="email" id="email" value="lorem_ipsum@gmail.com">
+          </div>
+  
+            
+          <button class="config__caixa-info__botao" type="reset">
+            <img src="./images/pencil.png" alt="Lápis">
+          </button>
+        </form>
+      </article>
+      
+      <article class="config__article">
+        <h2 class="config__titulo">Detalhes pessoais</h2>
+        <p class="config__texto">Gerencie seu nome e informações de contato. Essas informações pessoas são privadas e não serão exibidas para outros usuários.</p>
+
+        <div class="config__caixa-info">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="nome">Nome:</label>
+            <input class="config__input" type="text" name="nome" id="nome" value="Lorem">
+          </div>
+        </div>
+        
+        <div class="config__caixa-info">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="sobrenome">Sobrenome:</label>
+            <input class="config__input" type="text" name="sobrenome" id="sobrenome" value="Ipsum">
+          </div>
+        </div>
+
+        <div class="config__caixa-info">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="idioma">Idioma de comunicação preferido:</label>
+            <input class="config__input" type="text" name="idioma" id="idioma" value="Português (Brasil)">
+          </div>
+        </div>
+      </article>
+
+      <article class="config__article">
+        <h2 class="config__titulo">Endereço</h2>
+
+        <div class="config__caixa-info">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="rua">Rua:</label>
+            <input class="config__input" type="text" name="rua" id="rua" value="Joaquina Lorem Ipsum">
+          </div>
+        </div>
+
+        <div class="config__caixa-info">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="numero">Número:</label>
+            <input class="config__input" type="text" name="numero" id="numero" value="2005">
+          </div>
+        </div>
+
+        <div class="config__caixa-info">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="cidade">Cidade:</label>
+            <input class="config__input" type="text" name="cidade" id="cidade" value="São Paulo">
+          </div>
+        </div>
+
+        <div class="config__caixa-info">
+          <div class="config__informacao">
+            <label class="config__texto config__texto--menor" for="pais">País:</label>
+            <input class="config__input" type="text" name="pais" id="pais" value="Brasil">
+          </div>
+        </div>
+      </article>
+
+      <div class="config__div-botoes">
+        <button class="config__botao" type="submit">Salvar mudanças</button>
+        <button class="config__botao" type="reset">Descartar mudanças</button>
+      </div>
+
+    </section>
+
+    <section class="config config--excluir">
+      <h2 class="config__titulo config__titulo--excluir">Excluir Conta</h2>
+      <p class="config__texto">Clique em <strong class="config__strong">solicitar exlusão de conta</strong> para iniciar o processo de exclusão permanente da sua conta, incluindo todas as informações pessoais, compras, progresso nos jogos e conteúdo dentro dos jogos.</p>
+      <button class="config__botao config__botao--excluir" type="submit">Solicitar exclusão de conta</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="media-social">
+      <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
+
+      <article class="media-social__links">
+        <a class="media-social__a" href="https://www.facebook.com/">
+          <img src="./images/facebook-icon.svg" alt="Facebook">
+        </a>
+          
+        <a class="media-social__a" href="https://www.instagram.com/">
+          <img src="./images/instagram-icon.svg" alt="Instagram">
+        </a>
+        
+        <a class="media-social__a" href="https://twitter.com/">
+          <img src="./images/twitter-icon.svg" alt="Twitter">
+        </a>
+      </article>
+    </section>
+
+    <section class="termos-e-politicas">
+      <p class="termos-e-politicas__p">Termos de Serviço</p>
+      <p class="termos-e-politicas__p">Política de Privacidade</p>
+      <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
+    </section>
+  </footer>
+  
+</body>
+</html>
