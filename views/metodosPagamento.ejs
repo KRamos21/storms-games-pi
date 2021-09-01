@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/metodosPagamento.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+  rel="stylesheet"/>
+  <title>Métodos de Pagamento</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <button class="menu-mobile">
+      <img
+        class="menu-mobile__imagem"
+        src="./images/menu.svg"
+        alt="Menu mobile"
+      />
+    </button>
+    <img
+      class="logo--mobile"
+      src="./images/logo-horizontal.svg"
+      alt="Logo do website"
+    />
+    <div class="pesquisa-e-compras">
+      <img class="pesquisa" src="./images/icone-lupa.svg" alt="Pesquisar" />
+      <img
+        class="carrinho-de-compras"
+        src="./images/icone-compras.svg"
+        alt="Carrinho de compras"
+      />
+    </div>
+  </header>
+
+  <header class="header__medium-devices">
+    <a class="menu__desktop" href="#">
+      <img
+        class="logo__desktop"
+        src="./images/menu-desktop/logoEleita.PNG"
+        alt="logotipo desktop"
+        width="110px"
+        height="65px"
+      />
+    </a>
+    <ul class="menu__pages">
+      <li class="menu__page">
+        <a class="menu__page-link" href="./index.html">home</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="./biblioteca.html">biblioteca</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="./foruns.html">fórum</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="./categorias.html">categorias</a>
+      </li>
+      <li class="menu__page">
+        <a class="menu__page-link" href="./suporte.html">suporte</a>
+      </li>
+    </ul>
+    <form class="menu__searchbar">
+      <input
+        class="menu__searchbar-input"
+        type="text"
+        id="searchbar"
+        name="searchbar"
+        placeholder="Buscar"
+      />
+    </form>
+    <div class="menu__loupe">
+      <img
+        class="menu__loupe-img"
+        src="./images/menuOculto/loupe.svg"
+        onclick=""
+      />
+    </div>
+    <div class="menu__shopping">
+      <a href="./carrinho.html" style="text-decoration: none;"><img
+        class="shopping-cart"
+        src="./images/menu-desktop/carrinho.svg"
+        alt="carrinho de compras"
+        width="22px"
+        height="22px"
+      /></a>
+    </div>
+    <div class="menu__user">
+      <a class="user" href="./login.html">
+        <img
+          class="user-login"
+          src="./images/menu-desktop/user.svg"
+          alt="login do usuário"
+          width="60px"
+          height="60px"
+      /></a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="menu-lateral">
+      <a href="/conta">
+        <article class="menu-lateral__nav-link">
+          <img src="./images/conta/man.png" alt="Usuário">
+          <p class="menu-lateral__texto">Geral</p>
+        </article>
+      </a>
+
+      <a href="/seguranca">
+        <article class="menu-lateral__nav-link">
+          <img src="./images/conta/key.png" alt="Chave">
+          <p class="menu-lateral__texto">Senha e Segurança</p>
+        </article>
+      </a>
+
+      <a href="/transacoes">
+        <article class="menu-lateral__nav-link">
+          <img src="./images/conta/money.png" alt="Sinal monetário">
+          <p class="menu-lateral__texto">Transações</p>
+        </article>
+      </a>
+
+      <a href="/metodosPagamento">
+        <article class="menu-lateral__nav-link">
+          <img src="./images/conta/carteira.png" alt="Carteira">
+          <p class="menu-lateral__texto">Formas de pagamento</p>
+        </article>
+      </a>
+
+      <a href="/pedidos">
+        <article class="menu-lateral__nav-link">
+          <img src="./images/conta/pedidos.png" alt="Prancheta de pedidos">
+          <p class="menu-lateral__texto">Pedidos</p>
+        </article>
+      </a>
+    </section>
+
+    <section class="cartao">
+      <article class="cartao__article cartao__article--com-borda">
+        <h1 class="cartao__titulo">Formas de pagamento</h1>
+        <p class="cartao__texto">Gerencie suas formas de pagamento.</p>
+      </article>
+      
+      <h2 class="cartao__titulo">Carteira</h2>
+      
+      <form action="">
+        <article class="cartao__article cartao__article--com-borda">
+
+          <div class="cartao__caixa">
+            <div class="cartao__faixa-superior">
+              <img class="cartao__bandeira" src="./images/metodosPagementos/bandeiraCartao1.svg" alt="Mastercard">
+              <p class="cartao__texto">Nubank Mastercard Platinum terminado em XXXX</p>
+            </div>
+
+            <div class="cartao__corpo-info">
+              <div>
+                <p class="cartao__texto cartao__texto--preto">Expira em 03/2022</p>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Nome no cartão:</p>
+                <p class="cartao__texto cartao__texto--preto">Lorem Ipsum Dolor</p>
+              </div>
+
+              <div>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito cartao__endereco">Endereço de Cobrança:</p>
+                <p class="cartao__texto cartao__texto--preto">Rua Lorem Ipsum, XXXX</p>
+                <p class="cartao__texto cartao__texto--preto">Ap. XXX-A</p>
+                <p class="cartao__texto cartao__texto--preto">Jardim Dolor Sit Amet, São Paulo, Brasil</p>
+                <p class="cartao__texto cartao__texto--preto">CEP: XXXXX-XXX</p>
+                <p class="cartao__texto cartao__texto--preto">Tel: (XX) XXXXX-XXXX</p>
+              </div>
+            </div>  
+
+            <div class="cartao__caixa__botoes">
+              <button class="cartao__caixa__botao" type="submit">Remover</button>
+              <button class="cartao__caixa__botao" type="submit">Editar</button>
+            </div>
+          </div>
+
+          <div class="cartao__caixa">
+            <div class="cartao__faixa-superior">
+              <img class="cartao__bandeira" src="./images/metodosPagementos/bandeiraCartao2.svg" alt="Visa">
+              <p class="cartao__texto">Visa Platinum terminado em XXXX</p>
+            </div>
+
+            <div class="cartao__corpo-info">
+              <div>
+                <p class="cartao__texto cartao__texto--preto">Expira em 03/2022</p>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito">Nome no cartão:</p>
+                <p class="cartao__texto cartao__texto--preto">Lorem Ipsum Dolor</p>
+              </div>
+
+              <div>
+                <p class="cartao__texto cartao__texto--preto cartao__texto--negrito cartao__endereco">Endereço de Cobrança:</p>
+                <p class="cartao__texto cartao__texto--preto">Rua Lorem Ipsum, XXXX</p>
+                <p class="cartao__texto cartao__texto--preto">Ap. XXX-A</p>
+                <p class="cartao__texto cartao__texto--preto">Jardim Dolor Sit Amet, São Paulo, Brasil</p>
+                <p class="cartao__texto cartao__texto--preto">CEP: XXXXX-XXX</p>
+                <p class="cartao__texto cartao__texto--preto">Tel: (XX) XXXXX-XXXX</p>
+              </div>
+            </div>
+
+            <div class="cartao__caixa__botoes">
+              <button class="cartao__caixa__botao" type="submit">Remover</button>
+              <button class="cartao__caixa__botao" type="submit">Editar</button>
+            </div>
+          </div>
+        </article>
+        
+        <h2 class="cartao__titulo cartao__titulo--centralizado">Adicione uma nova forma de pagamento</h2>
+        
+        <div class="cartao__div-botoes">
+          <button class="cartao__botao" type="submit">Cartão de crédito</button>
+          <button class="cartao__botao" type="reset">Cartão de débito</button>
+        </div>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="media-social">
+      <h2 class="media-social__titulo">Já segue a gente nas redes?</h2>
+
+      <article class="media-social__links">
+        <a class="media-social__a" href="https://www.facebook.com/">
+          <img src="./images/facebook-icon.svg" alt="Facebook" />
+        </a>
+
+        <a class="media-social__a" href="https://www.instagram.com/">
+          <img src="./images/instagram-icon.svg" alt="Instagram" />
+        </a>
+
+        <a class="media-social__a" href="https://twitter.com/">
+          <img src="./images/twitter-icon.svg" alt="Twitter" />
+        </a>
+      </article>
+    </section>
+
+    <section class="termos-e-politicas">
+      <p class="termos-e-politicas__p">Termos de Serviço</p>
+      <p class="termos-e-politicas__p">Política de Privacidade</p>
+      <p class="termos-e-politicas__p">Política de Reembolso da Loja</p>
+    </section>
+  </footer>
+
+  <footer class="footer__desktop">
+    <section class="superior__infos">
+      <div class="logo">
+        <img
+          class="footer__logo"
+          src="./images/menu-desktop/logoEleita.PNG"
+          width="150px"
+          height="100px"
+        />
+      </div>
+
+      <div class="div__links">
+        <div class="links">
+          <h5 class="tittle__links">Lorem ipsum dolor</h5>
+          <ul class="footer__links">
+            <li class="footer__link">
+              <a class="footer__page-link" href="#">quos animi ipsam</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__page-link" href="#">quos animi ipsam</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__page-link" href="#">quos animi ipsam</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__page-link" href="#">quos animi ipsam</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <h5 class="tittle__links">Lorem ipsum dolor</h5>
+          <ul class="footer__links">
+            <li class="footer__link">
+              <a class="footer__page-link" href="#">quos animi ipsam</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__page-link" href="#">quos animi ipsam</a>
+            </li>
+            <li class="footer__link">
+              <a class="footer__page-link" href="#">quos animi ipsam</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="social-media">
+        <h4 class="social-media__title">Já segue a gente nas redes?</h4>
+
+        <article class="social-media__links">
+          <a class="socialmedia__a" href="https://www.facebook.com/">
+            <img
+              class="socialmedia__img"
+              src="./images/facebook-icon.svg"
+              alt="Facebook"
+            />
+          </a>
+
+          <a class="socialmedia__a" href="https://www.instagram.com/">
+            <img
+              class="socialmedia__img"
+              src="./images/instagram-icon.svg"
+              alt="Instagram"
+            />
+          </a>
+
+          <a class="socialmedia__a" href="https://twitter.com/">
+            <img
+              class="socialmedia__img"
+              src="./images/twitter-icon.svg"
+              alt="Twitter"
+            />
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="terms">
+      <div class="terms-and-policies">
+        <a class="terms-and-policies__link" href="#"
+          ><p class="terms-and-policies__p">Termos de Serviço</p></a
+        >
+        <a class="terms-and-policies__link" href="#"
+          ><p class="terms-and-policies__p">Política de Privacidade</p></a
+        >
+        <a class="terms-and-policies__link" href="#"
+          ><p class="terms-and-policies__p">
+            Política de Reembolso da Loja
+          </p></a
+        >
+      </div>
+    </section>
+  </footer>
+  
+</body>
+</html>
