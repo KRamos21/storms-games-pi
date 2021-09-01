@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stylesheets/reset.css">
-  <link rel="stylesheet" href="./stylesheets/seguranca.css">
+  <link rel="stylesheet" href="./stylesheets/transacoes.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link
   href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
   rel="stylesheet"/>
-  <title>Conta - Segurança</title>
+  <title>Histórico de Compras</title>
 </head>
 
 <body class="body">
@@ -141,64 +141,66 @@
       </a>
     </section>
 
-    <div class="main__config">
-      <section class="config">
-        <article class="config__article config__article--com-borda">
-          <h1 class="config__titulo config__h1">Alterar Senha</h1>
-          <p class="config__texto">Para sua segurança, recomendamos enfaticamente que escolha uma senha única, que não seja usada em qualquer outra conta on-line</p>
-        </article>
-  
-        <form action="">
+    <section class="historico">
+      <article class="historico__article historico__article--com-borda">
+        <h1 class="historico__titulo">Histórico de Compras</h1>
+      </article>
 
-          <div class="senha__div">
-            <article class="config__article config__article--com-borda config__article--senha">
-              <h2 class="config__titulo">Senha</h2>
+      <article class="historico__article">
+        <div class="historico__colunas">
+          <h2 class="historico__titulo historico__titulo--colunas">Descrição</h2>
+          <h2 class="historico__titulo historico__titulo--colunas historico__titulo--preco">Preço</h2>
+          <h2 class="historico__titulo historico__titulo--colunas historico__titulo--status">Status</h2>
+        </div>
+
+        <div class="historico__data">
+          <p class="historico__texto historico__texto--data">20/05/2021</p>
+        </div>
+        <div class="historico__informacoes">
+          <p class="historico__texto">NBA2K21</p>
+          <p class="historico__texto historico__preco">R$ 100,00</p>
+          <p class="historico__texto historico__status">Comprado</p>
+        </div>
+
+        <div class="historico__data">
+          <p class="historico__texto historico__texto--data">20/05/2021</p>
+        </div>
+        <div class="historico__informacoes">
+          <p class="historico__texto">RollerCoaster Tycoon® 3: Complete Edition</p>
+          <p class="historico__texto historico__preco">R$ 100,00</p>
+          <p class="historico__texto historico__status">Comprado</p>
+        </div>
+
+        <div class="historico__data">
+          <p class="historico__texto historico__texto--data">20/05/2021</p>
+        </div>
+        <div class="historico__informacoes">
+          <p class="historico__texto">Amnesia: A Machine for Pigs</p>
+          <p class="historico__texto historico__preco">R$ 100,00</p>
+          <p class="historico__texto historico__status">Comprado</p>
+        </div>
+
+        <div class="historico__data">
+          <p class="historico__texto historico__texto--data">20/05/2021</p>
+        </div>
+        <div class="historico__informacoes">
+          <p class="historico__texto">Football Manager 2020</p>
+          <p class="historico__texto historico__preco">R$ 100,00</p>
+          <p class="historico__texto historico__status">Comprado</p>
+        </div>
+
+        <div class="historico__data">
+          <p class="historico__texto historico__texto--data">20/05/2021</p>
+        </div>
+        <div class="historico__informacoes">
+          <p class="historico__texto">Path of Exile</p>
+          <p class="historico__texto historico__preco">R$ 100,00</p>
+          <p class="historico__texto historico__status">Comprado</p>
+        </div>
         
-              <div class="config__caixa-info">
-                <div class="config__informacao">
-                  <label class="config__texto config__texto--menor" for="senhaAtual">Senha atual:</label>
-                  <input class="config__input" type="password" name="senhaAtual" id="password" value="SenhaAtual123">
-                </div>
-              </div>
-              
-              <div class="config__caixa-info">
-                <div class="config__informacao">
-                  <label class="config__texto config__texto--menor" for="novaSenha">Nova senha:</label>
-                  <input class="config__input" type="password" name="novaSenha" id="novaSenha" value="NovaSenha123">
-                </div>
-              </div>
-      
-              <div class="config__caixa-info">
-                <div class="config__informacao">
-                  <label class="config__texto config__texto--menor" for="confirmarNovaSenha">Confirme sua nova senha:</label>
-                  <input class="config__input" type="password" name="confirmarNovaSenha" id="confirmarNovaSenha" value="NovaSenha123">
-                </div>
-              </div>
-            </article>
-            
-            <article class="config__article config__article--requisitos">
-              <h2 class="config__titulo config__titulo--centralizado">Requisitos</h2>
-              <p class="config__texto config__texto--centralizado">Sua senha precisa ter mais de 7 caracteres.</p>
-              <p class="config__texto config__texto--centralizado">Sua senha precisa pelo menos 1 número.</p>
-              <p class="config__texto config__texto--centralizado">Sua senha não pode conter espaços.</p>
-            </article>
-          </div>
-            
-    
-          <div class="config__div-botoes">
-            <button class="config__botao" type="submit">Salvar mudanças</button>
-            <button class="config__botao" type="reset">Descartar mudanças</button>
-          </div>
-        </form>
-  
-      </section>
-  
-      <section class="config config--finalizar-sessao">
-        <h2 class="config__titulo config__titulo--finalizar-sessao">Finalizar sessões</h2>
-        <p class="config__texto">Finalize sessões em qualquer outro local em que a sua conta esteja sendo usada, incluindo todos os outros navegadores, telefones, consoles ou qualquer outro dispositivo.</p>
-        <button class="config__botao config__botao--finalizar-sessao" type="submit">Finalizar outras sessões</button>
-      </section>
-    </div>
+
+      </article>
+    </section>
   </main>
 
   <footer class="footer">
