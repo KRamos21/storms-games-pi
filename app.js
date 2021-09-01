@@ -10,6 +10,7 @@ const contaRouter = require("./routes/conta");
 const segurancaRouter = require("./routes/seguranca");
 const transacoesRouter = require("./routes/transacoes");
 const metodosPagamentoRouter = require("./routes/metodosPagamento");
+const pedidosRouter = require("./routes/pedidos");
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use("/conta", contaRouter);
 app.use("/seguranca", segurancaRouter);
 app.use("/transacoes", transacoesRouter);
 app.use("/metodosPagamento", metodosPagamentoRouter);
+app.use("/pedidos", pedidosRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
