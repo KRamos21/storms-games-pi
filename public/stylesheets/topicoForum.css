@@ -5,22 +5,24 @@
 
 .body {
   background-color: #444968;
+  margin: 0 auto;
 }
 
-/* HEADER MOBILE*/
+/* HEADER */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .menu-mobile {
   cursor: pointer;
   padding: 5px 15px;
   border-right: solid 1px white;
+  color: white;
 }
 
 .menu-mobile__imagem {
@@ -31,7 +33,6 @@
   display: flex;
   align-items: center;
   margin-right: 20px;
-  cursor: pointer;
 }
 
 .pesquisa {
@@ -46,6 +47,7 @@
   background-color: #000;
   margin-bottom: 40px;
   height: 12vh;
+  width: 100%;
 }
 
 .menu__pages {
@@ -92,114 +94,123 @@
   margin: 0 auto;
 }
 
-.menu-lateral {
-  display: none;
-  background-color: #1B1D2A;
-  padding: 20px;
-  border-radius: 12px;
+.regras-e-historico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.menu-lateral__nav-link {
+.regras-e-historico__ancora {
+  text-decoration: none;
+}
+
+.regras-e-historico__div {
   display: flex;
   align-items: center;
-  background-color: #5470C4;
-  max-width: 335px;
-  padding: 10px;
-  border-radius: 6px;
+  width: 343px;
+  background-color: #F27B13;
+  padding: 10px 25px;
+  border-radius: 3px;
   margin-bottom: 20px;
 }
 
-.menu-lateral__texto {
+.regras-e-historico__texto {
+  font-weight: 400;
   font-size: 20px;
   color: #fff;
-  margin-left: 10px;
+  margin-left: 28px;
 }
 
+.titulo-do-jogo {
+  font-family: 'Russo One', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
 
-.config {
+.topico {
   background-color: #1B1D2A;
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 40px;
 }
 
-.config__article {
-  margin-bottom: 40px;
+.topico__article {
+  margin-bottom: 20px;
 }
 
-.config__article--com-borda {
-  padding-bottom: 10px;
+
+.topico__article--com-borda {
   border-bottom: solid 1px #fff;
-  margin-bottom: 40px;
 }
 
-.config__titulo {
+.topico__busca-e-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topico__titulo {
   color: #fff;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.config__texto {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: justify;
-  line-height: 23px;
+.topico__titulo--centralizado {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-
-.config__caixa-info {
+.busca {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #444968;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 12px;
-}
-
-.config__caixa-info--oculta {
-  opacity: 0;
-  display: none;
-}
-
-.config__informacao {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.config__texto--menor {
-  font-size: 16px;
-}
-
-.config__input {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  background-color: #444968;
-  padding: 0px;
-  border: none;
-  margin-top: 5px;
-}
-
-.config__caixa-info__botao {
+  width: 100%;
+  max-width: 500px;
   background-color: #fff;
-  border-radius: 12px;
-  width: 40px;
-  height: 40px;
+  padding: 10px 25px;
+  border-radius: 24px;
 }
 
-.config__div-botoes {
+.topico__texto {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.topico__texto--preto {
+  color: #000;
+  margin-left: 25px;
+}
+
+.topico__article--info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  background-color: #444968;
+  padding: 10px 15px;
+  border-radius: 12px;
 }
 
-.config__botao {
-  width: 240px;
+.topico__info__div {
+  border-bottom: solid 1px #fff;
+  margin-bottom: 20px;
+}
+
+.topico__titulo--info {
+  font-size: 27px;
+}
+
+.topico__texto--margin {
+  margin-bottom: 15px;
+}
+
+.topico__botao {
+  width: 100px;
   font-size: 20px;
   font-weight: 700;
   color: #fff;
@@ -209,27 +220,55 @@
     rgba(245, 85, 85, 1) 100%
   );
   padding: 20px 10px;
-  border-radius: 3px;
+  border-radius: 12px;
   margin-bottom: 30px;
 }
 
-.config--excluir {
+.topico__botao--info {
+  align-self: center;
+  width: 200px;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+
+.mensagem__caixa {
+  background-color: #fff;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.mensagem__faixa-superior {
+  display: flex;
+  align-items: center;
+  background-color: #5470C4;
+
+  padding: 10px 25px 10px 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.mensagem__usuario {
+  margin-right: 15px;
+}
+
+.mensagem__corpo {
+  padding: 10px 15px;
+}
+
+.topico__titulo--mensagem {
+  color: #2A2D40;
+  font-size: 28px;
+}
+
+.topico__texto--mensagem {
+  color: #2A2D40;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.mensagem__novo-post {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.config__titulo--excluir {
-  text-transform: uppercase;
-}
-
-.config__strong {
-  text-transform: uppercase;
-}
-
-.config__botao--excluir {
-  width: 300px;
-  margin-top: 30px;
 }
 
 /* FOOTER */
@@ -360,80 +399,74 @@
 /* MEDIA QUERIES */
 
 @media (min-width: 769px) {
-  .config__nome-e-email {
-    display: flex;
-  }
-
-  .config__caixa-info {
-    flex: 1;
-    max-width: 440px;
-  }
-
-  .config__caixa-info--oculta {
-    display: block;
-  }
-
-  .config__caixa-info:nth-child(odd) {
-    margin-right: 30px;
-  }
-
-  .config__nome-e-idioma, .config__endereco {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .config__nome-e-idioma__div, .config__rua-e-numero, .config__cidade-e-pais {
-    display: flex;
-  }
-
-  .config__div-botoes {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .config__botao--margin {
-    margin-right: 30px;
-  }
-
   .header {
     display: none;
   }
-  
-  .header__medium-devices {
-    max-width: 100;
-  }
-  
-  .footer {
-    display: none;
-  }
 
   .header__medium-devices {
     display: flex;
   }
 
+  .regras-e-historico {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .regras-e-historico__div {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    display: none;
+  }
+  
   .footer__desktop {
     display: block;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .main {
-    display: flex;
     padding: 0 20px;
   }
-  
-  .menu-lateral {
-    display: block;
-    align-self: flex-start;
+
+  .titulo-do-jogo {
+    font-size: 56px;
+  }
+
+  .topico__div {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .topico__busca-e-info {
+    flex: 1;
+  }
+
+  .busca, .topico__article--info {
+    max-width: 430px;
+  }
+
+  .topico__mensagens {
+    flex: 1.5;
     margin-right: 30px;
   }
 
-  .main__config {
-    flex: 1.5;
+  .mensagem__caixa {
+    margin-top: 0;
   }
 
-  .config {
-    padding: 15px;
+  .topico__article {
+    margin-bottom: 40px;
+  }
+
+  .mensagem__novo-post {
+    flex-direction: row;
+  }
+
+  .topico__botao--novo-post {
+    flex: 1;
+    margin: 0 20px;
   }
   
   .footer__page-link {
@@ -442,8 +475,8 @@
 }
 
 @media (min-width: 1200px) {
-  .config__div-botoes {
-    justify-content: flex-start;
+  .titulo-do-jogo {
+    font-size: 72px;
   }
 
   .header__medium-devices {

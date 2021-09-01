@@ -5,9 +5,10 @@
 
 .body {
   background-color: #444968;
+  margin: 0 auto;
 }
 
-/* HEADER MOBILE*/
+/* HEADER */
 
 .header {
   display: flex;
@@ -21,6 +22,7 @@
   cursor: pointer;
   padding: 5px 15px;
   border-right: solid 1px white;
+  color: white;
 }
 
 .menu-mobile__imagem {
@@ -31,7 +33,6 @@
   display: flex;
   align-items: center;
   margin-right: 20px;
-  cursor: pointer;
 }
 
 .pesquisa {
@@ -46,6 +47,7 @@
   background-color: #000;
   margin-bottom: 40px;
   height: 12vh;
+  width: 100%;
 }
 
 .menu__pages {
@@ -115,7 +117,6 @@
   margin-left: 10px;
 }
 
-
 .config {
   background-color: #1B1D2A;
   padding: 10px;
@@ -148,20 +149,22 @@
   line-height: 23px;
 }
 
+.config__article--senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .config__caixa-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 440px;
   background-color: #444968;
   padding: 10px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 12px;
-}
-
-.config__caixa-info--oculta {
-  opacity: 0;
-  display: none;
 }
 
 .config__informacao {
@@ -185,11 +188,14 @@
   margin-top: 5px;
 }
 
-.config__caixa-info__botao {
-  background-color: #fff;
-  border-radius: 12px;
-  width: 40px;
-  height: 40px;
+.config__titulo--centralizado {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.config__texto--centralizado {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .config__div-botoes {
@@ -213,21 +219,17 @@
   margin-bottom: 30px;
 }
 
-.config--excluir {
+.config--finalizar-sessao {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.config__titulo--excluir {
-  text-transform: uppercase;
+.config__titulo--finalizar-sessao {
+  text-align: center;
 }
 
-.config__strong {
-  text-transform: uppercase;
-}
-
-.config__botao--excluir {
+.config__botao--finalizar-sessao {
   width: 300px;
   margin-top: 30px;
 }
@@ -358,57 +360,17 @@
 }
 
 /* MEDIA QUERIES */
-
 @media (min-width: 769px) {
-  .config__nome-e-email {
-    display: flex;
-  }
-
-  .config__caixa-info {
-    flex: 1;
-    max-width: 440px;
-  }
-
-  .config__caixa-info--oculta {
-    display: block;
-  }
-
-  .config__caixa-info:nth-child(odd) {
-    margin-right: 30px;
-  }
-
-  .config__nome-e-idioma, .config__endereco {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .config__nome-e-idioma__div, .config__rua-e-numero, .config__cidade-e-pais {
-    display: flex;
-  }
-
-  .config__div-botoes {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .config__botao--margin {
-    margin-right: 30px;
-  }
-
   .header {
     display: none;
   }
-  
-  .header__medium-devices {
-    max-width: 100;
-  }
-  
-  .footer {
-    display: none;
-  }
 
   .header__medium-devices {
     display: flex;
+  }
+
+  .footer {
+    display: none;
   }
 
   .footer__desktop {
@@ -435,6 +397,39 @@
   .config {
     padding: 15px;
   }
+
+  .senha__div {
+    display: flex;
+  }
+
+  .config__article--senha {
+    align-items: flex-start;
+    flex: 1;
+    border-bottom: none;
+    border-right: solid 1px #fff;
+    padding: 10px 15px 10px 0;
+  }
+
+  .config__article--requisitos {
+    flex: 1;
+    padding: 10px 0 10px 15px;
+  }
+
+  .config__titulo--centralizado {
+    text-align: start;
+  }
+
+  .config__texto--centralizado {
+    text-align: start;
+  }
+
+  .config__div-botoes {
+    flex-direction: row;
+  }
+
+  .config__botao:nth-child(2) {
+    margin-left: 20px;
+  }
   
   .footer__page-link {
     font-size: 11px;
@@ -442,10 +437,6 @@
 }
 
 @media (min-width: 1200px) {
-  .config__div-botoes {
-    justify-content: flex-start;
-  }
-
   .header__medium-devices {
     justify-content: space-evenly;
   }

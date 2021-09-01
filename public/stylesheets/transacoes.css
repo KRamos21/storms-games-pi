@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .body {
   background-color: #444968;
 }
 
-/* HEADER MOBILE*/
+/* HEADER */
 
 .header {
   display: flex;
@@ -21,6 +21,7 @@
   cursor: pointer;
   padding: 5px 15px;
   border-right: solid 1px white;
+  color: white;
 }
 
 .menu-mobile__imagem {
@@ -31,7 +32,6 @@
   display: flex;
   align-items: center;
   margin-right: 20px;
-  cursor: pointer;
 }
 
 .pesquisa {
@@ -46,6 +46,7 @@
   background-color: #000;
   margin-bottom: 40px;
   height: 12vh;
+  width: 100%;
 }
 
 .menu__pages {
@@ -115,121 +116,71 @@
   margin-left: 10px;
 }
 
-
-.config {
+.historico {
   background-color: #1B1D2A;
   padding: 10px;
   border-radius: 12px;
   margin-bottom: 40px;
 }
 
-.config__article {
+.historico__article {
   margin-bottom: 40px;
 }
 
-.config__article--com-borda {
-  padding-bottom: 10px;
+.historico__article--com-borda {
   border-bottom: solid 1px #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.config__titulo {
+.historico__titulo {
   color: #fff;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 20px;
 }
 
-.config__texto {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: justify;
-  line-height: 23px;
-}
-
-
-.config__caixa-info {
+.historico__colunas {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0px 5px;
+}
+
+.historico__titulo--colunas {
+  font-size: 20px;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.historico__titulo--preco, .historico__preco, .historico__titulo--status, .historico__status {
+  text-align: end;
+}
+
+.historico__data {
   background-color: #444968;
-  padding: 10px;
-  margin-top: 20px;
   border-radius: 12px;
 }
 
-.config__caixa-info--oculta {
-  opacity: 0;
-  display: none;
-}
-
-.config__informacao {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.config__texto--menor {
+.historico__texto {
+  color: #fff;
+  font-weight: 400;
   font-size: 16px;
-}
-
-.config__input {
-  color: #fff;
-  font-weight: 400;
-  font-size: 20px;
+  /* text-align: justify; */
   line-height: 23px;
-  background-color: #444968;
-  padding: 0px;
-  border: none;
-  margin-top: 5px;
+  flex: 1;
 }
 
-.config__caixa-info__botao {
-  background-color: #fff;
-  border-radius: 12px;
-  width: 40px;
-  height: 40px;
+.historico__texto--data {
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
-.config__div-botoes {
+.historico__informacoes {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-}
-
-.config__botao {
-  width: 240px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(
-    156deg,
-    rgba(252, 207, 49, 1) 0%,
-    rgba(245, 85, 85, 1) 100%
-  );
-  padding: 20px 10px;
-  border-radius: 3px;
-  margin-bottom: 30px;
-}
-
-.config--excluir {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.config__titulo--excluir {
-  text-transform: uppercase;
-}
-
-.config__strong {
-  text-transform: uppercase;
-}
-
-.config__botao--excluir {
-  width: 300px;
-  margin-top: 30px;
+  padding: 0px 5px 0px 10px;
+  margin-bottom: 20px;
 }
 
 /* FOOTER */
@@ -360,55 +311,16 @@
 /* MEDIA QUERIES */
 
 @media (min-width: 769px) {
-  .config__nome-e-email {
-    display: flex;
-  }
-
-  .config__caixa-info {
-    flex: 1;
-    max-width: 440px;
-  }
-
-  .config__caixa-info--oculta {
-    display: block;
-  }
-
-  .config__caixa-info:nth-child(odd) {
-    margin-right: 30px;
-  }
-
-  .config__nome-e-idioma, .config__endereco {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .config__nome-e-idioma__div, .config__rua-e-numero, .config__cidade-e-pais {
-    display: flex;
-  }
-
-  .config__div-botoes {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .config__botao--margin {
-    margin-right: 30px;
-  }
-
   .header {
     display: none;
   }
-  
-  .header__medium-devices {
-    max-width: 100;
-  }
-  
-  .footer {
-    display: none;
-  }
 
   .header__medium-devices {
     display: flex;
+  }
+
+  .footer {
+    display: none;
   }
 
   .footer__desktop {
@@ -421,31 +333,23 @@
     display: flex;
     padding: 0 20px;
   }
-  
+
   .menu-lateral {
     display: block;
     align-self: flex-start;
     margin-right: 30px;
   }
 
-  .main__config {
+  .historico {
     flex: 1.5;
   }
 
-  .config {
-    padding: 15px;
-  }
-  
   .footer__page-link {
     font-size: 11px;
   }
 }
 
 @media (min-width: 1200px) {
-  .config__div-botoes {
-    justify-content: flex-start;
-  }
-
   .header__medium-devices {
     justify-content: space-evenly;
   }
