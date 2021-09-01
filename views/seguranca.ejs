@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/reset.css">
-  <link rel="stylesheet" href="/stylesheets/conta.css">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/seguranca.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-    rel="stylesheet"/>
-  <title>Conta - Geral</title>
+  href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+  rel="stylesheet"/>
+  <title>Conta - Segurança</title>
 </head>
 
 <body class="body">
@@ -146,126 +144,59 @@
     <div class="main__config">
       <section class="config">
         <article class="config__article config__article--com-borda">
-          <h1 class="config__titulo">Configurações Gerais</h1>
-          <p class="config__texto">Gerencie os detalhes da conta que você compartilha conosco.</p>
+          <h1 class="config__titulo config__h1">Alterar Senha</h1>
+          <p class="config__texto">Para sua segurança, recomendamos enfaticamente que escolha uma senha única, que não seja usada em qualquer outra conta on-line</p>
         </article>
   
-        <article class="config__article">
-          <h2 class="config__titulo">Informações da Conta</h2>
-          <p class="config__texto">ID: XXXXXX</p>
-    
-          <div class="config__nome-e-email">
-            <form class="config__caixa-info" action="">
-              <div class="config__informacao">
-                <label class="config__texto config__texto--menor" for="nomeDeUsuario">Nome de usuário:</label>
-                <input class="config__input" type="text" name="nomeDeUsuario" id="nomeDeUsuario" value="Lorem_ipsum">
-              </div>
-      
-              <button class="config__caixa-info__botao" type="reset">
-                <img src="./images/pencil.png" alt="Lápis">
-              </button>
-            </form>
-      
-            <form class="config__caixa-info" action="">
-              <div class="config__informacao">
-                <label class="config__texto config__texto--menor" for="email">Endereço de e-mail:</label>
-                <input class="config__input" type="email" name="email" id="email" value="lorem_ipsum@gmail.com">
-              </div>
-         
-              <button class="config__caixa-info__botao" type="reset">
-                <img src="./images/pencil.png" alt="Lápis">
-              </button>
-            </form>
-          </div>
-        </article>
-        
         <form action="">
-          <article class="config__article">
-            <h2 class="config__titulo">Detalhes pessoais</h2>
-            <p class="config__texto">Gerencie seu nome e informações de contato. Essas informações pessoas são privadas e não serão exibidas para outros usuários.</p>
-            
-            <div class="config__nome-e-idioma">
-              <div class="config__nome-e-idioma__div">
-                
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="nome">Nome:</label>
-                    <input class="config__input" type="text" name="nome" id="nome" value="Lorem">
-                  </div>
-                </div>
-                
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="sobrenome">Sobrenome:</label>
-                    <input class="config__input" type="text" name="sobrenome" id="sobrenome" value="Ipsum">
-                  </div>
+
+          <div class="senha__div">
+            <article class="config__article config__article--com-borda config__article--senha">
+              <h2 class="config__titulo">Senha</h2>
+        
+              <div class="config__caixa-info">
+                <div class="config__informacao">
+                  <label class="config__texto config__texto--menor" for="senhaAtual">Senha atual:</label>
+                  <input class="config__input" type="password" name="senhaAtual" id="password" value="SenhaAtual123">
                 </div>
               </div>
-
-              <div class="config__nome-e-idioma__div">
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="idioma">Idioma de comunicação preferido:</label>
-                    <input class="config__input" type="text" name="idioma" id="idioma" value="Português (Brasil)">
-                  </div>
+              
+              <div class="config__caixa-info">
+                <div class="config__informacao">
+                  <label class="config__texto config__texto--menor" for="novaSenha">Nova senha:</label>
+                  <input class="config__input" type="password" name="novaSenha" id="novaSenha" value="NovaSenha123">
                 </div>
-  
-                <div class="config__caixa-info config__caixa-info--oculta"></div>
               </div>
       
-            </div>
-          </article>
-    
-          <article class="config__article">
-            <h2 class="config__titulo">Endereço</h2>
-  
-            <div class="config__endereco">
-  
-              <div class="config__rua-e-numero">
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="rua">Rua:</label>
-                    <input class="config__input" type="text" name="rua" id="rua" value="Joaquina Lorem Ipsum">
-                  </div>
-                </div>
-        
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="numero">Número:</label>
-                    <input class="config__input" type="text" name="numero" id="numero" value="2005">
-                  </div>
+              <div class="config__caixa-info">
+                <div class="config__informacao">
+                  <label class="config__texto config__texto--menor" for="confirmarNovaSenha">Confirme sua nova senha:</label>
+                  <input class="config__input" type="password" name="confirmarNovaSenha" id="confirmarNovaSenha" value="NovaSenha123">
                 </div>
               </div>
-  
-              <div class="config__cidade-e-pais">
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="cidade">Cidade:</label>
-                    <input class="config__input" type="text" name="cidade" id="cidade" value="São Paulo">
-                  </div>
-                </div>
-        
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="pais">País:</label>
-                    <input class="config__input" type="text" name="pais" id="pais" value="Brasil">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
+            </article>
+            
+            <article class="config__article config__article--requisitos">
+              <h2 class="config__titulo config__titulo--centralizado">Requisitos</h2>
+              <p class="config__texto config__texto--centralizado">Sua senha precisa ter mais de 7 caracteres.</p>
+              <p class="config__texto config__texto--centralizado">Sua senha precisa pelo menos 1 número.</p>
+              <p class="config__texto config__texto--centralizado">Sua senha não pode conter espaços.</p>
+            </article>
+          </div>
+            
     
           <div class="config__div-botoes">
-            <button class="config__botao config__botao--margin" type="submit">Salvar mudanças</button>
+            <button class="config__botao" type="submit">Salvar mudanças</button>
             <button class="config__botao" type="reset">Descartar mudanças</button>
           </div>
         </form>
+  
       </section>
   
-      <section class="config config--excluir">
-        <h2 class="config__titulo config__titulo--excluir">Excluir Conta</h2>
-        <p class="config__texto">Clique em <strong class="config__strong">solicitar exlusão de conta</strong> para iniciar o processo de exclusão permanente da sua conta, incluindo todas as informações pessoais, compras, progresso nos jogos e conteúdo dentro dos jogos.</p>
-        <button class="config__botao config__botao--excluir" type="submit">Solicitar exclusão de conta</button>
+      <section class="config config--finalizar-sessao">
+        <h2 class="config__titulo config__titulo--finalizar-sessao">Finalizar sessões</h2>
+        <p class="config__texto">Finalize sessões em qualquer outro local em que a sua conta esteja sendo usada, incluindo todos os outros navegadores, telefones, consoles ou qualquer outro dispositivo.</p>
+        <button class="config__botao config__botao--finalizar-sessao" type="submit">Finalizar outras sessões</button>
       </section>
     </div>
   </main>
