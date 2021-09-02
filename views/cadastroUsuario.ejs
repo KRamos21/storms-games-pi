@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/cadastroUsuario.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cadastro de Usuarios</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <%- include("./partials/header") %>
+
+      <main>
+        <section class="register">
+          <div class="register__tittle">
+            <p class="register__tittle-text">Cadastro de Usuário</p>
+          </div>
+
+          <div class="register__div">
+            <div class="register__user">
+              <form class="register__form-user">
+                <label class="register__user-label" for="name"
+                  >Crie um nome de usuário:</label
+                >
+                <input
+                  class="register__user-input"
+                  type="text"
+                  id="user"
+                  name="user"
+                  placeholder="ex: mandyHellz"
+                />
+              </form>
+            </div>
+
+            <div class="register__disponib">
+              <p class="register__disponibility">Verificar disponibilidade</p>
+            </div>
+
+            <div class="register__pass">
+              <form class="register__form-pass">
+                <label class="register__pass-label" for="pass"
+                  >Crie uma senha:</label
+                >
+                <input
+                  class="register__pass-input"
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  placeholder=""
+                /><br />
+                <label class="register__pass-label" for="pass"
+                  >Digite a senha novamente:</label
+                >
+                <input
+                  class="register__pass-input"
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  placeholder=""
+                />
+              </form>
+            </div>
+            <div class="register__mail">
+              <form class="register__form-mail">
+                <label class="register__mail-label" for="email">E-mail:</label>
+                <input
+                  class="register__mail-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="seuemail@email.com"
+                />
+              </form>
+            </div>
+            <div class="register__submit">
+              <input
+                class="register__submit-btn"
+                type="submit"
+                onclick=""
+                value="Finalizar cadastro"
+              />
+            </div>
+          </div>
+
+          <p class="register__texts">
+            Seu endereço de e-mail é utilizado para a confirmação de compras
+            realizadas no site e também para auxiliá-lo a gerenciar sua conta.
+          </p>
+        </section>
+      </main>
+
+      <%- include("./partials/footer") %>
+    </div>
+  </body>
+</html>
