@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/redefinicaoSenha.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Redefinição de senha</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <%- include("./partials/header") %>
+
+      <main>
+        <section class="reset">
+          <div class="register__tittle">
+            <p class="reset__tittle-text">Redefinição de senha</p>
+          </div>
+          <div class="reset__div">
+            <div class="reset__code">
+              <form class="reset__form-code">
+                <label class="reset__code-label" for="code"
+                  >Digite o código enviado junto ao e-mail de redefinição de
+                  senha:
+                </label>
+                <input
+                  class="reset__code-input"
+                  type="text"
+                  id="code"
+                  name="code"
+                  placeholder=""
+                />
+              </form>
+            </div>
+            <div class="reset__pass">
+              <form class="reset__form-pass">
+                <label class="reset__pass-label" for="pass"
+                  >Crie uma senha:
+                </label>
+                <input
+                  class="reset__pass-input"
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  placeholder=""
+                /><br />
+                <label class="reset__pass-label" for="pass"
+                  >Digite a senha novamente:
+                </label>
+                <input
+                  class="reset__pass-input"
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  placeholder=""
+                />
+              </form>
+            </div>
+            <div class="reset__submit">
+              <input
+                class="reset__submit-btn"
+                type="submit"
+                onclick=""
+                value="Alterar"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <%- include("./partials/footer") %>
+    </div>
+  </body>
+</html>
