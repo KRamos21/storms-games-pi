@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/topicoForum.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Russo+One&display=swap" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+  rel="stylesheet"/>
+  <title>Ghost of Tsushima - Tópico 1</title>
+</head>
+
+<body class="body">
+  <%- include("./partials/header") %>
+
+  <main class="main">
+    <section class="regras-e-historico">
+      <a class="regras-e-historico__ancora" href="#">
+        <div class="regras-e-historico__div" href="">
+          <img src="./images/foruns/balanca.svg" alt="Regras">
+          <p class="regras-e-historico__texto">Regras e diretrizes para discussões</p>
+        </div>
+      </a>
+
+      <a class="regras-e-historico__ancora" href="#">
+        <div class="regras-e-historico__div" href="">
+          <img src="./images/foruns/historico.svg" alt="Regras">
+          <p class="regras-e-historico__texto">Histórico nas discussões</p>
+        </div>
+      </a>
+    </section>
+
+    <h1 class="titulo-do-jogo">Ghost of Tsushima</h1>
+
+    <section class="topico">
+      <article class="topico__article topico__article--com-borda">
+        <h2 class="topico__titulo topico__titulo--centralizado">Título do tópico</h1>
+      </article>
+
+      <div class="topico__div">
+        <article class="topico__busca-e-info">
+          <div class="topico__article busca">
+            <img src="./images/topicoForum/lupa-preta.png" alt="Pesquisar no tópico">
+            <p class="topico__texto topico__texto--preto">Buscar neste tópico</p>
+          </div>
+    
+          <div class="topico__article topico__article--info">
+            <div class="topico__info__div">
+              <h2 class="topico__titulo topico__titulo--info">Informações do tópico</h2>
+              <p class="topico__texto topico__texto--margin"><strong>Publicado em:</strong>  31/05/2021às 11:25 p.m.</p>
+              <p class="topico__texto topico__texto--margin"><strong>Mensagens:</strong>  3</p>
+            </div>
+            
+            <button class="topico__botao topico__botao--info" type="submit">Inscrever-se na discussão</button>
+          </div>
+        </article>
+  
+        <article class="topico__mensagens">
+          <div class="mensagem__caixa topico__article">
+            <div class="mensagem__faixa-superior">
+              <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
+              <p class="topico__texto">Usuário 1</p>
+            </div>
+    
+            <div class="mensagem__corpo">
+              <h2 class="topico__titulo topico__titulo--mensagem">Título do tópico</h2>
+              <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
+            </div>
+          </div>
+    
+          <div class="mensagem__caixa topico__article">
+            <div class="mensagem__faixa-superior">
+              <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
+              <p class="topico__texto">Usuário 2</p>
+            </div>
+    
+            <div class="mensagem__corpo">
+              <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
+            </div>
+          </div>
+    
+          <div class="mensagem__caixa topico__article">
+            <div class="mensagem__faixa-superior">
+              <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
+              <p class="topico__texto">Usuário 3</p>
+            </div>
+    
+            <div class="mensagem__corpo">
+              <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <article class="mensagem__caixa topico__article">
+        <div class="mensagem__faixa-superior">
+          <img class="mensagem__usuario" src="./images/foruns/man.svg" alt="Mastercard">
+          <p class="topico__texto">Usuário</p>
+        </div>
+        
+        <div class="mensagem__novo-post">
+          <div class="mensagem__corpo">
+            <p class="topico__texto topico__texto--mensagem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus erat magna, in tristique turpis viverra non. Phasellus ut massa eleifend, consectetur tellus eu, vehicula lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur finibus fringilla quam, quis consectetur massa ultricies a. Pellentesque vel dictum tortor.</p>
+          </div>
+          <button class="topico__botao topico__botao--novo-post" type="submit">Publicar</button>          
+        </div>
+      </article>
+    </section> 
+  </main>
+
+  <%- include("./partials/footer") %>
+  
+</body>
+</html>
