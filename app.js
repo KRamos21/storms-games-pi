@@ -15,6 +15,7 @@ const jogosRouter = require("./routes/jogos");
 const forumJogoRouter = require("./routes/forumJogo");
 const forunsRouter = require("./routes/foruns");
 const topicoForumRouter = require("./routes/topicoForum");
+const bibliotecaRouter = require("./routes/biblioteca");
 
 const app = express();
 
@@ -39,6 +40,7 @@ app.use("/jogo", jogosRouter);
 app.use("/forumJogo", forumJogoRouter);
 app.use("/foruns", forunsRouter);
 app.use("/topico", topicoForumRouter);
+app.use("/biblioteca", bibliotecaRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
