@@ -13,6 +13,7 @@ const metodosPagamentoRouter = require("./routes/metodosPagamento");
 const pedidosRouter = require("./routes/pedidos");
 const jogosRouter = require("./routes/jogos");
 const forumJogoRouter = require("./routes/forumJogo");
+const forunsRouter = require("./routes/foruns");
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use("/metodosPagamento", metodosPagamentoRouter);
 app.use("/pedidos", pedidosRouter);
 app.use("/jogo", jogosRouter);
 app.use("/forumJogo", forumJogoRouter);
+app.use("/foruns", forunsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

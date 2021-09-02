@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/foruns.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <title>Comunidades</title>
+</head>
+
+<body class="body">
+  <%- include("./partials/header") %>
+
+  <main class="main">
+    <section class="regras-e-historico">
+      <a class="regras-e-historico__ancora" href="#">
+        <div class="regras-e-historico__div" href="">
+          <img src="./images/foruns/balanca.svg" alt="Regras">
+          <p class="regras-e-historico__texto">Regras e diretrizes para discussões</p>
+        </div>
+      </a>
+
+      <a class="regras-e-historico__ancora" href="#">
+        <div class="regras-e-historico__div" href="">
+          <img src="./images/foruns/historico.svg" alt="Regras">
+          <p class="regras-e-historico__texto">Histórico nas discussões</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="forum">
+      <article class="forum__topicos">
+        <a href="/forumJogo">
+          <h2 class="forum__titulo forum__titulo--russo-one">Ghost of Tsushima</h2>
+        </a>
+        
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 1</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 2</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 3</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 4</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 5</p>
+        </div>
+      </article>
+
+      <article class="forum__info">
+        <h3 class="forum__titulo">Informações</h3>
+        <div class="forum__info__dados">
+          <p class="forum__texto">Discussões gerais</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+
+        <div class="forum__info__dados">
+          <p class="forum__texto">Eventos e anúncios</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+        
+        <div class="forum__info__dados">
+          <p class="forum__texto">Trocas</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="forum">
+      <article class="forum__topicos">
+        <h2 class="forum__titulo forum__titulo--russo-one">Horizon Zero Dawn</h2>
+        
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 1</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 2</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 3</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 4</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 5</p>
+        </div>
+      </article>
+
+      <article class="forum__info">
+        <h3 class="forum__titulo">Informações</h3>
+        <div class="forum__info__dados">
+          <p class="forum__texto">Discussões gerais</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+
+        <div class="forum__info__dados">
+          <p class="forum__texto">Eventos e anúncios</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+        
+        <div class="forum__info__dados">
+          <p class="forum__texto">Trocas</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="forum">
+      <article class="forum__topicos">
+        <h2 class="forum__titulo forum__titulo--russo-one">Spider-man: Miles Morales</h2>
+        
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 1</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 2</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 3</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 4</p>
+        </div>
+        <div class="lista__topico">
+          <p class="forum__texto">Tópico 5</p>
+        </div>
+      </article>
+
+      <article class="forum__info">
+        <h3 class="forum__titulo">Informações</h3>
+        <div class="forum__info__dados">
+          <p class="forum__texto">Discussões gerais</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+
+        <div class="forum__info__dados">
+          <p class="forum__texto">Eventos e anúncios</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+        
+        <div class="forum__info__dados">
+          <p class="forum__texto">Trocas</p>
+          <p class="forum__texto">XXX</p>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <%- include("./partials/footer") %>
+  
+</body>
+</html>
