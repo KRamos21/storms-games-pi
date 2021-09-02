@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/reset.css">
+  <link rel="stylesheet" href="./stylesheets/jogo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+  rel="stylesheet"/>
+  <title>Ghost of Tsushima</title>
+</head>
+
+<body class="body">
+  <%- include("./partials/header") %>
+
+  <main class="main">
+    <section class="nome-jogo">
+      <h1 class="nome-jogo__h1">Ghost of Tsushima</h1>
+      <article class="nome-jogo__notas">
+        <p class="nome-jogo__texto">Classificações:</p>
+        <div class="nome-jogo__circulo">
+          <p class="nome-jogo__texto">10</p>
+        </div>
+        <div class="nome-jogo__circulo">
+          <p class="nome-jogo__texto">9</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="jogo">
+      <img class="jogo__imagem" src="./images/jogo/jogo-imagem.svg" alt="Imagem do Jogo">
+      
+      <article class="videos-e-compra">
+        <div class="videos">
+          
+          <div class="videos__analise">
+            <iframe class="videos__youtube" src="https://www.youtube.com/embed/GTOkHC6_u_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videos__info">
+              <div class="videos__circulo"></div>
+              <p class="videos__texto">Ei Nerd</p>
+            </div>
+          </div>
+
+          <div class="videos__analise">
+            <iframe class="videos__youtube" src="https://www.youtube.com/embed/Kfr9Wiif5SI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videos__info">
+              <div class="videos__circulo"></div>
+              <p class="videos__texto">Voxel</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="compra">
+          <div class="compra__medias">
+            <button class="compra__botao compra__botao--azul" type="submit">Digital</button>
+            <button class="compra__botao compra__botao--azul" type="submit">Físico</button>
+          </div>
+          <p class="compra__valor">R$ XXX,XX</p>
+          <button class="compra__botao compra__botao--laranja" type="submit">Comprar</button>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="info">
+      <article class="requisitos">
+        <h2 class="requisitos__h2">Informações e Requisitos</h2>
+      </article>
+
+      <article class="reviews">
+        <div class="reviews__relevantes">
+          <div class="reviews__destaque">
+            <div class="reviews__circulo">
+              <img src="./images/jogo/man.svg" alt="Imagem de usuário">
+            </div>
+            <p class="texto">Principal review positivo (Usuário)</p>
+          </div>
+  
+          <div class="reviews__destaque">
+            <div class="reviews__circulo">
+              <img src="./images/jogo/man.svg" alt="Imagem de usuário">
+            </div>
+            <p class="texto">Principal review negativo (Usuário)</p>
+          </div>
+          <p class="texto texto--14px">Veja todas as avaliações</p>
+        </div>
+
+        <div class="lista lista--reviews">
+          <h2 class="lista__titulo">Todos os reviews</h2>
+          
+          <div class="lista__topico lista__topico--flex">
+            <img class="lista__usuario" src="./images/jogo/man.svg" alt="Imagem de usuário">
+            <p class="lista__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellat.</p>
+          </div>
+          <div class="lista__topico lista__topico--flex">
+            <img class="lista__usuario" src="./images/jogo/man.svg" alt="Imagem de usuário">
+            <p class="lista__texto">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+          <div class="lista__topico lista__topico--flex">
+            <img class="lista__usuario" src="./images/jogo/man.svg" alt="Imagem de usuário">
+            <p class="lista__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="lista__topico lista__topico--flex">
+            <img class="lista__usuario" src="./images/jogo/man.svg" alt="Imagem de usuário">
+            <p class="lista__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, repellat.</p>
+          </div>
+          <div class="lista__topico lista__topico--flex">
+            <img class="lista__usuario" src="./images/jogo/man.svg" alt="Imagem de usuário">
+            <p class="lista__texto">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <div class="lista__novo-comentario">
+            <p class="lista__texto">Escreva seu review</p>
+            <button type="submit">
+              <img src="./images/jogo/arrow.png" alt="Enviar">
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="forum">
+      <article class="lista">
+        <h2 class="lista__titulo">Ghost of Tsushima</h2>
+        
+        <div class="lista__topico">
+          <p class="lista__texto lista__texto--centralizado">Tópico 1</p>
+        </div>
+        <div class="lista__topico">
+          <p class="lista__texto lista__texto--centralizado">Tópico 2</p>
+        </div>
+        <div class="lista__topico">
+          <p class="lista__texto lista__texto--centralizado">Tópico 3</p>
+        </div>
+        <div class="lista__topico">
+          <p class="lista__texto lista__texto--centralizado">Tópico 4</p>
+        </div>
+        <div class="lista__topico">
+          <p class="lista__texto lista__texto--centralizado">Tópico 5</p>
+        </div>
+      </article>
+    </section>
+
+
+  </main>
+
+  <%- include("./partials/footer") %>
+  
+</body>
+</html>
