@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/menuOculto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Menu Oculto</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <section class="menu">
+        <div class="menu__div">
+          <div class="menu__close">
+            <img
+              class="menu__close-img"
+              src="./images/menuOculto/FECHAR.svg"
+              onclick="close"
+            />
+          </div>
+          <div class="menu__search">
+            <form class="menu__searchbar">
+              <input
+                class="menu__search-input"
+                type="text"
+                id="searchbar"
+                name="searchbar"
+                placeholder="Buscar"
+              />
+            </form>
+            <div class="menu__loupe">
+              <img
+                class="menu__loupe-img"
+                src="./images/menuOculto/loupe.svg"
+                onclick=""
+              />
+            </div>
+          </div>
+          <div class="menu__pages">
+            <ul class="menu__list">
+              <li>
+                <a href="./index.html">home</a>
+              </li>
+              <li>
+                <a href="./biblioteca.html">biblioteca</a>
+              </li>
+              <li>
+                <a href="./foruns.html">fórum</a>
+              </li>
+              <li>
+                <a href="./categorias.html">categorias</a>
+              </li>
+              <li>
+                <a href="./suporte.html">suporte</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__stormgames">
+            <img
+              class="menu__stormgamesR"
+              src="./images/menuOculto/STORMGAMESR.svg"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento confirmado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/pagamentoConfirmado.css" />
+  </head>
+
+  <body>
+    <%- include("./partials/header") %>
+
+    <main class="container">
+      <section class="boxPagamento">
+        <div class="boxPagamento__info">
+          <div>
+            <img src="./images/pagamento/img/pagamento-confirmado.svg" alt="" />
+          </div>
+          <div><h1>PAGAMENTO CONFIRMADO!</h1></div>
+          <div class="boxPagamento__texto">
+            <h5>
+              PARABÉNS! SEU PEDIDO FOI REALIZADO COM SUCESSO. UM EMAIL DE
+              CONFIRMAÇÃO FOI ENVIADO PARA EXEMPLO@EMAIL.COM
+            </h5>
+          </div>
+        </div>
+        <div>
+          <div><h5>DETALHES DO PEDIDO</h5></div>
+          <hr />
+        </div>
+
+        <div class="boxPagamento__tabela">
+          <table>
+            <tr>
+              <td>N° DO PEDIDO</td>
+              <td>XXXXXXXXXXXX</td>
+            </tr>
+            <tr>
+              <td>DATA</td>
+              <td>XX/XX/XXXX</td>
+            </tr>
+            <tr>
+              <td>TIPO DE PAGAMENTO</td>
+              <td>VISA</td>
+            </tr>
+            <tr>
+              <td>LOREM IPSUM</td>
+              <td>LOREM IPSUM</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <%- include("./partials/footer") %>
+  </body>
+</html>
