@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/carrinho.css" />
+  </head>
+
+  <body>
+    <%- include("./partials/header") %>
+    
+    <main>
+      <section class="container__header">
+        <div>
+          <h1>Meu carrinho</h1>
+        </div>
+        <div id="botao__continuar"><a href="./biblioteca.html"><img  src="./images/Lincoln/Botão - Continuar comprando.png" alt=""></a></div>
+      </section>
+      
+      <section class="container">
+        <section class="secaoProdutos">
+          <div class="secaoProdutos__header">
+            <div class="secaoProdutos__header__produto">Produto</div>
+            <div class="secaoProdutos__header__qtd">QTD</div>
+            <div class="secaoProdutos__header__valor">Valor</div>
+          </div>
+          <div class="secaoProdutos__items">
+            <div class="secaoProdutos__item">
+              <div>
+                <img
+                  src="./images/pagamento/jogos/cyberpunk.png"
+                  alt=""
+                />
+              </div>
+              <div class="secaoProdutos__item__nome">
+                <a href="#">Cyberpunk 2077</a>
+              </div>
+              <div class="secaoProdutos__item__qtd">
+                <a href="#">
+                  <img src="./images/pagamento/img/Botão Quantidade.png" alt="" />                  
+                </a>
+                <a href="#">Remover</a>
+              </div>
+              <div class="secaoProdutos__item__valor">R$ 149,99</div>
+            </div>
+          </div>
+          <div class="secaoProdutos__item">
+            <div>
+              <img
+                src="./images/pagamento/jogos/batman.png"
+                alt=""
+              />
+            </div>
+            <div class="secaoProdutos__item__nome">
+              <a href="#">Batman Arkham Origins</a>
+            </div>
+            <div class="secaoProdutos__item__qtd">
+              <a href="#">
+                <img src="./images/pagamento/img/Botão Quantidade.png" alt="" />                
+              </a>
+              <a href="#">Remover</a>
+            </div>
+            <div class="secaoProdutos__item__valor">
+              R$ 9,99
+            </div>
+          </div>
+          <div class="secaoProdutos__item">
+            <div>
+              <img
+                src="./images/pagamento/jogos/daysgone.png"
+                alt="imagem jogo cyberpunk"
+              />
+            </div>
+            <div class="secaoProdutos__item__nome">
+              <a href="#">Days Gone</a>
+            </div>
+            <div class="secaoProdutos__item__qtd">
+              <a href="#">
+                <img src="./images/pagamento/img/Botão Quantidade.png" alt="" />
+              </a>
+              <a href="#">Remover</a>
+            </div>
+            <div class="secaoProdutos__item__valor">
+              R$ 199,99
+            </div>
+          </div>
+          <div>
+            <div class="secaoProdutos__desconto">
+              <h4>Possui um cupom de desconto?</h4>
+            </div>
+            <div class="secaoProdutos__desconto__aplicar">
+              <form action="" method="POST">
+                <input type="text" placeholder="Cupom" />
+                <button type="submit">APLICAR</button>
+              </form>
+            </div>
+          </div>
+          <div class="secaoProdutos__subtotal">
+            <div>Subtotal</div>
+            <div>R$ 359,97</div>
+          </div>
+        </section>
+        <section class="secaoPagamentos">
+          <div class="secaoPagamentos__header">Formas de Pagamento</div>
+            <div class="secaoPagamentos__opcoes">
+              <input type="radio" name="tipo-pagamento" value="pix" />
+              <label for="">PIX</label>
+              <div>
+                <img src="./images/pagamento/tipos-pagamento/pix.png" alt="" />
+              </div>
+            </div>
+            <div class="secaoPagamentos__opcoes">
+              <input
+                type="radio"
+                name="tipo-pagamento"
+                value="boleto"
+              />
+              <label for="">BOLETO BANCÁRIO</label>
+              <div>
+                <img src="./images/pagamento/tipos-pagamento/boleto.png" alt="" />
+              </div>
+            </div>
+
+            <div class="secaoPagamentos__cartaoCredito">
+              <input
+                type="radio"
+                name="tipo-pagamento"
+                value="cartao-credito"
+              />
+              <label for="">CARTÃO DE CRÉDITO</label>
+              <div>
+                <ul>
+                  <li>
+                    <img
+                      src="./images/pagamento/tipos-pagamento/visa.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./images/pagamento/tipos-pagamento/mastercard.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./images/pagamento/tipos-pagamento/amex.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./images/pagamento/tipos-pagamento/hipercard.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="secaoPagamentos__bitcoin">
+              <input type="radio" name="tipo-pagamento" value="bitcoin" />
+              <label for="">BITCOIN</label>
+              <div>
+                <img src="./images/pagamento/tipos-pagamento/bitcoin.png" alt="" />
+              </div>
+            </div>
+          <div class="secaoPagamento__finalizar">
+            <div class="secaoPagamento__finalizar__desconto">
+              <div>DESCONTO</div>
+              <div>R$ 1,99</div>
+            </div>
+            <div class="secaoPagamento__finalizar__vt">
+              <div>VALOR TOTAL</div>
+              <div>R$ 111,93</div>
+            </div>
+          
+          <div class="secaoPagamento__finalizar__botao">
+              <a href="#">
+                <img
+                  src="./images/Lincoln/Botão - Finalizar Pagamento.png"
+                  alt=""
+                />
+              </a>
+          </div>
+        </div>
+        </section>
+      </section>
+    </main>
+
+    <%- include("./partials/footer") %>
+  </body>
+</html>
