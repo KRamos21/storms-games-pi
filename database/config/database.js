@@ -7,6 +7,9 @@ module.exports = {
     database: "storm_games",
     host: "localhost",
     dialect: "mysql",
+    define: {
+      underscored: true
+    }
   },
   test: {
     username: "root",
