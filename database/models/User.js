@@ -32,5 +32,22 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING(15),
       allowNull: false,
     },
+    address_id: {
+      type: DataTypes.INTEGER.UNSIGNED,
+      allowNull: false,
+      references: {
+        model: "addresses",
+        key: "id"
+      }
+    },
   });
+
+  User.associate = (models) => {
+    User.hasOne(models.Address, {
+      as: "addresses",
+      foreignKey: "address_id"
+    })
+  }
+
+  return User;
 };
