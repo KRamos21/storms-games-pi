@@ -41,6 +41,14 @@ module.exports = {
         type: Sequelize.STRING(15),
         allowNull: false,
       },
+      address_id: {
+        type: Sequelize.INTEGER.UNSIGNED,
+        allowNull: false,
+        references: {
+          model: "addresses",
+          key: "id"
+        }
+      },
       created_at: {
         type: "TIMESTAMP",
         defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
