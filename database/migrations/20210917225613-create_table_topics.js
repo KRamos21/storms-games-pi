@@ -10,7 +10,7 @@ module.exports = {
         autoIncrement: true,
       },
       titulo_topico: {
-        type: Sequelize.STRING(45),
+        type: Sequelize.STRING(100),
         allowNull: false,
       },
       data_publicacao: {

@@ -37,14 +37,6 @@ module.exports = {
           key: "id"
         }
       },
-      provider_id: {
-        type: Sequelize.INTEGER.UNSIGNED,
-        allowNull: false,
-        references: {
-          model: "providers",
-          key: "id"
-        }
-      },
       category_id: {
         type: Sequelize.INTEGER.UNSIGNED,
         allowNull: false,
