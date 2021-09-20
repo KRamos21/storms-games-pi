@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.INTEGER.UNSIGNED,
         allowNull: false,
         references: {
-          model: "foruns",
+          model: "forums",
           key: "id"
         }
       },

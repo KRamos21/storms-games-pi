@@ -23,7 +23,6 @@ const segurancaRouter = require("./routes/seguranca");
 const suporteRouter = require("./routes/suporte");
 const topicoForumRouter = require("./routes/topicoForum");
 const transacoesRouter = require("./routes/transacoes");
-const usersRouter = require("./routes/users");
 
 const app = express();
 
@@ -56,7 +55,6 @@ app.use("/seguranca", segurancaRouter);
 app.use("/suporte", suporteRouter);
 app.use("/topico", topicoForumRouter);
 app.use("/transacoes", transacoesRouter);
-app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

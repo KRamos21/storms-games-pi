@@ -42,6 +42,11 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: 'user_id',
       as: 'address'
     })
+
+    User.hasMany(models.Coment, {
+      foreignKey: 'user_id',
+      as: 'coments'
+    })
   }
 
   return User;
