@@ -11,7 +11,6 @@ module.exports = {
       data_nascimento: "1989-12-20",
       sexo: "masculino",
       telefone: "11966665555",
-      address_id: 1,
     }, {
       nome: "Amanda",
       sobrenome: "Nunes",
@@ -21,7 +20,6 @@ module.exports = {
       data_nascimento: "1989-06-04",
       sexo: "feminino",
       telefone: "119555666",
-      address_id: 2,
     }] , {});  
   },
 

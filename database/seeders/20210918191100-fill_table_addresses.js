@@ -8,14 +8,16 @@ module.exports = {
       bairro: "Jardim Paulista",
       cep: "01409000",
       cidade:"São Paulo",
-      estado: "São Paulo"   
+      estado: "São Paulo",
+      user_id: 1
     }, {
       rua: "João",
       numero: 966,
       bairro: "Ahú",
       cep: "03531000",
       cidade:"Curitiba",
-      estado: "Paraná" 
+      estado: "Paraná",
+      user_id: 2
     }] , {});
   },
 

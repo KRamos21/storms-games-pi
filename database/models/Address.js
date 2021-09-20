@@ -24,11 +24,14 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
+  }, 
+  {
+    tableName: "addresses"
   })
   
   Address.associate = (models) => {
     Address.belongsTo(models.User, {
-      foreignKey: 'address_id',
+      foreignKey: 'user_id',
       as: 'user'
   });
   }

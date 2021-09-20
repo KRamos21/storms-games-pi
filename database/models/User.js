@@ -32,15 +32,14 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    address_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
-      allowNull: false
-    },
+  }, 
+  {
+    tableName: "users"
   });
 
   User.associate = (models) => {
     User.hasOne(models.Address, {
-      foreignKey: 'address_id',
+      foreignKey: 'user_id',
       as: 'address'
     })
   }
