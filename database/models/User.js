@@ -38,11 +38,6 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   User.associate = (models) => {
-    User.hasOne(models.Address, {
-      foreignKey: 'user_id',
-      as: 'address'
-    })
-
     User.hasMany(models.Coment, {
       foreignKey: 'user_id',
       as: 'coments'

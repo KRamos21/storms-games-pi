@@ -5,24 +5,16 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
 const indexRouter = require("./routes/index");
-const bibliotecaRouter = require("./routes/biblioteca");
 const cadastroUsuarioRouter = require("./routes/cadastroUsuario");
-const carrinhoRouter = require("./routes/carrinho");
-const categoriasRouter = require("./routes/categorias");
 const contaRouter = require("./routes/contas");
-const erroPagamentoRouter = require("./routes/erroPagamento");
 const forumJogoRouter = require("./routes/forumJogo");
-const forunsRouter = require("./routes/foruns");
 const jogosRouter = require("./routes/jogos");
 const loginRouter = require("./routes/login");
-const metodosPagamentoRouter = require("./routes/metodosPagamento");
-const pagamentoConfirmadoRouter = require("./routes/pagamentoConfirmado");
-const pedidosRouter = require("./routes/pedidos");
 const redefinirSenhaRouter = require("./routes/redefinirSenha");
 const segurancaRouter = require("./routes/seguranca");
-const suporteRouter = require("./routes/suporte");
 const topicoForumRouter = require("./routes/topicoForum");
-const transacoesRouter = require("./routes/transacoes");
+
+const modelsTest = require("./routes/modelsTest");
 
 const app = express();
 
@@ -37,24 +29,16 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/biblioteca", bibliotecaRouter);
 app.use("/cadastroUsuario", cadastroUsuarioRouter);
-app.use("/carrinho", carrinhoRouter);
-app.use("/categorias", categoriasRouter);
 app.use("/conta", contaRouter);
-app.use("/erroPagamento", erroPagamentoRouter);
 app.use("/forumJogo", forumJogoRouter);
-app.use("/foruns", forunsRouter);
 app.use("/jogo", jogosRouter);
 app.use("/login", loginRouter);
-app.use("/metodosPagamento", metodosPagamentoRouter);
-app.use("/pagamentoConfirmado", pagamentoConfirmadoRouter);
-app.use("/pedidos", pedidosRouter);
 app.use("/redefinirSenha", redefinirSenhaRouter);
 app.use("/seguranca", segurancaRouter);
-app.use("/suporte", suporteRouter);
 app.use("/topico", topicoForumRouter);
-app.use("/transacoes", transacoesRouter);
+
+app.use("/modelsTest", modelsTest);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

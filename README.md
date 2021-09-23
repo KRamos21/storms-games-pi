@@ -1,6 +1,8 @@
 # Storm Games
 
-Storm Games é um e-commerce de games criado para o projeto integrador do curso de Desenvolvedor Full-Stack da Digital House.
+Storm Games é uma comunidade de games em que os aficcionados podem debater assuntos relevantes, tirar dúvidas e os mais variados tipos de informações sobre seus jogos favoritos.
+
+Esse site foi criado para o projeto integrador do curso de Desenvolvimento Web Full-Stack da Digital House.
 
 ## Objetivo
 
