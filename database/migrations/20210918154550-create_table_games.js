@@ -13,19 +13,11 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      quantidade: {
-        type: Sequelize.INTEGER,
-        allowNull: false
-      },
       imagem_do_produto: {
         type: Sequelize.BLOB,
         allowNull: false
       },
-      valor_compra: {
-        type: Sequelize.INTEGER,
-        allowNull: false
-      },
-      valor_venda: {
+      preco_medio: {
         type: Sequelize.INTEGER,
         allowNull: false
       },

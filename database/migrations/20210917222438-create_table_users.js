@@ -9,11 +9,7 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
       },
-      nome: {
-        type: Sequelize.STRING(45),
-        allowNull: false,
-      },
-      sobrenome: {
+      nome_usuario: {
         type: Sequelize.STRING(45),
         allowNull: false,
       },
@@ -23,6 +19,14 @@ module.exports = {
       },
       senha: {
         type: Sequelize.STRING(20),
+        allowNull: false,
+      },
+      nome: {
+        type: Sequelize.STRING(45),
+        allowNull: false,
+      },
+      sobrenome: {
+        type: Sequelize.STRING(45),
         allowNull: false,
       },
       cpf: {
@@ -35,10 +39,6 @@ module.exports = {
       },
       sexo: {
         type: Sequelize.STRING(9),
-        allowNull: false,
-      },
-      telefone: {
-        type: Sequelize.STRING(15),
         allowNull: false,
       },
       created_at: {
