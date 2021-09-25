@@ -11,6 +11,11 @@ module.exports = (sequelize, DataTypes) => {
       foreignKey: "forum_id", 
       as: "topics"
     })
+
+    Forum.belongsTo(models.Game, {
+      foreignKey: "game_id",
+      as: "game"
+    })
   };
 
   return Forum;
