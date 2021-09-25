@@ -12,13 +12,15 @@ const GameController = {
     }
   },
   listAllGames: () => GameModel.findAll(),
-  newGame: (descricao, preco_medio, imagem_do_produto ) => {
+  newGame: ( titulo, descricao, categoria, preco_medio, imagem_do_produto ) => {
     
-    return GameModel.newGame({ descricao, preco_medio: Number(preco), imagem_do_produto  })
+    return GameModel.newGame({ titulo, descricao, categoria, preco_medio: Number(preco), imagem_do_produto  })
   },
-  updateGame: (id, descricao, preco_medio, imagem_do_produto ) => {
+  updateGame: (id, titulo, descricao, categoria, preco_medio, imagem_do_produto ) => {
     return GameModel.update(id, {
+      titulo,
       descricao,
+      categoria,
       preco_medio,
       imagem_do_produto,
     });
