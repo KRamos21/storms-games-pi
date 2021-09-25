@@ -21,22 +21,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false
       },
-      forum_id: {
-        type: Sequelize.INTEGER.UNSIGNED,
-        allowNull: false,
-        references: {
-          model: "forums",
-          key: "id"
-        }
-      },
-      category_id: {
-        type: Sequelize.INTEGER.UNSIGNED,
-        allowNull: false,
-        references: {
-          model: "categories",
-          key: "id"
-        }
-      },
       created_at: {
         type: "TIMESTAMP",
         defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
