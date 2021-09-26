@@ -2,24 +2,32 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable("categories", {
+    await queryInterface.createTable("games", {
       id: {
         primaryKey: true,
         type: Sequelize.INTEGER.UNSIGNED,
         allowNull: false,
         autoIncrement: true,
       },
+      titulo: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
       descricao: {
         type: Sequelize.STRING,
         allowNull: false
       },
-      game_id: {
-        type: Sequelize.INTEGER.UNSIGNED,
+      categoria: {
+        type: Sequelize.STRING,
+        allowNull: false
+      },
+      imagem_do_produto: {
+        type: Sequelize.BLOB,
+        allowNull: true
+      },
+      plataforma: {
+        type: Sequelize.STRING(45),
         allowNull: false,
-        references: {
-          model: "games",
-          key: id
-        }
       },
       created_at: {
         type: "TIMESTAMP",
@@ -35,6 +43,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable("categories");
+    await queryInterface.dropTable("games");
   }
 };

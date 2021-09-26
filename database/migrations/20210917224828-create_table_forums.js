@@ -9,7 +9,7 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
       },
-      titulo_forum: {
+      descricao: {
         type: Sequelize.STRING(100),
         allowNull: false,
       },
@@ -18,7 +18,7 @@ module.exports = {
         allowNull: false,
         references: {
           model: "games",
-          key: id
+          key: "id"
         }
       },
       created_at: {

@@ -1,17 +1,25 @@
 module.exports = (sequelize, DataTypes) => {
   const Game = sequelize.define("Game", {
+    titulo: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },  
     descricao: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    categoria: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     imagem_do_produto: {
       type: DataTypes.BLOB,
-      allowNull: false,
+      allowNull: true,
     },
-    preco_medio: {
-      type: DataTypes.INTEGER,
+    plataforma: {
+      type: DataTypes.STRING(45),
       allowNull: false,
-    },
+    }
   });
 
   Game.associate = (models) => {
@@ -20,10 +28,10 @@ module.exports = (sequelize, DataTypes) => {
       as: "forum",
     });
 
-    Game.hasOne(models.Category, {
+    Game.hasOne(models.Review, {
       foreignKey: "game_id",
-      as: "category",
-    });
+      as: "review"
+    })
   };
 
   return Game;

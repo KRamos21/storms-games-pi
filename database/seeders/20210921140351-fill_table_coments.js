@@ -43,6 +43,19 @@ module.exports = {
           user_id: 2,
           topic_id: 3,
         },
+        {
+          comentario: `Estou com dificuldades para vencer o arauto da morte.
+          Alguém tem uma dica de como matá-lo?`,
+          data_comentario: "2021-08-23 15:30:00",
+          user_id: 2,
+          topic_id: 4,
+        },
+        {
+          comentario: `Tem um vídeo no youtube que mostra um jeito fácil de fazer isso. Dá uma olhada: https://www.youtube.com/watch?v=yheelq-6xkI`,
+          data_comentario: "2021-08-24 12:00:00",
+          user_id: 2,
+          topic_id: 4,
+        }
       ],
       {}
     );

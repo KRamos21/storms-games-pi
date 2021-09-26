@@ -17,8 +17,13 @@ module.exports = {
         },
         {
           titulo_topico: "Como iniciar a DLC da Irlanda?",
-          data_publicacao: "2021-06-15 20:30:00",
+          data_publicacao: "2021-08-22 14:30:00",
           forum_id: 2
+        },
+        {
+          titulo_topico: "Como matar o arauto da morte?",
+          data_publicacao: "2021-08-23 15:30:00",
+          forum_id: 3
         }
       ],
       {}

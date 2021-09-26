@@ -1,9 +1,13 @@
 module.exports = (sequelize, DataTypes) => {
   const Forum = sequelize.define("Forum", {
-    titulo_forum: {
+    descricao: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    game_id: {
+      type: DataTypes.INTEGER.UNSIGNED,
+      allowNull: false,
+    }
   });
 
   Forum.associate = (models) => {
