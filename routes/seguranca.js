@@ -1,8 +1,9 @@
 const express = require("express");
+const verificarLogin = require("../middlewares/verificarLogin");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/", verificarLogin, (req, res) => {
   res.render("seguranca");
 });
 
