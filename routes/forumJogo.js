@@ -3,7 +3,9 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("forumJogo");
+  const usuario = req.session.usuario;
+
+  res.render("forumJogo", { usuario });
 });
 
 module.exports = router;

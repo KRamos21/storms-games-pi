@@ -4,7 +4,9 @@ const verificarLogin = require("../middlewares/verificarLogin");
 const router = express.Router();
 
 router.get("/", verificarLogin, (req, res) => {
-  res.render("conta");
+  const usuario = req.session.usuario;
+
+  res.render("conta", { usuario });
 });
 
 module.exports = router;

@@ -41,7 +41,7 @@
         onclick=""
       />
     </div>
-    <form>
+    <form class="menu__searchbar__form">
       <input
         class="menu__searchbar-input"
         type="text"
@@ -53,19 +53,28 @@
   </div>
 
   <div class="menu__login-and-user">
-    <div class="menu__buttons">
-      <a href="/login">
-        <button class="menu__btn menu__btn--login">
-          Entrar
-        </button>
-      </a>
-      <a href="/cadastroUsuario">
+    <% if (typeof usuario === "undefined") {%>
+      <div class="menu__buttons">
+        <a href="/login">
+          <button class="menu__btn menu__btn--login">
+            Entrar
+          </button>
+        </a>
+        <a href="/cadastroUsuario">
+          <button class="menu__btn menu__btn--cadastro">
+            Casdastre-se
+          </button>
+        </a>
+      </div>
+    <% } else { %>
+      <p class="menu__greetings">Bem vindo, <%= usuario.nome %>  </p>
+      <a href="/logout">
         <button class="menu__btn menu__btn--logout">
-          Casdastre-se
+          Sair
         </button>
       </a>
-    </div>
-  
+    <% } %> 
+
     <div class="menu__user">
       <a class="user" href="/conta">
         <img

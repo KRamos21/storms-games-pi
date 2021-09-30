@@ -4,120 +4,12 @@
 }
 
 .body {
-  background-color: #444968;
-}
-
-/* HEADER */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  margin-bottom: 30px;
-}
-
-.menu-mobile {
-  cursor: pointer;
-  padding: 5px 15px;
-  border-right: solid 1px white;
-  color: white;
-}
-
-.menu-mobile__imagem {
-  width: 25px;
-}
-
-.pesquisa-e-compras {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.pesquisa {
-  margin-right: 20px;
+  background-color: #2A2D40;
 }
 
 /* HEADER DESKTOP */
 .header__medium-devices {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #000;
-  padding: 30px 20px;
   margin-bottom: 40px;
-  height: 5vh;
-  width: 100%;
-}
-
-.menu__logo {
-  width: 10em;
-  margin-right: 50px;
-}
-
-.menu__searchbar {
-  background-color: #fff;
-  display: flex;
-  flex: 1;
-  justify-content: start;
-  align-items: center;
-  max-width: 800px;
-  padding: 5px;
-  border-radius: 5px;
-  margin-right: 40px;
-}
-
-.menu__loupe {
-  margin-right: 5px;
-}
-
-.menu__loupe--img {
-  width: 20px;
-}
-
-.menu__searchbar-input {
-  margin: 0 0 0 10px;
-  padding: 0;
-  font-size: larger;
-  border: none;
-  line-height: 22px;
-}
-
-.menu__login-and-user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu__btn {
-  width: 100px;
-  font-size: small;
-  font-weight: 700;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.menu__btn--login {
-  color: whitesmoke;
-  background-color: rgba(84, 112, 196, 0);
-  padding: 5px;
-  border-radius: 20px;
-  border-color:whitesmoke;
-  border: solid 2px;
-}
-
-.menu__btn--logout {
-  color: black;
-  background-color:whitesmoke;
-  padding: 7px;
-  border-radius: 20px;
-  border: none
-}
-
-.menu__user {
-  padding: 0;
-  position: relative;
-  top: 8px;
 }
 
 /* MAIN */

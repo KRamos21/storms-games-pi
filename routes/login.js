@@ -16,11 +16,11 @@ router.post("/", async (req, res) => {
     return res.send(`${usuario}`)
   };
 
-  const { nome_usuario: nomeSession, email: emailSession } = usuario;
+  const { nome_usuario, email: emailSession } = usuario;
 
   req.session.usuario = {
-    nomeSession,
-    emailSession
+    nome: nome_usuario,
+    email: emailSession
   }
 
   res.redirect("/conta");
