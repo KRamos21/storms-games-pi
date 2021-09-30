@@ -18,16 +18,16 @@ module.exports = {
         allowNull: false,
       },
       senha: {
-        type: Sequelize.STRING(20),
+        type: Sequelize.STRING,
         allowNull: false,
       },
       nome: {
         type: Sequelize.STRING(45),
-        allowNull: false,
+        allowNull: true,
       },
       sobrenome: {
         type: Sequelize.STRING(45),
-        allowNull: false,
+        allowNull: true,
       },
       cpf: {
         type: Sequelize.CHAR(11),
@@ -35,11 +35,11 @@ module.exports = {
       },
       data_nascimento: {
         type: Sequelize.DATEONLY,
-        allowNull: false,
+        allowNull: true,
       },
       sexo: {
         type: Sequelize.STRING(9),
-        allowNull: false,
+        allowNull: true,
       },
       created_at: {
         type: "TIMESTAMP",

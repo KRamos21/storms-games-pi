@@ -16,11 +16,11 @@ module.exports = (sequelize, DataTypes) => {
       },
       nome: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       sobrenome: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       cpf: {
         type: DataTypes.CHAR,
@@ -28,11 +28,11 @@ module.exports = (sequelize, DataTypes) => {
       },
       data_nascimento: {
         type: DataTypes.DATEONLY,
-        allowNull: false,
+        allowNull: true,
       },
       sexo: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
       },
     },
     {

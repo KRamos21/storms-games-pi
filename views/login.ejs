@@ -29,7 +29,8 @@
         <section class="login">
           <div class="login__background">
             <div class="login__div">
-              <form class="login__forms">
+              <form action="/login" method="POST" class="login__forms">
+                
                 <label for="email"></label>
                 <input
                   type="email"
@@ -37,13 +38,36 @@
                   name="email"
                   placeholder="seuemail@email.com"
                 />
-                <label for="pass"></label>
+                
+                <label for="password"></label>
                 <input
                   type="password"
                   id="password"
                   name="password"
                   placeholder="******"
                 />
+
+                <div class="login__submit">
+                  <input
+                    class="login__btn"
+                    type="submit"
+                    onclick=""
+                    value="LOGIN"
+                    style="
+                      text-align: center;
+                      border-radius: 6px;
+                      border-color: orange;
+                      color: #fff;
+                      background: linear-gradient(
+                        156deg,
+                        rgba(252, 207, 49, 1) 0%,
+                        rgba(245, 85, 85, 1) 100%
+                      );
+                      padding: 2px 30px;
+                    "
+                  />
+                </div>
+              
               </form>
             </div>
 
@@ -64,27 +88,6 @@
                   >Esqueci a senha</a
                 >
               </div>
-            </div>
-
-            <div class="login__submit">
-              <input
-                class="login__btn"
-                type="submit"
-                onclick=""
-                value="LOGIN"
-                style="
-                  text-align: center;
-                  border-radius: 6px;
-                  border-color: orange;
-                  color: #fff;
-                  background: linear-gradient(
-                    156deg,
-                    rgba(252, 207, 49, 1) 0%,
-                    rgba(245, 85, 85, 1) 100%
-                  );
-                  padding: 2px 30px;
-                "
-              />
             </div>
           </div>
         </section>

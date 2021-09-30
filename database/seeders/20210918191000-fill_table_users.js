@@ -1,5 +1,7 @@
 "use strict";
 
+const bcrypt = require("bcryptjs");
+
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.bulkInsert(
@@ -8,7 +10,7 @@ module.exports = {
         {
           nome_usuario: "KR21",
           email: "kaue@email.com",
-          senha: "123456",
+          senha: bcrypt.hashSync("123456"),
           nome: "Kauê",
           sobrenome: "Ramos",
           cpf: "12345678912",
@@ -18,7 +20,7 @@ module.exports = {
         {
           nome_usuario: "Mandy_Nunes",
           email: "amanda@email.com",
-          senha: "654321",
+          senha: bcrypt.hashSync("654321"),
           nome: "Amanda",
           sobrenome: "Nunes",
           cpf: "12987654321",

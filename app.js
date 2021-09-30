@@ -1,8 +1,10 @@
+require("dotenv").config();
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
+const session = require("express-session");
 
 const indexRouter = require("./routes/index");
 const cadastroUsuarioRouter = require("./routes/cadastroUsuario");
@@ -10,6 +12,7 @@ const contaRouter = require("./routes/contas");
 const forumJogoRouter = require("./routes/forumJogo");
 const jogosRouter = require("./routes/jogos");
 const loginRouter = require("./routes/login");
+const logoutRouter = require("./routes/logout");
 const redefinirSenhaRouter = require("./routes/redefinirSenha");
 const segurancaRouter = require("./routes/seguranca");
 const topicoForumRouter = require("./routes/topicoForum");
@@ -27,6 +30,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(session({ secret: process.env.SESSION_SECRET }));
 
 app.use("/", indexRouter);
 app.use("/cadastroUsuario", cadastroUsuarioRouter);
@@ -34,6 +38,7 @@ app.use("/conta", contaRouter);
 app.use("/forumJogo", forumJogoRouter);
 app.use("/jogo", jogosRouter);
 app.use("/login", loginRouter);
+app.use("/logout", logoutRouter);
 app.use("/redefinirSenha", redefinirSenhaRouter);
 app.use("/seguranca", segurancaRouter);
 app.use("/topico", topicoForumRouter);
