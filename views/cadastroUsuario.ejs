@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/header.css" />
     <link rel="stylesheet" href="./stylesheets/cadastroUsuario.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,89 +21,81 @@
   </head>
 
   <body>
-    <div class="container">
+    <!-- <div class="container"> -->
       <%- include("./partials/header") %>
 
-      <main>
+      <main class="main">
         <section class="register">
           <div class="register__tittle">
             <p class="register__tittle-text">Cadastro de Usuário</p>
           </div>
 
           <div class="register__div">
-            <div class="register__user">
-              <form class="register__form-user">
-                <label class="register__user-label" for="name"
+            <form action="/cadastroUsuario" method="POST" class="register__form-user">
+              
+              <div class="register__user">
+                <label class="register__user-label" for="username"
                   >Crie um nome de usuário:</label
                 >
                 <input
                   class="register__user-input"
                   type="text"
-                  id="user"
-                  name="user"
+                  id="username"
+                  name="username"
                   placeholder="ex: mandyHellz"
                 />
-              </form>
-            </div>
+              </div>
 
-            <div class="register__disponib">
               <p class="register__disponibility">Verificar disponibilidade</p>
-            </div>
 
-            <div class="register__pass">
-              <form class="register__form-pass">
-                <label class="register__pass-label" for="pass"
+              <div class="register__password">
+                <label for="password"
                   >Crie uma senha:</label
                 >
                 <input
-                  class="register__pass-input"
                   type="password"
-                  id="pass"
-                  name="pass"
-                  placeholder=""
+                  id="password"
+                  name="password"
+                  placeholder="********"
                 /><br />
-                <label class="register__pass-label" for="pass"
+
+                <label for="password-confirm"
                   >Digite a senha novamente:</label
                 >
                 <input
-                  class="register__pass-input"
                   type="password"
-                  id="pass"
-                  name="pass"
-                  placeholder=""
+                  id="password-confirm"
+                  name="password-confirm"
+                  placeholder="********"
                 />
-              </form>
-            </div>
-            <div class="register__mail">
-              <form class="register__form-mail">
-                <label class="register__mail-label" for="email">E-mail:</label>
+              </div>
+
+              <div class="register__email">
+                <label for="email">E-mail:</label>
                 <input
-                  class="register__mail-input"
+                  class="register__email-input"
                   type="email"
                   id="email"
                   name="email"
                   placeholder="seuemail@email.com"
                 />
-              </form>
-            </div>
-            <div class="register__submit">
-              <input
-                class="register__submit-btn"
-                type="submit"
-                onclick=""
-                value="Finalizar cadastro"
-              />
-            </div>
+              </div>
+
+              <div class="register__submit">
+                <input
+                  class="register__submit-btn"
+                  type="submit"
+                  onclick=""
+                  value="Finalizar cadastro"
+                />
+              </div>
+            </form>
           </div>
 
-          <p class="register__texts">
-            Seu endereço de e-mail é utilizado para a confirmação de compras
-            realizadas no site e também para auxiliá-lo a gerenciar sua conta.
-          </p>
         </section>
       </main>
 
       <%- include("./partials/footer") %>
-    </div>
+    <!-- </div> -->
   </body>
 </html>

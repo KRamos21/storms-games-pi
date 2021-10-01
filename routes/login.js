@@ -12,14 +12,15 @@ router.post("/", async (req, res) => {
 
   const usuario = await LoginController.logarUsuario(email, senha);
 
+  // Mostra a mensagem de erro do DB
   if ( typeof usuario === "string") {
     return res.send(`${usuario}`)
   };
 
-  const { nome_usuario, email: emailSession } = usuario;
+  const { nome_usuario: nomeSession, email: emailSession } = usuario;
 
   req.session.usuario = {
-    nome: nome_usuario,
+    nome: nomeSession,
     email: emailSession
   }
 
