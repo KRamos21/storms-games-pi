@@ -1,4 +1,5 @@
 const { User } = require("../database/models");
+const Sequelize = require("sequelize");
 
 module.exports.criarUsuario = async (usuario) => {
   const usuarioCriado = await User.create(usuario);

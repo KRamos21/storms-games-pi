@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/header.css">
+  <link rel="stylesheet" href="/stylesheets/topico.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Russo+One&display=swap" rel="stylesheet">
+  <link
+  href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+  rel="stylesheet"/>
+  <title>Ghost of Tsushima - Tópico 1</title>
+</head>
+
+<body class="body">
+  <%- include("./partials/header") %>
+
+  <main class="main">
+    <section class="regras-e-historico">
+      <a class="regras-e-historico__ancora" href="#">
+        <div class="regras-e-historico__div" href="">
+          <img src="/images/foruns/balanca.svg" alt="Regras">
+          <p class="regras-e-historico__texto">Regras e diretrizes para discussões</p>
+        </div>
+      </a>
+
+      <a class="regras-e-historico__ancora" href="#">
+        <div class="regras-e-historico__div" href="">
+          <img src="/images/foruns/historico.svg" alt="Regras">
+          <p class="regras-e-historico__texto">Histórico nas discussões</p>
+        </div>
+      </a>
+    </section>
+
+    <h1 class="titulo-do-jogo"> 
+      <%= topico.forum.game.titulo %> 
+    </h1>
+
+    <section class="topico">
+      <article class="topico__article topico__article--com-borda">
+        <h2 class="topico__titulo topico__titulo--centralizado">
+          <%= topico.titulo_topico %>           
+        </h2>
+      </article>
+
+      <div class="topico__div">
+        <article class="topico__busca-e-info">
+          <div class="topico__article busca">
+            <img src="/images/topicoForum/lupa-preta.png" alt="Pesquisar no tópico">
+            <p class="topico__texto topico__texto--preto">Buscar neste tópico</p>
+          </div>
+    
+          <div class="topico__article topico__article--info">
+            <div class="topico__info__div">
+              <h2 class="topico__titulo topico__titulo--info">Informações do tópico</h2>
+              <p class="topico__texto topico__texto--margin"><strong>Publicado em:</strong>  31/05/2021 às 11:25 p.m.</p>
+              <p class="topico__texto topico__texto--margin"><strong>Mensagens:</strong> <%= topico.coments.length %>  </p>
+            </div>
+            
+            <button class="topico__botao topico__botao--info" type="submit">Inscrever-se na discussão</button>
+          </div>
+        </article>
+  
+        <article class="topico__mensagens">
+          <% topico.coments.forEach( coment => { %>
+            <div class="mensagem__caixa topico__article">
+              <div class="mensagem__faixa-superior">
+                <img class="mensagem__usuario" src="/images/foruns/man.svg" alt="Usuário">
+                <p class="topico__texto"> <%= coment.user.nome_usuario %> </p>
+              </div>
+      
+              <div class="mensagem__corpo">
+                <p class="topico__texto topico__texto--mensagem"> <%= coment.comentario %> </p>
+              </div>
+            </div>
+          <% }) %> 
+        </article>
+      </div>
+
+      <article class="mensagem__caixa topico__article">
+        <div class="mensagem__faixa-superior">
+          <img class="mensagem__usuario" src="/images/foruns/man.svg" alt="Mastercard">
+          <p class="topico__texto">
+            <% if ( typeof usuario === "undefined" ) {%>
+                  Você não está logado.
+            <% } else {%>
+                  <%= usuario.nome %>
+            <% } %> 
+          </p>
+        </div>
+        
+        <form action="/topico/<%= topico.id %> " method="post" class="mensagem__novo-post">
+          <% if ( typeof usuario === "undefined" ) {%>
+            <div class="mensagem__corpo">
+              <textarea class="topico__texto topico__texto--mensagem topico__texto--textarea" name="novoComentario" id="novoComentario" disabled placeholder="Faça login ou cadastre-se para poder comentar."></textarea>
+            </div>
+            <button class="topico__botao topico__botao--novo-post" type="submit" disabled>Publicar</button>
+          <% } else {%>
+            <div class="mensagem__corpo">
+              <textarea class="topico__texto topico__texto--mensagem topico__texto--textarea" name="novoComentario" id="novoComentario" placeholder="Insira aqui seu comentário."></textarea>
+            </div>
+            <button class="topico__botao topico__botao--novo-post" type="submit">Publicar</button>
+          <% } %> 
+        </form>
+      </article>
+    </section> 
+  </main>
+
+  <%- include("./partials/footer") %>
+  
+</body>
+</html>

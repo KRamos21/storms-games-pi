@@ -9,13 +9,13 @@ const session = require("express-session");
 const indexRouter = require("./routes/index");
 const cadastroUsuarioRouter = require("./routes/cadastroUsuario");
 const contaRouter = require("./routes/contas");
-const forumJogoRouter = require("./routes/forumJogo");
+const forumRouter = require("./routes/forum");
 const jogosRouter = require("./routes/jogos");
 const loginRouter = require("./routes/login");
 const logoutRouter = require("./routes/logout");
 const redefinirSenhaRouter = require("./routes/redefinirSenha");
 const segurancaRouter = require("./routes/seguranca");
-const topicoForumRouter = require("./routes/topicoForum");
+const topicoRouter = require("./routes/topico");
 
 const modelsTest = require("./routes/modelsTest");
 
@@ -35,13 +35,13 @@ app.use(session({ secret: process.env.SESSION_SECRET }));
 app.use("/", indexRouter);
 app.use("/cadastroUsuario", cadastroUsuarioRouter);
 app.use("/conta", contaRouter);
-app.use("/forumJogo", forumJogoRouter);
+app.use("/forum", forumRouter);
 app.use("/jogo", jogosRouter);
 app.use("/login", loginRouter);
 app.use("/logout", logoutRouter);
 app.use("/redefinirSenha", redefinirSenhaRouter);
 app.use("/seguranca", segurancaRouter);
-app.use("/topico", topicoForumRouter);
+app.use("/topico", topicoRouter);
 
 app.use("/modelsTest", modelsTest);
 
