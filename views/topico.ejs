@@ -58,7 +58,7 @@
           <div class="topico__article topico__article--info">
             <div class="topico__info__div">
               <h2 class="topico__titulo topico__titulo--info">Informações do tópico</h2>
-              <p class="topico__texto topico__texto--margin"><strong>Publicado em:</strong>  31/05/2021 às 11:25 p.m.</p>
+              <p class="topico__texto topico__texto--margin"><strong>Publicado em:</strong> <%= new Date(topico.data_publicacao).toLocaleDateString() %> às <%= new Date(topico.data_publicacao).toLocaleTimeString() %></p>
               <p class="topico__texto topico__texto--margin"><strong>Mensagens:</strong> <%= topico.coments.length %>  </p>
             </div>
             
@@ -99,11 +99,12 @@
             <div class="mensagem__corpo">
               <textarea class="topico__texto topico__texto--mensagem topico__texto--textarea" name="novoComentario" id="novoComentario" disabled placeholder="Faça login ou cadastre-se para poder comentar."></textarea>
             </div>
-            <button class="topico__botao topico__botao--novo-post" type="submit" disabled>Publicar</button>
+            <!-- <button class="topico__botao topico__botao--novo-post" type="submit" disabled>Publicar</button> -->
           <% } else {%>
             <div class="mensagem__corpo">
               <textarea class="topico__texto topico__texto--mensagem topico__texto--textarea" name="novoComentario" id="novoComentario" placeholder="Insira aqui seu comentário."></textarea>
             </div>
+            <input type="hidden" name="data" id="data" value="<%= new Date() %> ">
             <button class="topico__botao topico__botao--novo-post" type="submit">Publicar</button>
           <% } %> 
         </form>

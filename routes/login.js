@@ -17,9 +17,10 @@ router.post("/", async (req, res) => {
     return res.send(`${usuario}`)
   };
 
-  const { nome_usuario: nomeSession, email: emailSession } = usuario;
+  const { id, nome_usuario: nomeSession, email: emailSession} = usuario;
 
   req.session.usuario = {
+    id,
     nome: nomeSession,
     email: emailSession
   }

@@ -4,8 +4,6 @@ const bcrypt = require("bcryptjs");
 module.exports.logarUsuario = async (email, senha) => {
   const usuarioEncontrado = await UsuarioModel.buscarUsuarioPorEmail(email);
 
-  console.log(usuarioEncontrado);
-
   if (!usuarioEncontrado) {
     return "Usuário inválido";
   };

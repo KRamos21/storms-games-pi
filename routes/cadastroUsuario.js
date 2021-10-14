@@ -12,9 +12,10 @@ router.post("/", async (req, res) => {
 
   const usuarioCriado = await CadastroController.criarUsuario(nomeUsuario, email, senha);
 
-  const { nome_usuario: nomeSession, email: emailSession } = usuarioCriado;
+  const { id, nome_usuario: nomeSession, email: emailSession } = usuarioCriado;
 
   req.session.usuario = {
+    id,
     nome: nomeSession,
     email: emailSession
   };
