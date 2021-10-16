@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/reset.css">
   <link rel="stylesheet" href="./stylesheets/header.css">
+  <link rel="stylesheet" href="./stylesheets/menu-conta.css">
   <link rel="stylesheet" href="/stylesheets/conta.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -21,42 +22,7 @@
   <%- include("./partials/header") %> 
   
   <main class="main">
-    <section class="menu-lateral">
-      <a href="/conta">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/man.png" alt="Usuário">
-          <p class="menu-lateral__texto">Geral</p>
-        </article>
-      </a>
-
-      <a href="/seguranca">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/key.png" alt="Chave">
-          <p class="menu-lateral__texto">Senha e Segurança</p>
-        </article>
-      </a>
-
-      <a href="/transacoes">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/money.png" alt="Sinal monetário">
-          <p class="menu-lateral__texto">Transações</p>
-        </article>
-      </a>
-
-      <a href="/metodosPagamento">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/carteira.png" alt="Carteira">
-          <p class="menu-lateral__texto">Formas de pagamento</p>
-        </article>
-      </a>
-
-      <a href="/pedidos">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/pedidos.png" alt="Prancheta de pedidos">
-          <p class="menu-lateral__texto">Pedidos</p>
-        </article>
-      </a>
-    </section>
+    <%- include("./partials/menu-conta") %>
 
     <div class="main__config">
       <section class="config">
@@ -120,54 +86,35 @@
               <div class="config__nome-e-idioma__div">
                 <div class="config__caixa-info">
                   <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="idioma">Idioma de comunicação preferido:</label>
-                    <input class="config__input" type="text" name="idioma" id="idioma" value="Português (Brasil)">
+                    <label class="config__texto config__texto--menor" for="cpf">CPF:</label>
+                    <input class="config__input" type="text" name="cpf" id="cpf" value="25271539865">
+                  </div>
+                </div>
+  
+                <div class="config__caixa-info">
+                  <div class="config__informacao config__informacao--reduzida">
+                    <label class="config__texto config__texto--menor" for="data-nascimento">Data de Nascimento:</label>
+                    <input class="config__input" type="date" name="data-nascimento" id="data-nascimento" value="1989-12-20">
+                  </div>
+                </div>
+              </div>
+
+              <div class="config__nome-e-idioma__div">
+                <div class="config__caixa-info">
+                  <div class="config__informacao config__informacao--reduzida">
+                    <label class="config__texto config__texto--menor" for="sexo">Sexo:</label>
+                    <select class="config__input" name="sexo" id="sexo">
+                      <option value="" disabled selected="selected">Insira seu sexo</option>
+                      <option value="feminino">Feminino</option>
+                      <option value="masculino">Masculino</option>
+                      <option value="outros">Outros</option>
+                    </select>
                   </div>
                 </div>
   
                 <div class="config__caixa-info config__caixa-info--oculta"></div>
-              </div>
-      
-            </div>
-          </article>
-    
-          <article class="config__article">
-            <h2 class="config__titulo">Endereço</h2>
-  
-            <div class="config__endereco">
-  
-              <div class="config__rua-e-numero">
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="rua">Rua:</label>
-                    <input class="config__input" type="text" name="rua" id="rua" value="Joaquina Lorem Ipsum">
-                  </div>
-                </div>
-        
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="numero">Número:</label>
-                    <input class="config__input" type="text" name="numero" id="numero" value="2005">
-                  </div>
-                </div>
-              </div>
-  
-              <div class="config__cidade-e-pais">
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="cidade">Cidade:</label>
-                    <input class="config__input" type="text" name="cidade" id="cidade" value="São Paulo">
-                  </div>
-                </div>
-        
-                <div class="config__caixa-info">
-                  <div class="config__informacao">
-                    <label class="config__texto config__texto--menor" for="pais">País:</label>
-                    <input class="config__input" type="text" name="pais" id="pais" value="Brasil">
-                  </div>
-                </div>
-              </div>
-            </div>
+              </div>     
+            </div>     
           </article>
     
           <div class="config__div-botoes">

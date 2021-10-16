@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stylesheets/reset.css">
   <link rel="stylesheet" href="./stylesheets/header.css">
+  <link rel="stylesheet" href="./stylesheets/menu-conta.css">
   <link rel="stylesheet" href="./stylesheets/seguranca.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,42 +22,7 @@
   <%- include("./partials/header") %>
 
   <main class="main">
-    <section class="menu-lateral">
-      <a href="/conta">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/man.png" alt="Usuário">
-          <p class="menu-lateral__texto">Geral</p>
-        </article>
-      </a>
-
-      <a href="/seguranca">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/key.png" alt="Chave">
-          <p class="menu-lateral__texto">Senha e Segurança</p>
-        </article>
-      </a>
-
-      <a href="/transacoes">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/money.png" alt="Sinal monetário">
-          <p class="menu-lateral__texto">Transações</p>
-        </article>
-      </a>
-
-      <a href="/metodosPagamento">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/carteira.png" alt="Carteira">
-          <p class="menu-lateral__texto">Formas de pagamento</p>
-        </article>
-      </a>
-
-      <a href="/pedidos">
-        <article class="menu-lateral__nav-link">
-          <img src="./images/conta/pedidos.png" alt="Prancheta de pedidos">
-          <p class="menu-lateral__texto">Pedidos</p>
-        </article>
-      </a>
-    </section>
+    <%- include("./partials/menu-conta") %>
 
     <div class="main__config">
       <section class="config">
@@ -103,7 +69,7 @@
             
     
           <div class="config__div-botoes">
-            <button class="config__botao" type="submit">Salvar mudanças</button>
+            <button class="config__botao config__botao--margin" type="submit">Salvar mudanças</button>
             <button class="config__botao" type="reset">Descartar mudanças</button>
           </div>
         </form>

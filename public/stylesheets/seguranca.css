@@ -16,32 +16,9 @@
 /* MAIN */
 
 .main {
-  max-width: 1440px;
+  max-width: 1200px;
   padding: 0 16px;
   margin: 0 auto;
-}
-
-.menu-lateral {
-  display: none;
-  background-color: #1B1D2A;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.menu-lateral__nav-link {
-  display: flex;
-  align-items: center;
-  background-color: #5470C4;
-  max-width: 335px;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 20px;
-}
-
-.menu-lateral__texto {
-  font-size: 20px;
-  color: #fff;
-  margin-left: 10px;
 }
 
 .config {
@@ -87,8 +64,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 440px;
+  max-width: 600px;
+  
   background-color: #444968;
+
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 12px;
@@ -136,11 +115,7 @@
   font-size: 20px;
   font-weight: 700;
   color: #fff;
-  background: linear-gradient(
-    156deg,
-    rgba(252, 207, 49, 1) 0%,
-    rgba(245, 85, 85, 1) 100%
-  );
+  background-color: #F27B13;
   padding: 20px 10px;
   border-radius: 3px;
   margin-bottom: 30px;
@@ -297,6 +272,15 @@
     display: flex;
   }
 
+  .config__div-botoes {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .config__botao--margin {
+    margin-right: 30px;
+  }
+
   .footer {
     display: none;
   }
@@ -307,21 +291,6 @@
 }
 
 @media (min-width: 1000px) {
-  .main {
-    display: flex;
-    padding: 0 20px;
-  }
-  
-  .menu-lateral {
-    display: block;
-    align-self: flex-start;
-    margin-right: 30px;
-  }
-
-  .main__config {
-    flex: 1.5;
-  }
-
   .config {
     padding: 15px;
   }
@@ -351,14 +320,6 @@
     text-align: start;
   }
 
-  .config__div-botoes {
-    flex-direction: row;
-  }
-
-  .config__botao:nth-child(2) {
-    margin-left: 20px;
-  }
-  
   .footer__page-link {
     font-size: 11px;
   }

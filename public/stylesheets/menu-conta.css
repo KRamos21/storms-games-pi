@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.conta-e-seguranca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.conta-e-seguranca__ancora {
+  text-decoration: none;
+}
+
+.conta-e-seguranca__div {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  background-color: #F27B13;
+  padding: 10px 25px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.conta-e-seguranca__texto {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin-left: 28px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 769px) {
+  .conta-e-seguranca {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .conta-e-seguranca__div {
+    margin-bottom: 0;
+  }
+}
