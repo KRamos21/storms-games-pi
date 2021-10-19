@@ -31,8 +31,7 @@
           <p class="config__texto">Para sua segurança, recomendamos enfaticamente que escolha uma senha única, que não seja usada em qualquer outra conta on-line</p>
         </article>
   
-        <form action="">
-
+        <form method="POST" action="/seguranca/alterarSenha/<%= usuario.id%>?_method=PUT ">
           <div class="senha__div">
             <article class="config__article config__article--com-borda config__article--senha">
               <h2 class="config__titulo">Senha</h2>
@@ -40,21 +39,21 @@
               <div class="config__caixa-info">
                 <div class="config__informacao">
                   <label class="config__texto config__texto--menor" for="senhaAtual">Senha atual:</label>
-                  <input class="config__input" type="password" name="senhaAtual" id="password" value="SenhaAtual123">
+                  <input class="config__input" type="password" name="senhaAtual" id="password" value="">
                 </div>
               </div>
               
               <div class="config__caixa-info">
                 <div class="config__informacao">
                   <label class="config__texto config__texto--menor" for="novaSenha">Nova senha:</label>
-                  <input class="config__input" type="password" name="novaSenha" id="novaSenha" value="NovaSenha123">
+                  <input class="config__input" type="password" name="novaSenha" id="novaSenha" value="">
                 </div>
               </div>
       
               <div class="config__caixa-info">
                 <div class="config__informacao">
-                  <label class="config__texto config__texto--menor" for="confirmarNovaSenha">Confirme sua nova senha:</label>
-                  <input class="config__input" type="password" name="confirmarNovaSenha" id="confirmarNovaSenha" value="NovaSenha123">
+                  <label class="config__texto config__texto--menor" for="confirmaNovaSenha">Confirme sua nova senha:</label>
+                  <input class="config__input" type="password" name="confirmaNovaSenha" id="confirmaNovaSenha" value="">
                 </div>
               </div>
             </article>

@@ -94,6 +94,10 @@
   margin-top: 5px;
 }
 
+.config__input:focus {
+  outline: none;
+ }
+
 .config__titulo--centralizado {
   text-align: center;
   margin-bottom: 30px;
