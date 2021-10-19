@@ -5,6 +5,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const session = require("express-session");
+const methodOverride = require("method-override");
 
 const indexRouter = require("./routes/index");
 const cadastroUsuarioRouter = require("./routes/cadastroUsuario");
@@ -31,6 +32,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(session({ secret: process.env.SESSION_SECRET }));
+app.use(methodOverride("_method"));
 
 app.use("/", indexRouter);
 app.use("/cadastroUsuario", cadastroUsuarioRouter);

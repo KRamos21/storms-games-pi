@@ -103,6 +103,11 @@
 
 .config__input::-webkit-calendar-picker-indicator {
   filter: invert(1);
+  cursor: pointer;
+}
+
+.config__input--select {
+  cursor: pointer;
 }
 
 .config__caixa-info__botao {
@@ -122,10 +127,14 @@
 
 .config__botao {
   width: 240px;
+
   font-size: 20px;
   font-weight: 700;
+  
   color: #fff;
   background-color: #F27B13;
+  cursor: pointer;
+
   padding: 20px 10px;
   border-radius: 3px;
   margin-bottom: 30px;

@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
 
   req.session.usuario = {
     id,
-    nome: nomeSession,
+    nomeUsuario: nomeSession,
     email: emailSession
   }
 

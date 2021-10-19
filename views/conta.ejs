@@ -30,40 +30,40 @@
           <h1 class="config__titulo">Configurações Gerais</h1>
           <p class="config__texto">Gerencie os detalhes da conta que você compartilha conosco.</p>
         </article>
-  
-        <article class="config__article">
-          <h2 class="config__titulo">Informações da Conta</h2>
-          <p class="config__texto">ID: XXXXXX</p>
-    
-          <div class="config__nome-e-email">
-            <form class="config__caixa-info" action="">
-              <div class="config__informacao">
-                <label class="config__texto config__texto--menor" for="nomeDeUsuario">Nome de usuário:</label>
-                <input class="config__input" type="text" name="nomeDeUsuario" id="nomeDeUsuario" value="Lorem_ipsum">
-              </div>
-      
-              <button class="config__caixa-info__botao" type="reset">
-                <img src="./images/pencil.png" alt="Lápis">
-              </button>
-            </form>
-      
-            <form class="config__caixa-info" action="">
-              <div class="config__informacao">
-                <label class="config__texto config__texto--menor" for="email">Endereço de e-mail:</label>
-                <input class="config__input" type="email" name="email" id="email" value="lorem_ipsum@gmail.com">
-              </div>
-         
-              <button class="config__caixa-info__botao" type="reset">
-                <img src="./images/pencil.png" alt="Lápis">
-              </button>
-            </form>
-          </div>
-        </article>
         
-        <form action="">
+        <form method="POST" action="/conta/<%= usuario.id %>?_method=PUT">
+          <article class="config__article">
+            <h2 class="config__titulo">Informações da Conta</h2>
+            <p class="config__texto">ID: <%= usuario.id %> </p>
+
+            <div class="config__nome-e-email">
+              <div class="config__caixa-info" action="">
+                <div class="config__informacao">
+                  <label class="config__texto config__texto--menor" for="nomeUsuario">Nome de usuário:</label>
+                  <input class="config__input" type="text" name="nomeUsuario" id="nomeUsuario" value="<%= usuario.nomeUsuario %> ">
+                </div>
+        
+                <button class="config__caixa-info__botao" type="reset">
+                  <img src="./images/pencil.png" alt="Lápis">
+                </button>
+              </div>
+        
+              <div class="config__caixa-info" action="">
+                <div class="config__informacao">
+                  <label class="config__texto config__texto--menor" for="email">Endereço de e-mail:</label>
+                  <input class="config__input" type="email" name="email" id="email" value="<%= usuario.email %> ">
+                </div>
+          
+                <button class="config__caixa-info__botao" type="reset">
+                  <img src="./images/pencil.png" alt="Lápis">
+                </button>
+              </div>
+            </div>
+          </article>
+        
           <article class="config__article">
             <h2 class="config__titulo">Detalhes pessoais</h2>
-            <p class="config__texto">Gerencie seu nome e informações de contato. Essas informações pessoas são privadas e não serão exibidas para outros usuários.</p>
+            <p class="config__texto">Gerencie seu nome e informações pessoais. Essas informações pessoas são privadas e não serão exibidas para outros usuários.</p>
             
             <div class="config__nome-e-idioma">
               <div class="config__nome-e-idioma__div">
@@ -71,14 +71,14 @@
                 <div class="config__caixa-info">
                   <div class="config__informacao">
                     <label class="config__texto config__texto--menor" for="nome">Nome:</label>
-                    <input class="config__input" type="text" name="nome" id="nome" value="Lorem">
+                    <input class="config__input" type="text" name="nome" id="nome" value="<%= usuario.nome %> ">
                   </div>
                 </div>
                 
                 <div class="config__caixa-info">
                   <div class="config__informacao">
                     <label class="config__texto config__texto--menor" for="sobrenome">Sobrenome:</label>
-                    <input class="config__input" type="text" name="sobrenome" id="sobrenome" value="Ipsum">
+                    <input class="config__input" type="text" name="sobrenome" id="sobrenome" value="<%= usuario.sobrenome %>">
                   </div>
                 </div>
               </div>
@@ -87,14 +87,14 @@
                 <div class="config__caixa-info">
                   <div class="config__informacao">
                     <label class="config__texto config__texto--menor" for="cpf">CPF:</label>
-                    <input class="config__input" type="text" name="cpf" id="cpf" value="25271539865">
+                    <input class="config__input" type="text" name="cpf" id="cpf" value="<%= usuario.cpf %> ">
                   </div>
                 </div>
   
                 <div class="config__caixa-info">
                   <div class="config__informacao config__informacao--reduzida">
-                    <label class="config__texto config__texto--menor" for="data-nascimento">Data de Nascimento:</label>
-                    <input class="config__input" type="date" name="data-nascimento" id="data-nascimento" value="1989-12-20">
+                    <label class="config__texto config__texto--menor" for="dataNascimento">Data de Nascimento:</label>
+                    <input class="config__input" type="date" name="dataNascimento" id="dataNascimento" value="<%= usuario.dataNascimento %>">
                   </div>
                 </div>
               </div>
@@ -103,11 +103,28 @@
                 <div class="config__caixa-info">
                   <div class="config__informacao config__informacao--reduzida">
                     <label class="config__texto config__texto--menor" for="sexo">Sexo:</label>
-                    <select class="config__input" name="sexo" id="sexo">
-                      <option value="" disabled selected="selected">Insira seu sexo</option>
-                      <option value="feminino">Feminino</option>
-                      <option value="masculino">Masculino</option>
-                      <option value="outros">Outros</option>
+                    <select class="config__input config__input--select" name="sexo" id="sexo">
+                      <% if ( usuario.sexo === "feminino" ) { %>
+                        <option value="" disabled>Insira seu sexo</option>
+                        <option value="feminino" selected="selected">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outros">Outros</option>
+                      <% } else if ( usuario.sexo === "masculino" ){ %>
+                        <option value="" disabled>Insira seu sexo</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino" selected="selected">Masculino</option>
+                        <option value="outros">Outros</option>
+                      <% } else if ( usuario.sexo === "outros" ){ %>
+                        <option value="" disabled>Insira seu sexo</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outros" selected="selected">Outros</option>
+                      <% } else { %>
+                        <option value="" disabled selected="selected">Insira seu sexo</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outros" >Outros</option> 
+                      <% } %>                  
                     </select>
                   </div>
                 </div>
@@ -126,8 +143,10 @@
   
       <section class="config config--excluir">
         <h2 class="config__titulo config__titulo--excluir">Excluir Conta</h2>
-        <p class="config__texto">Clique em <strong class="config__strong">solicitar exlusão de conta</strong> para iniciar o processo de exclusão permanente da sua conta, incluindo todas as informações pessoais, compras, progresso nos jogos e conteúdo dentro dos jogos.</p>
-        <button class="config__botao config__botao--excluir" type="submit">Solicitar exclusão de conta</button>
+        <p class="config__texto">Clique em <strong class="config__strong">solicitar exlusão de conta</strong> para iniciar o processo de exclusão permanente da sua conta.</p>
+        <form method="POST" action="/conta/<%= usuario.id %>?_method=DELETE">
+          <button class="config__botao config__botao--excluir" type="submit">Solicitar exclusão de conta</button>
+        </form>
       </section>
     </div>
   </main>
