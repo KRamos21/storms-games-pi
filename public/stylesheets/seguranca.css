@@ -8,17 +8,12 @@
   margin: 0 auto;
 }
 
-/* HEADER DESKTOP */
-.header__medium-devices {
-  margin-bottom: 40px;
-}
-
 /* MAIN */
 
 .main {
   max-width: 1200px;
   padding: 0 16px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 
 .config {
@@ -268,14 +263,6 @@
 
 /* MEDIA QUERIES */
 @media (min-width: 769px) {
-  .header {
-    display: none;
-  }
-
-  .header__medium-devices {
-    display: flex;
-  }
-
   .config__div-botoes {
     flex-direction: row;
     justify-content: center;
@@ -330,10 +317,6 @@
 }
 
 @media (min-width: 1200px) {
-  .header__medium-devices {
-    justify-content: space-evenly;
-  }
-
   .footer__page-link {
     font-size: 13px;
   }

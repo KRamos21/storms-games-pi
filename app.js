@@ -18,8 +18,6 @@ const redefinirSenhaRouter = require("./routes/redefinirSenha");
 const segurancaRouter = require("./routes/seguranca");
 const topicoRouter = require("./routes/topico");
 
-const modelsTest = require("./routes/modelsTest");
-
 const app = express();
 
 // view engine setup
@@ -44,8 +42,6 @@ app.use("/logout", logoutRouter);
 app.use("/redefinirSenha", redefinirSenhaRouter);
 app.use("/seguranca", segurancaRouter);
 app.use("/topico", topicoRouter);
-
-app.use("/modelsTest", modelsTest);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -193,10 +193,6 @@ body {
 /* Very small devices (smarthphones and small
 tablets, 767px and down)*/
 @media (max-width: 767px) {
-  .header__medium-devices {
-    display: none;
-  }
-
   .footer__desktop {
     display: none;
   }
@@ -206,10 +202,6 @@ tablets, 767px and down)*/
 @media (min-width: 768px) {
   .container {
     width: 100%;
-  }
-
-  .header {
-    display: none;
   }
 
   .login__div {
@@ -239,10 +231,6 @@ tablets, 767px and down)*/
     margin: 5px 100px;
   }
 
-  .header {
-    display: none;
-  }
-
   .footer {
     display: none;
   }
@@ -264,14 +252,6 @@ tablets, 767px and down)*/
 
   .login__background {
     margin: 5px 200px;
-  }
-
-  .header {
-    display: none;
-  }
-
-  .header__medium-devices {
-    justify-content: space-evenly;
   }
 
   .footer {

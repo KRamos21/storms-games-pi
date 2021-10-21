@@ -7,17 +7,12 @@
   background-color: #2A2D40;
 }
 
-/* HEADER DESKTOP */
-.header__medium-devices {
-  margin-bottom: 40px;
-}
-
 /* MAIN */
 
 .main {
   max-width: 1200px;
   padding: 0 16px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 
 .config {
@@ -320,21 +315,9 @@
   .config__botao--margin {
     margin-right: 30px;
   }
-
-  .header {
-    display: none;
-  }
-  
-  .header__medium-devices {
-    max-width: 100;
-  }
   
   .footer {
     display: none;
-  }
-
-  .header__medium-devices {
-    display: flex;
   }
 
   .footer__desktop {
@@ -353,10 +336,6 @@
 }
 
 @media (min-width: 1200px) {
-  .header__medium-devices {
-    justify-content: space-evenly;
-  }
-
   .footer__page-link {
     font-size: 13px;
   }

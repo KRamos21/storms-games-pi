@@ -9,17 +9,12 @@
   margin: 0 auto;
 }
 
-/* HEADER DESKTOP */
-.header__medium-devices {
-  margin-bottom: 40px;
-}
-
 /* MAIN */
 
 .main {
   max-width: 1440px;
   padding: 0px 16px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 
 .regras-e-historico {
@@ -256,14 +251,6 @@
 /* MEDIA QUERIES */
 
 @media (min-width: 769px) {
-  .header {
-    display: none;
-  }
-
-  .header__medium-devices {
-    display: flex;
-  }
-
   .regras-e-historico {
     flex-direction: row;
     justify-content: space-evenly;
@@ -340,10 +327,6 @@
   .forum__topicos__navegar--superior {
     display: flex;
     margin-top: 0;
-  }
-
-  .header__medium-devices {
-    justify-content: space-evenly;
   }
 
   .footer__page-link {

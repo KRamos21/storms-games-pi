@@ -469,10 +469,6 @@ iframe {
 /* Very small devices (smarthphones and small
 tablets, 767px and down)*/
 @media (max-width: 767px) {
-  .header__medium-devices {
-    display: none;
-  }
-
   .footer__desktop {
     display: none;
   }
@@ -480,10 +476,6 @@ tablets, 767px and down)*/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .header {
-    display: none;
-  }
-
   .first-section__item1,
   .first-section__item2,
   .first-section__item3,
@@ -545,10 +537,6 @@ tablets, 767px and down)*/
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .header {
-    display: none;
-  }
-
   .first-section__item1,
   .first-section__item2,
   .first-section__item3,
@@ -778,14 +766,6 @@ tablets, 767px and down)*/
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .header {
-    display: none;
-  }
-
-  .header__medium-devices {
-    justify-content: space-evenly;
-  }
-
   .first-section__item1,
   .first-section__item2,
   .first-section__item3,
