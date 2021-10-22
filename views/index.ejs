@@ -1,592 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheets/header.css">
-    <link rel="stylesheet" href="./stylesheets/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
     <title>Storm Games</title>
-  </head>
-  
-  <body>
-    <div class="container">
-      <%- include("./partials/header") %> 
+</head>
 
-      <main>
-        <section class="first-section">
-          <div class="first-section__div">
-            <p class="first-section__text">Lorem ipsum dolor sit amet</p>
-          </div>
+<body class="bg-stormBlue-default">
+  <%- include("./partials/header") %>
 
-          <div class="first-section__div-carousel">
-            <ul class="first-section__carousel">
-              <li class="first-section__item1">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/acvalhallamale.jpg"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li class="first-section__item2">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/control.jpg"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li class="first-section__item3">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/battlefield.jpeg"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li class="first-section__item4">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/mk11.jpg"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li class="first-section__item5">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/horizon.jpeg"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li class="first-section__item6">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/jurassicpark.png"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li class="first-section__item7">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/monsterhunter.jpeg"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li class="first-section__item8">
-                <a href="#" class="first-section__link">
-                  <div class="image__container">
-                    <img
-                      class="first-section__imglink"
-                      src="./images/homepage/games/lis.jpg"
-                    />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <!--First section with most popular topics-->
+  <div class="max-w-page bg-valhallaback bg-clip-border bg-no-repeat bg-contain sm:bg-cover lg:bg-center">
+    <div class="max-w-screen max-w-page pt-24 sm:pt-96 sm:m-auto">
+      <p class="uppercase font-Roboto font-medium sm:font-light text-2xl sm:text-4xl m-1 sm:ml-2 text-white transform hover:text-yellow-500 transition duration-500">categorias</p>
+      <div class="sm:flex sm:items-center bg-stormBlue-light py-1 sm:py-2 lg:py-2.5 sm:p-0 bg-opacity-90 xl:max-h-56">
 
-        <section class="video">
-          <div class="video__div-selectors">
-            <p class="video__selectors">.</p>
-            <p class="video__selectors">.</p>
-            <p class="video__selectors">.</p>
-            <p class="video__selectors">.</p>
-            <p class="video__selectors">.</p>
-          </div>
-
-          <div class="video__div-text">
-            <p class="video__text">Lorem ipsum dolor sit amet</p>
-          </div>
-
-          <div class="video__div-iframe">
-            <iframe
-              width="1366"
-              height="768"
-              src="https://www.youtube.com/embed/tsvprGlVHzg"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-
-          <div class="video__scenes">
-            <div class="video__div-photos">
-              <img
-                class="video__photos1"
-                src="./images/homepage/photos/ellie_bow.jpg"
-                alt=""
-              />
-              <img
-                class="video__photos2"
-                src="./images/homepage/photos/looking.jpg"
-                alt=""
-              />
-              <img
-                class="video__photos3"
-                src="./images/homepage/photos/ellie_battle.jpg"
-                alt=""
-              />
-            </div>
-
-            <div class="video__texts">
-              <a class="video__popularlink" href="#"
-                ><p class="video__text-popular">Popular</p>
-              </a>
-
-              <div class="video__text-prices">
-                <p class="video__text-avaiable">Disponível</p>
-                <br />
-                <a class="video__pricelink" href="#">
-                  <p class="video__text-price">R$69,90</p></a
-                >
-              </div>
+        <div class="text-center m-1 max-w-full sm:w-full transform hover:relative -bottom-2 mb-0">
+          <div class="max-w-full"> 
+            <img class="w-auto filter hover:grayscale" src="https://www.ultimaficha.com.br/wp-content/uploads/2020/09/Naga-Pro-272_R1_compressed.jpg" width="100%" alt=""> 
+            <div class="relative -top-12 bg-black bg-opacity-60 w-auto p-1">
+              <span class="text-white text-center font-Roboto font-bold italic uppercase transform hover:text-yellow-500">Ação</span>
             </div>
           </div>
-
-          <div class="promos__div-selectors">
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-          </div>
-        </section>
-
-        <section class="promos">
-          <div class="promos__div-text">
-            <p class="promos__text">Lorem ipsum dolor sit amet</p>
-          </div>
-
-          <div class="promos__div-biggest">
-            <div class="promos__biggest">
-              <a class="promos__link" href="#">
-                <img
-                  class="promos__biggest-img"
-                  src="./images/homepage/games/RDR.jpg"
-                />
-              </a>
-              <div class="promos__texts">
-                <p class="promos__text-avaiable">Disponível</p>
-                <p
-                  class="promos__text-oldprice"
-                  style="text-decoration: line-through"
-                >
-                  R$249,90
-                </p>
-                <a
-                  class="promos__pricelink"
-                  href="#"
-                  style="text-decoration: none"
-                  ><p class="promos__text-price">R$169,90</p></a
-                >
-              </div>
+        </div>
+        
+        <div class="text-center m-1 max-w-full sm:w-full transform hover:relative -bottom-2 mb-0">
+          <div> 
+            <img class="w-auto filter hover:grayscale" src="https://razer01-01-us-east-1-prod-media.s3.amazonaws.com/sys-master/root/h00/ha6/9288352038942/razer-tartarus-pro-gallery-04.jpg" width="100%" alt=""> 
+            <div class="relative -top-12 bg-black bg-opacity-60 w-auto p-1">
+              <span class="text-white text-center font-Roboto font-bold italic uppercase transform hover:text-yellow-500">aventura</span>
             </div>
           </div>
+        </div>
 
-          <div class="promos__div-carousel">
-            <ul class="promos__carousel">
-              <li class="promos__item">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/darksouls3.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-
-              <li class="promos__item">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/cyberpunk.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-              <li class="promos__item3">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/revillage.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-              <li class="promos__item4">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/ghostOfTsushima.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="promos__div-carousel">
-            <ul class="promos__carousel">
-              <li class="promos__item">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/the-witcher-3-poster.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-
-              <li class="promos__item">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/ffvii.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-              <li class="promos__item3">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/ghostOfTsushima.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-              <li class="promos__item4">
-                <a href="#" class="promos__link">
-                  <div class="image__container">
-                    <img
-                      class="promos__imglink"
-                      src="./images/homepage/games/ghostOfTsushima.jpg"
-                    />
-                  </div>
-                </a>
-                <div class="promos__text-carousel">
-                  <p
-                    class="promos__oldprice"
-                    style="text-decoration: line-through"
-                  >
-                    R$00,00
-                  </p>
-                  <p class="promos__newprice">R$00,00</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="promos__div-selectors">
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-            <p class="promo__selectors">.</p>
-          </div>
-        </section>
-
-        <section class="promos__desktop">
-          <div class="desktop__div-text">
-            <p class="desktop__text">Lorem ipsum dolor sit amet</p>
-          </div>
-
-          <div class="desktop__div-biggest">
-            <div class="desktop">
-              <a class="desktop__link" href="#">
-                <img
-                  class="desktop__biggest-img"
-                  src="./images/homepage/games/RDR.jpg"
-                />
-              </a>
-              <div class="desktop__texts">
-                <p class="desktop__text-avaiable">Disponível</p>
-                <p
-                  class="desktop__text-oldprice"
-                  style="text-decoration: line-through"
-                >
-                  R$249,90
-                </p>
-                <a
-                  class="desktop__pricelink"
-                  href="#"
-                  style="text-decoration: none"
-                  ><p class="desktop__text-price">R$169,90</p></a
-                >
-              </div>
-            </div>
-
-            <div class="desktop__carousels">
-              <div class="desktop__div-carousel">
-                <ul class="desktop__carousel">
-                  <li class="desktop__item">
-                    <a href="#" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/darksouls3.jpg"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-
-                  <li class="desktop__item">
-                    <a href="#" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/cyberpunk.jpg"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-                  <li class="desktop__item3">
-                    <a href="#" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/DiabloIV.png"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-                  <li class="desktop__item4">
-                    <a href="#" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/deathstranding.jpg"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="desktop__div-carousel">
-                <ul class="desktop__carousel">
-                  <li class="desktop__item">
-                    <a href="#" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/the-witcher-3-poster.jpg"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-
-                  <li class="desktop__item">
-                    <a href="#" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/ffvii.jpg"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-                  <li class="desktop__item3">
-                    <a href="/jogo" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/ghostOfTsushima.jpg"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-                  <li class="desktop__item4">
-                    <a href="#" class="desktop__link">
-                      <div class="image__container">
-                        <img
-                          class="desktop__imglink"
-                          src="./images/homepage/games/revillage.jpg"
-                        />
-                      </div>
-                    </a>
-                    <div class="desktop__text-carousel">
-                      <p
-                        class="desktop__oldprice"
-                        style="text-decoration: line-through"
-                      >
-                        R$00,00
-                      </p>
-                      <p class="desktop__newprice">R$00,00</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+        <div class="text-center m-1 max-w-full sm:w-full transform hover:relative -bottom-2 mb-0">
+          <div> 
+            <img class="w-auto filter hover:grayscale" src="https://www.ultimaficha.com.br/wp-content/uploads/2020/09/Naga-Pro-272_R1_compressed.jpg" width="100%" alt=""> 
+            <div class="relative -top-12 bg-black bg-opacity-60 w-auto p-1">
+              <span class="text-white text-center font-Roboto font-bold italic uppercase transform hover:text-yellow-500">terror</span>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
 
-      <%- include("./partials/footer") %> 
+        <div class="text-center m-1 max-w-full sm:w-full transform hover:relative -bottom-2 mb-0">
+          <div> 
+            <img class="w-auto filter hover:grayscale" src="https://razer01-01-us-east-1-prod-media.s3.amazonaws.com/sys-master/root/h00/ha6/9288352038942/razer-tartarus-pro-gallery-04.jpg" width="100%" alt=""> 
+            <div class="relative -top-12 bg-black bg-opacity-60 w-auto p-1">
+              <span class="text-white text-center font-Roboto font-bold italic uppercase transform hover:text-yellow-500">rpg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-1 max-w-full sm:w-full transform hover:relative -bottom-2 mb-0">
+          <div> 
+            <img class="w-auto filter hover:grayscale" src="https://www.ultimaficha.com.br/wp-content/uploads/2020/09/Naga-Pro-272_R1_compressed.jpg" width="100%" alt=""> 
+            <div class="relative -top-12 bg-black bg-opacity-60 w-auto p-1">
+              <span class="text-white text-center font-Roboto font-bold italic uppercase transform hover:text-yellow-500">estrategia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center m-1 max-w-full sm:w-full transform hover:relative -bottom-2 mb-0">
+          <div> 
+            <img class="w-auto filter hover:grayscale" src="https://razer01-01-us-east-1-prod-media.s3.amazonaws.com/sys-master/root/h00/ha6/9288352038942/razer-tartarus-pro-gallery-04.jpg" width="100%" alt=""> 
+            <div class="relative -top-12 bg-black bg-opacity-60 w-auto p-1">
+              <span class="text-white text-center font-Roboto font-bold italic uppercase transform hover:text-yellow-500">outros</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <!--Recommended by community-->
+  <div class="w-full sm:max-w-container mx-auto my-20">
+    <p class="uppercase mx-1 mt-5 font-Roboto font-medium sm:font-light text-xl sm:text-2xl text-white text-center sm:text-left">Recomendado pela comunidade</p>
+    <p class="uppercase mx-1 mb-10 font-Roboto font-medium sm:font-light text-lg sm:text-xl text-white text-center sm:text-left">hoje</p>
+    <div class="sm:flex m-auto">
+      <div class="bg-black bg-opacity-50 text-white m-1 flex flex-1 items-center justify-around">
+        <div class="flex flex-col items-center m-4 text-center w-4/5">
+          <p class="text-center text-white mb-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde quam molestias suscipit autem in cum. Dolor et, facilis voluptatibus suscipit sint perspiciatis in, autem, commodi delectus possimus nulla dolorem..."</p>
+          <a class="text-center text-yellow-300 mb-4 transform hover:text-yellow-500 transition duration-500 underline" href="#">ler a análise completa</a>
+          <img class="w-1/2 rounded-full" src="./images/icons/Daco_4264903.png">
+        </div>
+      </div>
+      <div class="bg-black bg-opacity-50 text-white flex flex-1 items-center m-1">
+        <iframe class="max-w-full mx-auto" width="560" height="315" src="https://www.youtube.com/embed/s7Tsuble_4o" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media;" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!--Highlighted games-->
+  <div class=" max-w-container mx-auto my-20">
+    <p class="uppercase mx-1 mt-5 mb-10 font-Roboto font-medium sm:font-light text-xl sm:text-2xl text-white text-center sm:text-left">Jogos mais populares</p>
+
+    <div class="md:flex mb-10">
+      <div class="flex-1 m-auto">
+        <!--1st line-->
+        <div class="sm:flex mb-4">
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/cyberpunk.webp"></a>
+          </div>
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/tlou2.webp"></a>
+          </div>
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/ghostoftsushima.webp"></a>
+          </div>
+        </div>
+        
+        <!--2nd line-->
+        <div class="sm:flex mt-4">
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/tw3.webp"></a>
+          </div>
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/doom3.webp"></a> 
+          </div>
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/mk11.webp"></a> 
+          </div>
+        </div>
+        
+        <!--3rd line-->
+        <div class="hidden sm:flex mt-4">
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/agony.webp"></a>
+          </div>
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/lis2.webp"></a> 
+          </div>
+          <div class="mx-1 bg-stormBlue-darken sm:rounded-lg p-2 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+            <a href=""><img class="m-auto p-2 w-full" src="./images/homepage/games/darksouls.webp"></a> 
+          </div>
+        </div>
+      </div>
+      
+      <!--highlighted game-->
+      <div class="md:flex m-auto md:max-w-full md:m-0">
+        <div class="mt-4 md:mt-0 mx-1 bg-stormBlue-darken sm:rounded-lg px-2 py-4 border-2 border-transparent transform hover:border-yellow-500 transition duration-500">
+          <a href=""><img class="m-auto p-4" src="./images/homepage/games/rdr.webp"></a>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+  <%- include("./partials/footer") %>
+</body>
 </html>

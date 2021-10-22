@@ -1,98 +1,55 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=10" />
-    <link rel="stylesheet" href="./stylesheets/header.css">
-    <link rel="stylesheet" href="./stylesheets/login.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>login-cadastro</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/header.css">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+    rel="stylesheet"
+  />
+  <title>Login</title>
+</head>
 
-  <body>
-    <div class="container">
-      <%- include("./partials/header") %>
+<body class="bg-stormBlue-default">
+  <%- include("./partials/header") %>
+  
+  <!--Login section-->
+  <div class="max-w-page m-auto bg-loginbg backdrop-brightness-0 min-h-screen bg-cover py-40">
+    <!-- Login Box -->
+    <div id="login-box" class="sm:max-w-container mx-auto bg-black bg-opacity-10 backdrop-filter backdrop-blur-lg py-5 px-1 sm:p-16 transform shadow-xl">
+      <!-- Logo -->
+      <div class="m-auto w-2/3 sm:1/4 mb-4">
+          <img class="m-auto rounded-xl" src="./images/login/logotipo.png">
+      </div>
 
-      <main>
-        <section class="login">
-          <div class="login__background">
-            <div class="login__div">
-              <form action="/login" method="POST" class="login__forms">
-                
-                <label for="email"></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="seuemail@email.com"
-                />
-                
-                <label for="password"></label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="******"
-                />
-
-                <div class="login__submit">
-                  <input
-                    class="login__btn"
-                    type="submit"
-                    onclick=""
-                    value="LOGIN"
-                    style="
-                      text-align: center;
-                      border-radius: 6px;
-                      border-color: orange;
-                      color: #fff;
-                      background: linear-gradient(
-                        156deg,
-                        rgba(252, 207, 49, 1) 0%,
-                        rgba(245, 85, 85, 1) 100%
-                      );
-                      padding: 2px 30px;
-                    "
-                  />
-                </div>
-              
-              </form>
-            </div>
-
-            <div class="login__buttons">
-              <div class="login__btn-div">
-                <a
-                  class="login__btn-text"
-                  href="./cadastroUsuario.html"
-                  style="text-decoration: none"
-                  >Cadastro</a
-                >
-              </div>
-              <div class="login__btn-div">
-                <a
-                  class="login__btn-text"
-                  href="./caixaRecuperacaoSenha.html"
-                  style="text-decoration: none"
-                  >Esqueci a senha</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <%- include("./partials/footer") %>
+      <!-- Form -->
+      <form action="/login" method="POST">
+        <div class="sm:flex sm:flex-col m-auto my-5 text-center">
+          <input class="w-2/3 m-auto outline-none my-1 py-1 text-center" type="email" name="email" placeholder="meu_email@email.com">
+          <input class="w-2/3 m-auto outline-none my-1 py-1 text-center" type="password" name="password" placeholder="*****">
+        </div>
+        
+        <div class="sm:flex sm:items-center sm:justify-around my-5 m-auto text-center">
+          <button class="mx-auto sm:w-1/3 w-1/2 my-2 text-center text-xl font-semibold rounded-full p-1 sm:p-2 bg-gradient-to-r from-green-300 via-blue-500 to-blue-600 sm:transform hover:scale-105 transition duration-500 text-white">Cadastro</button>
+          <button class="mx-auto sm:w-1/3 w-1/2 my-2 text-center text-xl font-semibold rounded-full p-1 sm:p-2 bg-gradient-to-r from-green-300 via-blue-500 to-blue-600 sm:transform hover:scale-105 transition duration-500 text-white">Esqueci a senha</button>
+        </div>
+        
+        <div class="sm:flex items-center justify-around m-auto text-center">
+          <button type="submit" class="sm:w-1/4 w-1/2 mx-auto my-2 text-center text-xl font-semibold rounded-full p-1 sm:p-2 bg-gradient-to-r from-pink-500 to-yellow-500 sm:transform hover:scale-105 transition duration-500 text-white">Login</button>            
+        </div>
+      </form>
     </div>
-  </body>
+  </div>
+
+  <%- include("./partials/footer") %>
+</body>
 </html>
