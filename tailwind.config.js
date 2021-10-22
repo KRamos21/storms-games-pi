@@ -25,6 +25,8 @@ module.exports = {
         'loginbg': "url('https://s3.amazonaws.com/ultrawidewallpapers/86.jpg')",
       },
       maxHeight: {
+        '100': '28rem',
+        '120': '30rem',
         '1/4': '25%',
         '1/2': '50%',
         '3/4': '75%',

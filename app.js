@@ -17,6 +17,7 @@ const logoutRouter = require("./routes/logout");
 const redefinirSenhaRouter = require("./routes/redefinirSenha");
 const segurancaRouter = require("./routes/seguranca");
 const topicoRouter = require("./routes/topico");
+const categoriaRouter = require("./routes/categoria");
 
 const app = express();
 
@@ -42,6 +43,7 @@ app.use("/logout", logoutRouter);
 app.use("/redefinirSenha", redefinirSenhaRouter);
 app.use("/seguranca", segurancaRouter);
 app.use("/topico", topicoRouter);
+app.use("/categoria", categoriaRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
