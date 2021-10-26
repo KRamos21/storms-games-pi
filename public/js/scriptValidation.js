@@ -1,11 +1,11 @@
-//query selectors 
+//Query selectors 
 const form = document.querySelector('.register__form-user');
 const errorContainer = document.querySelector('.errors-container');
 
-//form items 
-//const { name: username, password, password-confirm, email } = form.elements;
+//Form items 
+const { name: username, password, passwordConfirm, email } = form.elements;
 
-const formItems =  [username, password, password-confirm, email];
+const formItems =  [username, password, passwordConfirm, email];
 
 
 //Empty inputs validator
@@ -57,37 +57,37 @@ function passwordInputValidator() {
     return true;
   }
   
-  username.onblur = passwordInputValidator;
+  password.onblur = passwordInputValidator;
 
 
 //Password confirm validator (o nome "password-confirm" esta dando problemas na validação)
-//function passConfInputValidator() {
-//    const passIsValid = password-confirm.value = password;
-//    const passwordLimits = password-confirm.value.trim().length = 8;
-//  
-//    const span = password.nextElementSibling;
-//    span.innerText = "";
-//
-//    if(!passIsValid) {
-//        password-content.style.borderColor = "red";
-//        span.innerText = "A senha é diferente!";
-//        password-confirm.insertAdjacentElement('afterend', span);
-//        return false;
-//    }
-//  
-//    if(!passwordLimits){
-//      password.style.borderColor = "red";
-//      span.innerText = 'A senha deve conter 8 caracteres!';
-//      password.insertAdjacentElement('afterend', span);
-//      return false;
-//    }
-//  
-//    password.style.borderColor = "green";
-//  
-//    return true;
-//  }
-//  
-//  username.onblur = passConfInputValidator;
+function passConfInputValidator() {
+    const passIsValid = passwordConfirm.value = password;
+    const passwordLimits = passwordConfirm.value.trim().length = 8;
+  
+    const span = passwordConfirm.nextElementSibling;
+    span.innerText = "";
+
+    if(!passIsValid) {
+        passwordConfirm.style.borderColor = "red";
+        span.innerText = "A senha é diferente!";
+        passwordConfirm.insertAdjacentElement('afterend', span);
+        return false;
+    }
+  
+    if(!passwordLimits){
+      passwordConfirm.style.borderColor = "red";
+      span.innerText = 'A senha deve conter 8 caracteres!';
+      passwordConfirm.insertAdjacentElement('afterend', span);
+      return false;
+    }
+  
+    passwordConfirm.style.borderColor = "green";
+  
+    return true;
+  }
+  
+  passwordConfirm.onblur = passConfInputValidator;
 
 
 //Email validator
