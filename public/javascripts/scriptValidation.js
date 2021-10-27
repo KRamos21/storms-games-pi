@@ -22,13 +22,13 @@ function usernameInputValidator() {
     span.innerText = "";
   
     if(!usernameLimits){
-      //username.style.backgroundColor = "red";
+      username.style.color = "red";
       span.innerHTML = "O username deve ter de 2 a 50 caracteres!";
       username.insertAdjacentElement('afterend', span);
       return false;
     }
   
-    username.style.backgroundColor = "green";
+    username.style.color = "green";
     return true;
   }
   
@@ -43,13 +43,13 @@ function passwordInputValidator() {
     span.innerText = "";
   
     if(!passwordLimits){
-      //password.style.backgroundColor = "red";
+      password.style.color = "red";
       span.innerHTML = "A senha deve ter pelo menos 6 caracteres!";
       password.insertAdjacentElement('afterend', span);
       return false;
     }
   
-    password.style.backgroundColor = "green";
+    password.style.color = "green";
     return true;
   }
   
@@ -64,13 +64,13 @@ function password2InputValidator() {
     span.innerText = "";
 
     if(!passIsValid) {
-       // password2.style.backgroundColor = "red";
+        password2.style.color = "red";
         span.innerHTML = "A senha é diferente!";
         password2.insertAdjacentElement('afterend', span);
         return false;
     }
   
-    password2.style.backgroundColor = "green";
+    password2.style.color = "green";
     return true;
   }
   
@@ -86,13 +86,13 @@ function emailInputValidator() {
     span.innerText = "";
 
     if(!emailIsValid && !emailLimits) {
-        //email.style.backgroundColor = "red";
+        email.style.color = "red";
         span.innerHTML = "Email inválido!";
         email.insertAdjacentElement('afterend', span);
         return false;
     }
 
-    email.style.backgroundColor = "green";
+    email.style.color = "green";
     return true;
   }
 
