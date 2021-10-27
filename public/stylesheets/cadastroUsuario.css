@@ -232,6 +232,12 @@ input {
   background-color: #000;
 }
 
+span {
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}
+
 /* Very small devices (smarthphones and small
 tablets, 767px and down)*/
 @media (max-width: 767px) {
