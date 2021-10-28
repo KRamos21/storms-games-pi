@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
     />
-    <script defer src="../public/javascripts/scriptValidation.js"></script>
+    <script defer src="./javascripts/scriptValidation.js"></script>
     <title>Cadastro de Usuarios</title>
   </head>
 
@@ -33,7 +33,7 @@
           </div>
 
           <div class="register__div">
-            <form action="/cadastroUsuario" method="POST" class="register__form-user">
+            <form action="/cadastroUsuario" method="POST" id="register__form-user" class="register__form-user">
               
               <div class="register__user">
                 <label class="register__user-label" for="username"
@@ -45,6 +45,7 @@
                   id="username"
                   name="username"
                   placeholder="ex: mandyHellz"
+                  required
                 />
                 <span class="error-message"></span>
               </div>
@@ -59,7 +60,8 @@
                   type="password"
                   id="password"
                   name="password"
-                  placeholder="********"
+                  placeholder="Senha"
+                  required
                 />
                 <span class="error-message"></span>
                 <br />
@@ -69,9 +71,10 @@
                 >
                 <input
                   type="password"
-                  id="passwordConfirm"
-                  name="passwordConfirm"
-                  placeholder="********"
+                  id="password2"
+                  name="password2"
+                  placeholder="Confirme a senha"
+                  required
                 />
                 <span class="error-message"></span>
               </div>
@@ -84,6 +87,7 @@
                   id="email"
                   name="email"
                   placeholder="seuemail@email.com"
+                  required
                 />
                 <span class="error-message"></span>
               </div>
@@ -92,10 +96,10 @@
                 <input
                   class="register__submit-btn"
                   type="submit"
+                  id= "submit-btn"
                   onclick=""
                   value="Finalizar cadastro"
                 />
-                <span class="error-message"></span>
               </div>
             </form>
           </div>
