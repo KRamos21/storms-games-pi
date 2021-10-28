@@ -9,9 +9,7 @@ router.get("/:id?", async (req, res) => {
 
   const jogo = await JogoController.buscarJogoPorId(id);
 
-  const infosRobo = await JogoController.acionarRobo(jogo.titulo);
-
-  res.render("jogo", { usuario, jogo, infosRobo });
+  res.render("jogo", { usuario, jogo });
 });
 
 module.exports = router;
