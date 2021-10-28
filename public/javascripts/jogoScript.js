@@ -12,26 +12,38 @@ window.addEventListener("DOMContentLoaded", async function changeOpenCriticScore
 
 window.addEventListener("DOMContentLoaded", async function changePsStore() {
   const title = document.getElementById("title").innerText;
-  const psUrl = document.getElementById("psStore-anchor");
+  const anchor = document.getElementById("psStore-anchor");
   const psPrice = document.getElementById("psStore-price");
 
   const { data } = await axios.get(`${baseUrl}/psStore/${title}`);
   const { psStorePrice, psStoreUrl } = data;
 
-  psUrl.href = psStoreUrl;
+  anchor.href = psStoreUrl;
   psPrice.innerText = psStorePrice;
 });
 
 window.addEventListener("DOMContentLoaded", async function changeSteam() {
   const title = document.getElementById("title").innerText;
-  const psUrl = document.getElementById("psStore-anchor");
-  const psPrice = document.getElementById("psStore-price");
+  const anchor = document.getElementById("steam-anchor");
+  const price = document.getElementById("steam-price");
 
-  const { data } = await axios.get(`${baseUrl}/psStore/${title}`);
-  const { psStorePrice, psStoreUrl } = data;
+  const { data } = await axios.get(`${baseUrl}/steam/${title}`);
+  const { steamPrice, steamUrl } = data;
 
-  psUrl.href = psStoreUrl;
-  psPrice.innerText = psStorePrice;
+  anchor.href = steamUrl;
+  price.innerText = steamPrice;
+});
+
+window.addEventListener("DOMContentLoaded", async function changeEpic() {
+  const title = document.getElementById("title").innerText;
+  const anchor = document.getElementById("epic-anchor");
+  const price = document.getElementById("epic-price");
+
+  const { data } = await axios.get(`${baseUrl}/epic/${title}`);
+  const { epicPrice, epicUrl } = data;
+
+  anchor.href = epicUrl;
+  price.innerText = epicPrice;
 });
 
 window.addEventListener("DOMContentLoaded", async function changeYoutubeVideos() {
