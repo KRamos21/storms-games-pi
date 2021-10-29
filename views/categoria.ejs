@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheets/style.css">
-    <link rel="stylesheet" href="./stylesheets/carousel.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/carousel.css">
     <title>Categoria</title>
 </head>
 
 <body class="bg-stormBlue-default">
+  <%- include("./partials/header") %>
+
     <div class="carousel rounded relative overflow-hidden shadow-xl max-w-page">
         <div class="carousel-inner relative overflow-hidden w-full">
           <!--Slide 1-->
@@ -106,5 +109,6 @@
             </div>
         </div>
     </div>
+    <%- include("./partials/footer") %>
 </body>
 </html>

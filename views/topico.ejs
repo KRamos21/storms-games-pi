@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/reset.css">
   <link rel="stylesheet" href="/stylesheets/header.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/stylesheets/topico.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Russo+One&display=swap" rel="stylesheet">
@@ -22,22 +22,6 @@
   <%- include("./partials/header") %>
 
   <main class="main">
-    <section class="regras-e-historico">
-      <a class="regras-e-historico__ancora" href="#">
-        <div class="regras-e-historico__div" href="">
-          <img src="/images/foruns/balanca.svg" alt="Regras">
-          <p class="regras-e-historico__texto">Regras e diretrizes para discussões</p>
-        </div>
-      </a>
-
-      <a class="regras-e-historico__ancora" href="#">
-        <div class="regras-e-historico__div" href="">
-          <img src="/images/foruns/historico.svg" alt="Regras">
-          <p class="regras-e-historico__texto">Histórico nas discussões</p>
-        </div>
-      </a>
-    </section>
-
     <h1 class="titulo-do-jogo"> 
       <%= topico.forum.game.titulo %> 
     </h1>
@@ -63,7 +47,7 @@
               <p class="topico__texto topico__texto--margin"><strong>Mensagens:</strong> <%= topico.coments.length %>  </p>
             </div>
             
-            <button class="topico__botao topico__botao--info" type="submit">Inscrever-se na discussão</button>
+            <button class="topico__botao topico__botao--info bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" type="submit">Inscrever-se na discussão</button>
           </div>
         </article>
   
@@ -90,7 +74,7 @@
             <% if ( typeof usuario === "undefined" ) {%>
                   Você não está logado.
             <% } else {%>
-                  <%= usuario.nome %>
+                  <%= usuario.nomeUsuario %>
             <% } %> 
           </p>
         </div>
@@ -106,7 +90,7 @@
               <textarea class="topico__texto topico__texto--mensagem topico__texto--textarea" name="novoComentario" id="novoComentario" placeholder="Insira aqui seu comentário."></textarea>
             </div>
             <input type="hidden" name="data" id="data" value="<%= new Date() %> ">
-            <button class="topico__botao topico__botao--novo-post" type="submit">Publicar</button>
+            <button class="topico__botao topico__botao--novo-post bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" type="submit">Publicar</button>
           <% } %> 
         </form>
       </article>

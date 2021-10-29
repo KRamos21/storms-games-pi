@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/reset.css">
-  <link rel="stylesheet" href="./stylesheets/header.css">
-  <link rel="stylesheet" href="./stylesheets/menu-conta.css">
-  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/header.css">
+  <link rel="stylesheet" href="/stylesheets/menu-conta.css">
   <link rel="stylesheet" href="/stylesheets/conta.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -136,8 +136,8 @@
           </article>
     
           <div class="config__div-botoes">
-            <button class="config__botao config__botao--margin" type="submit">Salvar mudanças</button>
-            <button class="config__botao" type="reset">Descartar mudanças</button>
+            <button class="config__botao config__botao--margin bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" type="submit">Salvar mudanças</button>
+            <button class="config__botao bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" type="reset">Descartar mudanças</button>
           </div>
         </form>
       </section>
@@ -146,7 +146,7 @@
         <h2 class="config__titulo config__titulo--excluir">Excluir Conta</h2>
         <p class="config__texto">Clique em <strong class="config__strong">solicitar exlusão de conta</strong> para iniciar o processo de exclusão permanente da sua conta.</p>
         <form method="POST" action="/conta/<%= usuario.id %>?_method=DELETE">
-          <button class="config__botao config__botao--excluir" type="submit">Solicitar exclusão de conta</button>
+          <button class="config__botao config__botao--excluir bg-gradient-to-r from-green-500 to-blue-600 sm:transform hover:scale-105 transition duration-500 text-white" type="submit">Solicitar exclusão de conta</button>
         </form>
       </section>
     </div>
