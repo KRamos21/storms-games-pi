@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheets/header.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="./stylesheets/redefinicaoSenha.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -17,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
     />
+    <script defer src="/javascripts/scriptValidationRedefinicao.js"></script>
     <title>Redefinição de senha</title>
   </head>
 
@@ -56,17 +58,20 @@
                   id="pass"
                   name="pass"
                   placeholder=""
-                /><br />
+                />
+                <span class="error-message"></span>
+                <br />
                 <label class="reset__pass-label" for="pass"
                   >Digite a senha novamente:
                 </label>
                 <input
                   class="reset__pass-input"
                   type="password"
-                  id="pass"
-                  name="pass"
+                  id="pass2"
+                  name="pass2"
                   placeholder=""
                 />
+                <span class="error-message"></span>
               </form>
             </div>
             <div class="reset__submit">
