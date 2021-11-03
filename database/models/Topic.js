@@ -8,16 +8,16 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       allowNull: false,
     },
-    forum_id: {
+    game_id: {
       type: DataTypes.INTEGER.UNSIGNED,
       allowNull: false,
     },
   });
 
   Topic.associate = (models) => {
-    Topic.belongsTo(models.Forum, {
-      foreignKey: "forum_id",
-      as: "forum",
+    Topic.belongsTo(models.Game, {
+      foreignKey: "game_id",
+      as: "game"
     });
 
     Topic.hasMany(models.Coment, {

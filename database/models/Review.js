@@ -1,15 +1,11 @@
 module.exports = (sequelize, DataTypes) => {
   const Review = sequelize.define("Review", {
-    nota: {
-      type: DataTypes.INTEGER,
+    avaliacao_positiva: {
+      type: DataTypes.TEXT,
       allowNull: false,
     },
-    texto_avaliacao: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    user_id: {
-      type: DataTypes.INTEGER.UNSIGNED,
+    avaliacao_negativa: {
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     game_id: {
@@ -18,12 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     },
   });
 
-  Review.associate = (models) => {
-    Review.belongsTo(models.User, {
-      foreignKey: "user_id",
-      as: "user",
-    });
-    
+  Review.associate = (models) => {  
     Review.belongsTo(models.Game, {
       foreignKey: "game_id",
       as: "game",

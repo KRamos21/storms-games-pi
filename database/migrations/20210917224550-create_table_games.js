@@ -14,7 +14,7 @@ module.exports = {
         allowNull: false
       },
       descricao: {
-        type: Sequelize.STRING,
+        type: Sequelize.TEXT,
         allowNull: false
       },
       categoria: {

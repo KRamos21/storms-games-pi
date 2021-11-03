@@ -8,21 +8,23 @@ module.exports = {
         {
           titulo: "Ghost of Tsushima",
           descricao:
-            "Ghost of Tsushima é um jogo eletrônico de ação-aventura desenvolvido pela Sucker Punch Productions e publicado pela Sony Interactive Entertainment. Foi lançado em 17 de julho de 2020 exclusivamente para PlayStation 4",
+            "No final do século 13, o império mongol devastou nações inteiras ao longo de sua campanha para conquistar o Oriente. A Ilha de Tsushima é tudo o que existe entre o Japão continental e uma enorme frota de invasão mongol liderada pelo general implacável e astuto, Khotun Khan. Enquanto a ilha queima na esteira da primeira onda de ataque mongol, o guerreiro samurai Jin Sakai se destaca como um dos últimos membros sobreviventes de seu clã. Ele está decidido a fazer o que for preciso, a qualquer custo, para proteger seu povo e recuperar sua casa. Ele deve deixar de lado as tradições que o moldaram como guerreiro para abrir um novo caminho, o caminho do Fantasma, e travar uma guerra não convencional pela liberdade de Tsushima. ",
           categoria: "Aventura",
           plataforma: "PlayStation",
         },
         {
           titulo: "Assassin's Creed Valhalla",
           descricao:
-            "Assassin's Creed Valhalla é um jogo eletrônico de RPG de ação desenvolvido pela Ubisoft Montreal e publicado pela Ubisoft",
+            `Torne-se Eivor, um poderoso invasor Viking e lidere seu clã das costas áridas da Noruega para uma nova casa em meio às exuberantes fazendas da Inglaterra do século IX. Explore um belo e misterioso mundo aberto onde você enfrentará inimigos brutais, invadirá fortalezas, construirá o novo assentamento do seu clã e formará alianças para ganhar glória e ganhar um lugar em Valhalla.
+
+            A Inglaterra na era dos Vikings é uma nação fragmentada de pequenos senhores e reinos em guerra. Por baixo do caos encontra-se uma terra rica e indomada à espera de um novo conquistador. Será você? `,
           categoria: "RPG",
           plataforma: "PC",
         },
         {
           titulo: "Horizon Zero Dawn",
           descricao:
-            "Horizon Zero Dawn é um jogo eletrônico de RPG de ação desenvolvido pela Guerrilla Games e publicado pela Sony Interactive Entertainment. Foi lançado em 28 de fevereiro de 2017 para PlayStation 4 e em 7 de agosto de 2020 para Microsoft Windows.",
+            `Experimente toda a lendária jornada de Aloy para desvendar os mistérios de um mundo governado por máquinas mortais. Pária de sua tribo, a jovem caçadora luta para descobrir seu passado, descobrir seu destino ... e impedir uma ameaça catastrófica ao futuro. `,
           categoria: "RPG",
           plataforma: "PC",
         },

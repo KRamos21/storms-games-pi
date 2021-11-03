@@ -1,4 +1,4 @@
-const { Topic, Coment, Forum } = require("../database/models");
+const { Topic, Coment, Game } = require("../database/models");
 
 module.exports.buscarTopico = async (idTopico) => {
   const topicoEncontrado = await Topic.findByPk(idTopico, {
@@ -9,9 +9,8 @@ module.exports.buscarTopico = async (idTopico) => {
         include: "user"
       },
       {
-        model: Forum,
-        as: "forum",
-        include: "game"
+        model: Game,
+        as: "game",
       }
     ]
   });

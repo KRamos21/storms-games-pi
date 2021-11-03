@@ -17,11 +17,11 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      forum_id: {
+      game_id: {
         type: Sequelize.INTEGER.UNSIGNED,
         allowNull: false,
         references: {
-          model: "forums",
+          model: "games",
           key: "id"
         }
       },

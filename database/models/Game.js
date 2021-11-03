@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },  
     descricao: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     categoria: {
@@ -23,15 +23,15 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Game.associate = (models) => {
-    Game.hasOne(models.Forum, {
-      foreignKey: "game_id",
-      as: "forum",
+    Game.hasMany(models.Topic, {
+      foreignKey: "game_id", 
+      as: "topics"
     });
 
     Game.hasOne(models.Review, {
       foreignKey: "game_id",
       as: "review"
-    })
+    });
   };
 
   return Game;

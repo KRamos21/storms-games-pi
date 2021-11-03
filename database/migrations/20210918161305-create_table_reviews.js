@@ -9,21 +9,13 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
       },
-      nota: {
-        type: Sequelize.INTEGER,
+      avaliacao_positiva: {
+        type: Sequelize.TEXT,
         allowNull: false,
       },
-      texto_avaliacao: {
-        type: Sequelize.STRING(1000),
-        allowNull: true,
-      },
-      user_id: {
-        type: Sequelize.INTEGER.UNSIGNED,
+      avaliacao_negativa: {
+        type: Sequelize.TEXT,
         allowNull: false,
-        references: {
-          model: "users",
-          key: "id"
-        }
       },
       game_id: {
         type: Sequelize.INTEGER.UNSIGNED,
