@@ -14,7 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     },
     imagem_jogo: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
+    },
+    imagem_card: {
+      type: DataTypes.STRING,
+      allowNull: true
     },
     plataforma: {
       type: DataTypes.STRING(45),

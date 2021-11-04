@@ -5,3 +5,9 @@ module.exports.buscarJogoPorId = async (id) => {
 
   return jogoEncontrado;
 };
+
+module.exports.buscarJogosPorCategoria = async (categoria) => {
+  const jogosDaCategoria = await JogoModel.buscarJogosPorCategoria(categoria);
+
+  return jogosDaCategoria;
+};

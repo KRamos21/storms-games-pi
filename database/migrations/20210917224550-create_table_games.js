@@ -23,7 +23,11 @@ module.exports = {
       },
       imagem_jogo: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
+      },
+      imagem_card: {
+        type: Sequelize.STRING,
+        allowNull: true
       },
       plataforma: {
         type: Sequelize.STRING(45),
