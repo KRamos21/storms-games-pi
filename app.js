@@ -18,6 +18,8 @@ const segurancaRouter = require("./routes/seguranca");
 const topicoRouter = require("./routes/topico");
 const categoriaRouter = require("./routes/categoria");
 
+const modelsTestRouter = require("./routes/modelsTest");
+
 const app = express();
 
 // view engine setup
@@ -42,6 +44,8 @@ app.use("/redefinirSenha", redefinirSenhaRouter);
 app.use("/seguranca", segurancaRouter);
 app.use("/topico", topicoRouter);
 app.use("/categoria", categoriaRouter);
+
+app.use("/modelsTest", modelsTestRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

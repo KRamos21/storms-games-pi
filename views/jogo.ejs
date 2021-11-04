@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <img class="absolute z-10 -top-20 lg:-top-36 w-auto min-w-full max-w-none " src="/images/games/ghost_of_tsushima.jpg">
+    <img class="absolute z-10 -top-20 lg:-top-36 w-auto min-w-full max-w-none " src= <%= jogo.imagem_jogo %>  >
   </div>
 
   <!--Available on-->
@@ -110,8 +110,7 @@
     <!--About/description-->
     <div class="m-auto my-12 p-4 max-w-container bg-stormBlue-darken">
       <p class="m-auto text-left text-2xl mb-4 font-Roboto font-light text-gray-300" >Sobre o jogo:</p>
-      <p class="text-white mb-4 leading-6 text-base font-Roboto">No final do século 13, o império mongol devastou nações inteiras ao longo de sua campanha para conquistar o Oriente. A Ilha de Tsushima é tudo o que existe entre o Japão continental e uma enorme frota de invasão mongol liderada pelo general implacável e astuto, Khotun Khan. Enquanto a ilha queima na esteira da primeira onda de ataque mongol, o guerreiro samurai Jin Sakai se destaca como um dos últimos membros sobreviventes de seu clã. Ele está decidido a fazer o que for preciso, a qualquer custo, para proteger seu povo e recuperar sua casa. Ele deve deixar de lado as tradições que o moldaram como guerreiro para abrir um novo caminho, o caminho do Fantasma, e travar uma guerra não convencional pela liberdade de Tsushima.
-      </p>
+      <p class="text-white mb-4 leading-6 text-base font-Roboto"> <%= jogo.descricao %>  </p>
     </div>
     
     <!--Review ratings-->
@@ -120,8 +119,7 @@
         <a href="" class="flex items-center justify-around">
           <div class="flex flex-col items-center m-4 text-center w-4/5">
             <p class="sm:hidden text-green-500" >Positive Review</p>
-            <p class="text-center text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde quam molestias suscipit autem in cum. 
-              Dolor et, facilis voluptatibus suscipit sint perspiciatis in, autem, commodi delectus possimus nulla dolorem!</p>
+            <p class="text-center text-white mb-4"> <%= jogo.review.avaliacao_positiva %> </p>
             <img class="w-1/2" src="https://www.gamereactor.pt/media/08/ghosttsushima_3200883b.png">
           </div>
           <div class="sm:w-1/5 hidden sm:block p-4">
@@ -134,8 +132,7 @@
         <a href="" class="flex items-center justify-around transform hover:border-yellow-500 transition duration-500">
           <div class="flex flex-col items-center m-4 text-center w-4/5">
             <p class="sm:hidden text-red-500" >Positive Review</p>
-            <p class="text-center text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero unde quam molestias suscipit autem in cum. 
-              Dolor et, facilis voluptatibus suscipit sint perspiciatis in, autem, commodi delectus possimus nulla dolorem!</p>
+            <p class="text-center text-white mb-4"><%= jogo.review.avaliacao_negativa %></p>
             <img class="w-1/2" src="https://sm.ign.com/ign_br/news/g/ghost-of-t/ghost-of-tsushima-directors-cut-and-iki-island-expansion-ann_msh6.jpg">
           </div>
           <div class="sm:w-1/5 hidden sm:block p-4">
@@ -148,72 +145,20 @@
     <!--Topics 1st line-->
     <div class="sm:flex justify-center flex-wrap max-w-container m-auto mt-12">
 
-      <div class="sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 transform hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
-        <div class="m-auto p-4"> 
-            <strong class="text-xl font-Roboto font-bold text-yellow-500">Titulo 1</strong>
-        </div>
-        <div> 
-          <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p> 
-        </div>
-      </div>
-
-      <div class="sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 transform hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
-        <div class="m-auto p-4"> 
-            <strong class="text-xl font-Roboto font-bold text-yellow-500">Titulo 1</strong>
-        </div>
-        <div> 
-          <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p> 
-        </div>
-      </div>
-
-      <div class="sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 transform hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
-        <div class="m-auto p-4"> 
-            <strong class="text-xl font-Roboto font-bold text-yellow-500">Titulo 1</strong>
-        </div>
-        <div> 
-          <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p> 
-        </div>
-      </div>
-
-      <div class="sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 transform hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
-        <div class="m-auto p-4"> 
-            <strong class="text-xl font-Roboto font-bold text-yellow-500">Titulo 1</strong>
-        </div>
-        <div> 
-          <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p> 
-        </div>
-      </div>
-
-      <div class="sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 transform hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
-        <div class="m-auto p-4"> 
-            <strong class="text-xl font-Roboto font-bold text-yellow-500">Titulo 1</strong>
-        </div>
-        <div> 
-          <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p> 
-        </div>
-      </div>
-
-      <div class="sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 transform hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
-        <div class="m-auto p-4"> 
-            <strong class="text-xl font-Roboto font-bold text-yellow-500">Titulo 1</strong>
-        </div>
-        <div> 
-          <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p> 
-        </div>
-      </div>      
-    </div>
+      <% jogo.topics.forEach(element => { %>
+        <div class="sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 transform hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
+          <div class="m-auto p-4"> 
+              <strong class="text-xl font-Roboto font-bold text-yellow-500"> <%= element.titulo_topico %>  </strong>
+          </div>
+          <div> 
+            <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p> 
+          </div>
+        </div>     
+      <% }) %>   
+    </div> 
+  </div>
 
   <%- include("./partials/footer") %>
 </body>

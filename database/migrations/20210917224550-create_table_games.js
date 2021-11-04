@@ -21,9 +21,9 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      imagem_do_produto: {
-        type: Sequelize.BLOB,
-        allowNull: true
+      imagem_jogo: {
+        type: Sequelize.STRING,
+        allowNull: false
       },
       plataforma: {
         type: Sequelize.STRING(45),

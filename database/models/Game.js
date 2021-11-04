@@ -12,9 +12,9 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
-    imagem_do_produto: {
-      type: DataTypes.BLOB,
-      allowNull: true,
+    imagem_jogo: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     plataforma: {
       type: DataTypes.STRING(45),
