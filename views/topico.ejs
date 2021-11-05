@@ -79,7 +79,7 @@
           </p>
         </div>
         
-        <form action="/topico/<%= topico.id %> " method="post" class="mensagem__novo-post">
+        <form action="/topico/<%= topico.id %>/novoComentario" method="post" class="mensagem__novo-post">
           <% if ( typeof usuario === "undefined" ) {%>
             <div class="mensagem__corpo">
               <textarea class="topico__texto topico__texto--mensagem topico__texto--textarea" name="novoComentario" id="novoComentario" disabled placeholder="Faça login ou cadastre-se para poder comentar."></textarea>

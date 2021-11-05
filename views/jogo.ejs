@@ -46,17 +46,19 @@
   <!--Available on-->
   <div id="platforms" class="sm:max-h-36 sm:max-w-page w-full mx-auto bg-stormBlue-darken z-10 relative">
     <div>
-        <p class="font-Roboto text-xl text-white text-center pt-1 font-bold" >Disponível em:</p>
+      <p class="font-Roboto text-xl text-white text-center pt-1 font-bold" >Disponível em:</p>
     </div>
+
     <div class="flex items-center justify-around mx-2">
       <div class="text-center mb-2 mx-1 w-full">
         <div class="max-w-1/3 sm:w-1/3 m-auto"> 
           <a id="psStore-anchor" class="flex items-center justify-center" href="https://www.playstation.com/pt-br/">
-              <img class="m-auto filter w-20 transform hover:scale-110 sm:hover:scale-115 p-2 rounded-lg" src="/images/icons/psstore.png" width="" alt=""> 
-              <strong id="psStore-price" class="hidden sm:block text-white font-Roboto"> Pesquisando... </strong>
+            <img class="m-auto filter w-20 transform hover:scale-110 sm:hover:scale-115 p-2 rounded-lg" src="/images/icons/psstore.png" width="" alt=""> 
+            <strong id="psStore-price" class="hidden sm:block text-white font-Roboto"> Pesquisando... </strong>
           </a>
         </div>
       </div>
+
       <div class="text-center mb-2 mx-1 w-full">
         <div class="max-w-1/3 sm:w-1/3 m-auto"> 
           <a id="steam-anchor" class="flex items-center justify-center" href="https://store.steampowered.com/?l=portuguese">
@@ -65,6 +67,7 @@
           </a>
         </div>
       </div>
+
       <div class="text-center mb-2 mx-1 w-full">
         <div class="max-w-1/3 sm:w-1/3 m-auto"> 
           <a id="epic-anchor" class="flex items-center justify-center" href="https://www.epicgames.com/store/pt-BR/">
@@ -145,29 +148,33 @@
     <!--topic input-->
     <div class="max-w-container m-auto bg-stormBlue-darken sm:rounded-lg py-5 cursor-pointer">
       <strong class="text-xl font-Roboto font-bold text-yellow-500 p-5 text-left"> Criar um comentário:</strong>
-      <form action="" method="POST" class="flex flex-col mx-auto text-center mt-5">
-          <input class="mx-4 my-2 rounded-md p-2" type="text" name="title" placeholder="Título" required maxlength="150" >
-          <textarea rows="6" class="mx-4 my-2 rounded-md p-2" type="text" name="comment" placeholder="Seu comentário" required maxlength="1000"></textarea>
-          <button class="w-1/4 rounded-md mt-5 m-auto p-1 bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" type="submit">Enviar</button>
+      <form action="/topico/novoTopico" method="POST" class="flex flex-col mx-auto text-center mt-5">
+        <input class="mx-4 my-2 rounded-md p-2" type="text" name="titulo" placeholder="Título" required maxlength="150" >
+
+        <textarea rows="6" class="mx-4 my-2 rounded-md p-2" type="text" name="novoComentario" placeholder="Seu comentário" required maxlength="1000"></textarea>
+
+        <input type="hidden" name="data" id="data" value="<%= new Date() %>">
+        <input type="hidden" name="idJogo" id="idJogo" value="<%= jogo.id %>">
+
+        <button class="w-1/4 rounded-md mt-5 m-auto p-1 bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" type="submit">Enviar</button>
       </form>
     </div>  
 
     <!--Topics 1st line-->
     <div class="sm:flex justify-center flex-wrap max-w-container m-auto mt-12">
-
       <% jogo.topics.forEach(element => { %>
-          <div class="w-full sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 sm:transform sm:hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
-            <a href="/topico/<%= element.id %>">
-              <div class="m-auto p-4"> 
-                  <strong class="text-xl font-Roboto font-bold text-yellow-500"> <%= element.titulo_topico %>  </strong>
-              </div>
-              <div> 
-                <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                </p> 
-              </div>
-            </a>  
-          </div>   
+        <div class="w-full sm:w-5/12 md:w-3/10 lg:w-11/50 flex-initial my-5 mx-3 bg-stormBlue-darken sm:rounded-lg p-4 sm:transform sm:hover:relative -top-3 hover:bg-gray-500 transition duration-700 cursor-pointer">
+          <a href="/topico/<%= element.id %>">
+            <div class="m-auto p-4"> 
+              <strong class="text-xl font-Roboto font-bold text-yellow-500"> <%= element.titulo_topico %>  </strong>
+            </div>
+            <div> 
+              <p class="m-auto p-4 text-white text-sm transform hover:text-black transition duration-700">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p> 
+            </div>
+          </a>  
+        </div>   
       <% }) %>   
     </div> 
   </div>

@@ -17,3 +17,9 @@ module.exports.buscarTopico = async (idTopico) => {
 
   return topicoEncontrado;
 };
+
+module.exports.criarTopico = async (topicoObjeto) => {
+  const topicoCriado = await Topic.create(topicoObjeto);
+
+  return topicoCriado;
+};
