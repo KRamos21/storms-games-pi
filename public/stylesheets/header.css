@@ -58,6 +58,18 @@
   outline: none;
 }
 
+.results__div {
+  padding: 15px;
+  font-weight: 500;
+  font-size: larger;
+  border: none;
+  line-height: 22px;
+}
+
+.results__div:hover {
+  background-color: rgba(84, 112, 196, 0.6);
+}
+
 .menu__login-and-user {
   display: flex;
   justify-content: center;

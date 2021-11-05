@@ -11,3 +11,9 @@ module.exports.buscarJogosPorCategoria = async (categoria) => {
 
   return jogosDaCategoria;
 };
+
+module.exports.pesquisarPorTitulo = async (titulo) => {
+  const resultadoPesquisa = await JogoModel.pesquisarPorTitulo(titulo);
+
+  return resultadoPesquisa;
+};

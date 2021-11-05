@@ -9,7 +9,7 @@
     />
   </a>
 
-  <div class="menu__searchbar">
+  <div id="menu__searchbar" class="menu__searchbar">
     <div class="menu__loupe">
       <img
         class="menu__loupe--img"
@@ -21,9 +21,10 @@
       <input
         class="menu__searchbar-input"
         type="text"
-        id="searchbar"
+        id="searchbar-input"
         name="searchbar"
         placeholder="Buscar"
+        onkeyup="pesquisarTitulo(this)"
       />
     </form>
   </div>
@@ -64,4 +65,6 @@
       /></a>
     </div>
   </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="/javascripts/pesquisaHeader.js"></script>
 </header>
