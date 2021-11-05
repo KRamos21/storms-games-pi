@@ -1,4 +1,4 @@
-const { Game, Review, Topic } = require("../database/models");
+const { Game, Review, Topic, Coment } = require("../database/models");
 
 module.exports.buscarJogoPorId = async (id) => {
   const jogoEncontrado = await Game.findByPk(id, {
@@ -10,6 +10,10 @@ module.exports.buscarJogoPorId = async (id) => {
       {
         model: Topic,
         as: "topics",
+        include: {
+          model: Coment,
+          as: "coments",
+        },
       },
     ],
   });
