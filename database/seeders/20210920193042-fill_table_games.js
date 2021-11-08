@@ -72,6 +72,7 @@ module.exports = {
           categoria: "acao",
           imagem_card: "/images/categorias/acao/battlefield-2042.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 7
         {
@@ -81,6 +82,7 @@ module.exports = {
           categoria: "acao",
           imagem_card: "/images/categorias/acao/cod-infinitewarfare.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 8
         {
@@ -90,6 +92,7 @@ module.exports = {
           categoria: "acao",
           imagem_card: "/images/categorias/acao/farcry-3.jpeg",
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 9
         {
@@ -99,6 +102,7 @@ module.exports = {
           categoria: "acao",
           imagem_card: "/images/categorias/acao/god-of-war.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 10
         {
@@ -108,6 +112,7 @@ module.exports = {
           categoria: "acao",
           imagem_card: "/images/categorias/acao/hitman.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 11
         {
@@ -117,6 +122,7 @@ module.exports = {
           categoria: "acao",
           imagem_card: "/images/categorias/acao/max-payne.jpg",
           plataforma: "PC",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 12
         {
@@ -126,6 +132,7 @@ module.exports = {
           categoria: "acao",
           imagem_card: "/images/categorias/acao/tomb-raider.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 13
         {
@@ -135,6 +142,7 @@ module.exports = {
           categoria: "aventura",
           imagem_card: "/images/categorias/aventura/bloodborne.jpeg",
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 14
         {
@@ -144,6 +152,7 @@ module.exports = {
           categoria: "aventura",
           imagem_card: "/images/categorias/aventura/crash.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 15
         {
@@ -153,6 +162,7 @@ module.exports = {
           categoria: "aventura",
           imagem_card: "/images/categorias/aventura/darksouls.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 16
         {
@@ -162,6 +172,7 @@ module.exports = {
           categoria: "aventura",
           imagem_card: "/images/categorias/aventura/fallout-4.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 17
         {
@@ -171,6 +182,7 @@ module.exports = {
           categoria: "aventura",
           imagem_card: "/images/categorias/aventura/rdr-2.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 18
         {
@@ -180,6 +192,7 @@ module.exports = {
           categoria: "aventura",
           imagem_card: "/images/categorias/aventura/uncharted-4.jpeg",
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 19
         {
@@ -189,6 +202,7 @@ module.exports = {
           categoria: "aventura",
           imagem_card: "/images/categorias/aventura/unravel.jpg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 20
         {
@@ -198,6 +212,7 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/fifa2021.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 21
         {
@@ -207,6 +222,7 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/nba-2k21.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 22
         {
@@ -216,6 +232,7 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/nfs-rivals.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 23
         {
@@ -225,6 +242,7 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/nhl-2021.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 24
         {
@@ -234,6 +252,8 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/pes2021.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 25
         {
@@ -243,6 +263,8 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/riders-republic.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 26
         {
@@ -252,6 +274,8 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/tony-hawks.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 27
         {
@@ -261,6 +285,8 @@ module.exports = {
           categoria: "esportes",
           imagem_card: "/images/categorias/esportes/wwe-2k15.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 28
         {
@@ -270,6 +296,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/dbz-kakarot.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 29
         {
@@ -281,6 +309,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/fatal-fury-vol2.webp",
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 30
         {
@@ -292,6 +322,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/jojo-eyes-of-heaven.webp",
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 31
         {
@@ -305,6 +337,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/jump-force.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 32
         {
@@ -314,6 +348,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/mk-11.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 33
         {
@@ -324,6 +360,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/soulcalibur-vi.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 34
         {
@@ -333,6 +371,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/street-fighter-v.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 35
         {
@@ -344,6 +384,8 @@ module.exports = {
           categoria: "luta",
           imagem_card: "/images/categorias/luta/tekken7.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },        
         // Jogo ID 36
         {
@@ -357,6 +399,8 @@ module.exports = {
           categoria: "rpg",
           imagem_card: "/images/categorias/rpg/diablo-iii.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 37
         {
@@ -372,6 +416,8 @@ module.exports = {
           categoria: "rpg",
           imagem_card: "/images/categorias/rpg/ff-vii.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 38
         {
@@ -381,6 +427,8 @@ module.exports = {
           categoria: "rpg",
           imagem_card: "/images/categorias/rpg/monster-hunter.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 39
         {
@@ -390,6 +438,8 @@ module.exports = {
           categoria: "rpg",
           imagem_card: "/images/categorias/rpg/persona-5.jpeg",
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 40
         {
@@ -399,6 +449,8 @@ module.exports = {
           categoria: "rpg",
           imagem_card: "/images/categorias/rpg/skyrim.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 41
         {
@@ -408,6 +460,8 @@ module.exports = {
           categoria: "rpg",
           imagem_card: "/images/categorias/rpg/the-witcher.jpg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 42
         {
@@ -417,6 +471,8 @@ module.exports = {
           categoria: "terror",
           imagem_card: "/images/categorias/terror/alien-isolation.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 43
         {
@@ -426,6 +482,8 @@ module.exports = {
           categoria: "terror",
           imagem_card: "/images/categorias/terror/doom.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 44
         {
@@ -435,6 +493,8 @@ module.exports = {
           categoria: "terror",
           imagem_card: "/images/categorias/terror/fatal-frame.webp",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 45
         {
@@ -448,6 +508,8 @@ module.exports = {
           categoria: "terror",
           imagem_card: "/images/categorias/terror/man-of-medan.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 46
         {
@@ -457,6 +519,8 @@ module.exports = {
           categoria: "terror",
           imagem_card: "/images/categorias/terror/outlast-33507.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 47
         {
@@ -466,6 +530,8 @@ module.exports = {
           categoria: "terror",
           imagem_card: "/images/categorias/terror/re-vii.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
         // Jogo ID 48
         {
@@ -475,6 +541,8 @@ module.exports = {
           categoria: "terror",
           imagem_card: "/images/categorias/terror/the-evil-within.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
+
         },
       ],
       {}
