@@ -120,6 +120,35 @@
   top: 8px;
 }
 
+#menu-oculto {
+  background-color: black;
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+.menu-oculto--hidden {
+  display: none;
+}
+
+.menu--oculto__searchbar {
+  display: flex;
+  flex: 1;
+  justify-content: start;
+  align-items: center;
+  
+  max-width: 800px;
+  
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.menu-oculto__buttons {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 550px) {
   .menu__searchbar {
     display: flex;

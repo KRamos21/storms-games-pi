@@ -1,4 +1,4 @@
-<header class="header__medium-devices">
+<header id="header" class="header__medium-devices">
   <a class="menu__desktop" href="/">
     <img
       class="menu__logo"
@@ -56,7 +56,7 @@
     <% } %> 
 
     <div class="menu__user">
-      <a class="user" href="/conta">
+      <a id="user" class="user" href="/conta">
         <img
           class="user-login"
           src="/images/menu-desktop/user.png"
@@ -69,3 +69,50 @@
   <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script defer src="/javascripts/pesquisaHeader.js"></script>
 </header>
+
+<div id="menu-oculto" class="menu-oculto--hidden">
+  <div id="menu--oculto__searchbar" class="menu--oculto__searchbar">
+    <div class="menu__loupe">
+      <img
+        class="menu__loupe--img"
+        src="/images/menu-desktop/lupa-preta.png"
+        onclick=""
+      />
+    </div>
+    <form class="menu__searchbar__form">
+      <input
+        class="menu__searchbar-input"
+        type="text"
+        id="searchbar-input"
+        name="searchbar"
+        placeholder="Buscar"
+        onkeyup="pesquisarTitulo(this)"
+        autocomplete="off"
+      />
+    </form>
+  </div>
+
+  <% if (typeof usuario === "undefined") {%>
+    <div class="menu-oculto__buttons">
+      <a href="/login">
+        <button class="menu__btn menu__btn--login">
+          Entrar
+        </button>
+      </a>
+      <a href="/cadastroUsuario">
+        <button class="menu__btn menu__btn--cadastro">
+          Cadastre-se
+        </button>
+      </a>
+    </div>
+  <% } else { %>
+    <div class="menu-oculto__greetings">
+      <p class="menu__greetings__p">Bem vindo, <%= usuario.nomeUsuario %>  </p>
+      <a href="/logout">
+        <button class="menu__btn menu__btn--logout">
+          Sair
+        </button>
+      </a>
+    </div>
+  <% } %>
+</div>
