@@ -14,6 +14,7 @@ module.exports = {
           imagem_jogo: "/images/games/ghost_of_tsushima.jpg",
           imagem_card: "/images/categorias/aventura/got.jpeg",
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/s4AYUYRl7zY;https://www.youtube.com/embed/vUfjoQR_Phg;https://www.youtube.com/embed/nVhXp6FX7Y4;https://www.youtube.com/embed/iqysmS4lxwQ",
         },
         // Jogo ID 2
         {
@@ -26,6 +27,7 @@ module.exports = {
           imagem_jogo: "/images/games/backgroundAC.jpg",
           imagem_card: "/images/categorias/rpg/ACValhalla-card.png",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/bj9HolV5EMM;https://www.youtube.com/embed/vlk1z44sF18;https://www.youtube.com/embed/6pq_-zws3sg;https://www.youtube.com/embed/khlmcOkkTTw",
         },
         // Jogo ID 3
         {
@@ -36,6 +38,7 @@ module.exports = {
           imagem_jogo: "/images/games/horizonZeroDawn/horizon-fight.jpeg",
           imagem_card: "/images/categorias/rpg/horizon-zd.jpeg",
           plataforma: "All",
+          youtube_videos: "https://www.youtube.com/embed/fB2zlCgGUYU;https://www.youtube.com/embed/Uv6OvwqEPGM;https://www.youtube.com/embed/vrgqJ8zbZAI;https://www.youtube.com/embed/Y2AVetMgxww",
         },
         // Jogo ID 4
         {
@@ -46,6 +49,7 @@ module.exports = {
           imagem_jogo: "/images/games/halo5/halo-5.jpeg",
           imagem_card: "/images/categorias/acao/halo-5.jpeg", 
           plataforma: "PC",
+          youtube_videos: "https://www.youtube.com/embed/h79yo_lXFPI;https://www.youtube.com/embed/wz-HCfDDdMA;https://www.youtube.com/embed/FlTEpNJc_LQ;https://www.youtube.com/embed/r1hQxH0Lb8g",
         },
         // Jogo ID 5
         {
@@ -56,6 +60,7 @@ module.exports = {
           imagem_jogo: "/images/games/tlou2/ellie.jpeg",
           imagem_card: "/images/categorias/terror/tlou2.webp", 
           plataforma: "PlayStation",
+          youtube_videos: "https://www.youtube.com/embed/HBgPd_WBT2Y;https://www.youtube.com/embed/SxHKD5u0O9s;https://www.youtube.com/embed/wctBnn5KqL0;https://www.youtube.com/embed/6SfiGkzqEWs",
         },
         // Jogo ID 6
         {

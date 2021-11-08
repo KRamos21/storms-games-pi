@@ -46,25 +46,25 @@ window.addEventListener("DOMContentLoaded", async function changeEpic() {
   price.innerText = epicPrice;
 });
 
-window.addEventListener("DOMContentLoaded", async function changeYoutubeVideos() {
-  const title = document.getElementById("title").innerText;
-  const streamers = document.getElementById('streamers');
+// window.addEventListener("DOMContentLoaded", async function changeYoutubeVideos() {
+//   const title = document.getElementById("title").innerText;
+//   const streamers = document.getElementById('streamers');
 
-  const { data } = await axios.get(`${baseUrl}/youtube/${title}`);
-  const { topFour } = data;
+//   const { data } = await axios.get(`${baseUrl}/youtube/${title}`);
+//   const { topFour } = data;
   
-  while (streamers.firstChild) {
-    streamers.removeChild(streamers.lastChild);
-  }
+//   while (streamers.firstChild) {
+//     streamers.removeChild(streamers.lastChild);
+//   }
 
-  topFour.forEach(element => {
-    streamers.insertAdjacentHTML("beforeend", `
-      <div class="sm:w-1/3 my-5 mx-3 text-center sm:mb-5">
-        <div>
-          <iframe class="max-w-full m-auto" src="https://www.youtube.com/embed/${element}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    `)
-  });
+//   topFour.forEach(element => {
+//     streamers.insertAdjacentHTML("beforeend", `
+//       <div class="sm:w-1/3 my-5 mx-3 text-center sm:mb-5">
+//         <div>
+//           <iframe class="max-w-full m-auto" src="https://www.youtube.com/embed/${element}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+//         </div>
+//       </div>
+//     `)
+//   });
 
-});
+// });

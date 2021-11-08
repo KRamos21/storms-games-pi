@@ -23,7 +23,17 @@ module.exports = (sequelize, DataTypes) => {
     plataforma: {
       type: DataTypes.STRING(45),
       allowNull: false,
-    }
+    },
+    youtube_videos: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      get() {
+        return this.getDataValue('youtube_videos').split(';')
+      },
+      set(val) {
+        this.setDataValue('youtube_videos', val.join(';'));
+      },
+    },
   });
 
   Game.associate = (models) => {

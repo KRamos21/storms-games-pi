@@ -33,6 +33,16 @@ module.exports = {
         type: Sequelize.STRING(45),
         allowNull: false,
       },
+      youtube_videos: {
+        type: Sequelize.STRING,
+        allowNull: true,
+        get() {
+          return this.getDataValue('youtube_videos').split(';')
+        },
+        set(val) {
+          this.setDataValue('youtube_videos',val.join(';'));
+        },
+      },
       created_at: {
         type: "TIMESTAMP",
         defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"),
