@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
 
   // Mostra a mensagem de erro do DB
   if ( typeof usuario === "string") {
-    return res.send(`${usuario}`)
+    return res.redirect("/loginFalha")
   };
 
   const { id, nome_usuario: nomeSession, email: emailSession} = usuario;

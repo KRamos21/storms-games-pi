@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/header.css">
+  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Login</title>
+</head>
+
+<body class="bg-stormBlue-default">
+  <%- include("./partials/header") %>
+  
+  <!--Login section-->
+  <div class="max-w-page m-auto bg-loginbg backdrop-brightness-0 min-h-screen bg-cover py-40">
+    <!-- Login Box -->
+    <div id="login-box" class="sm:max-w-container mx-auto bg-black bg-opacity-10 backdrop-filter backdrop-blur-lg py-5 px-1 sm:p-16 transform shadow-xl">
+      <!-- Logo -->
+      <div class="m-auto w-2/3 sm:1/4 mb-4">
+          <img class="m-auto rounded-xl" src="./images/login/logotipo.png">
+      </div>
+
+      <!-- Form -->
+      <form action="/login" method="POST">
+        <div class="sm:flex sm:flex-col m-auto my-5 text-center">
+          <p class="text-red-500 font-Roboto font-medium text-base sm:text-lg mb-4 mr-2" >Usuário ou Senha inválidos. Tente novamente </p>
+          <input class="w-2/3 m-auto outline-none my-1 py-1 text-center" type="email" name="email" placeholder="meu_email@email.com">
+          <input class="w-2/3 m-auto outline-none my-1 py-1 text-center" type="password" name="password" placeholder="*****">
+        </div>
+        
+        <div class="sm:flex sm:items-center sm:justify-around my-5 m-auto text-center">
+          <button class="mx-auto sm:w-1/3 w-1/2 my-2 text-center text-xl font-semibold rounded-full p-1 sm:p-2 bg-gradient-to-r from-green-300 via-blue-500 to-blue-600 sm:transform hover:scale-105 transition duration-500 text-white">Cadastro</button>
+        </div>
+        
+        <div class="sm:flex items-center justify-around m-auto text-center">
+          <button type="submit" class="sm:w-1/4 w-1/2 mx-auto my-2 text-center text-xl font-semibold rounded-full p-1 sm:p-2 bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white">Login</button>            
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <%- include("./partials/footer") %>
+</body>
+</html>

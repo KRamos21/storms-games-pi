@@ -23,9 +23,11 @@
   <%- include("./partials/header") %>
 
   <main class="main">
-    <h1 class="titulo-do-jogo"> 
-      <%= topico.game.titulo %> 
-    </h1>
+    <a href="/jogo/<%= topico.game.id %> ">
+      <h1 class="titulo-do-jogo"> 
+        <%= topico.game.titulo %> 
+      </h1>
+    </a>
 
     <section class="topico">
       <article class="topico__article topico__article--com-borda">
@@ -36,10 +38,6 @@
 
       <div class="topico__div">
         <article class="topico__busca-e-info">
-          <div class="topico__article busca">
-            <img src="/images/topicoForum/lupa-preta.png" alt="Pesquisar no tópico">
-            <p class="topico__texto topico__texto--preto">Buscar neste tópico</p>
-          </div>
     
           <div class="topico__article topico__article--info">
             <div class="topico__info__div">
@@ -48,7 +46,7 @@
               <p class="topico__texto topico__texto--margin"><strong>Mensagens:</strong> <%= topico.coments.length %>  </p>
             </div>
             
-            <button class="topico__botao topico__botao--info bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" type="submit">Inscrever-se na discussão</button>
+            <a href="" class="topico__botao topico__botao--info text-center bg-gradient-to-r from-pink-500 to-red-500 sm:transform hover:scale-105 transition duration-500 text-white" >Inscrever-se na discussão</a href="#">
           </div>
         </article>
   
