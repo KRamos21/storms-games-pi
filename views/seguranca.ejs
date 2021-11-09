@@ -42,21 +42,24 @@
               <div class="config__caixa-info">
                 <div class="config__informacao">
                   <label class="config__texto config__texto--menor" for="senhaAtual">Senha atual:</label>
-                  <input class="config__input" type="password" name="senhaAtual" id="password" value="">
+                  <input class="config__input" type="password" name="senhaAtual" id="password" onblur="passwordInputValidator(this)" value="">
+                  <span class="error-message"></span>
                 </div>
               </div>
               
               <div class="config__caixa-info">
                 <div class="config__informacao">
                   <label class="config__texto config__texto--menor" for="novaSenha">Nova senha:</label>
-                  <input class="config__input" type="password" name="novaSenha" id="novaSenha" value="">
+                  <input class="config__input" type="password" name="novaSenha" id="novaSenha" onblur="passwordInputValidator(this)" value="">
+                  <span class="error-message"></span>
                 </div>
               </div>
       
               <div class="config__caixa-info">
                 <div class="config__informacao">
                   <label class="config__texto config__texto--menor" for="confirmaNovaSenha">Confirme sua nova senha:</label>
-                  <input class="config__input" type="password" name="confirmaNovaSenha" id="confirmaNovaSenha" value="">
+                  <input class="config__input" type="password" name="confirmaNovaSenha" id="confirmaNovaSenha" onblur="password2InputValidator(this)" value="">
+                  <span class="error-message"></span>
                 </div>
               </div>
             </article>

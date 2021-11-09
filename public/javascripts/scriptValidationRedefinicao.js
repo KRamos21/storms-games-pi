@@ -1,48 +1,38 @@
-//Query selectors
-const form = document.querySelector('.reset__form-pass');
-
-const { pass, pass2 } = form.elements;
-const formElements = [pass, pass2];
-
 //Password Validators
-function passwordInputValidator() {
-    const passLimits = pass.value.trim().length >=6;
+function passwordInputValidator(senha) {
+  const passLimits = senha.value.trim().length >=6;
+
+  const span = senha.nextElementSibling;
+  span.innerText = "";
+
+  if(!passLimits){
+    senha.style.color = "red";
+    span.innerHTML = "A senha deve ter pelo menos 6 caracteres!";
+    span.style.color = "red";
+    senha.insertAdjacentElement('afterend', span);
+    return false;
+  }
+
+  senha.style.color = "green";
+  return true;
+}
   
-    const span = pass.nextElementSibling;
-    span.innerText = "";
+function password2InputValidator(confirmaNovaSenha) {
+  const novaSenha = document.getElementById("novaSenha");
   
-    if(!passLimits){
-      pass.style.color = "red";
-      span.innerHTML = "A senha deve ter pelo menos 6 caracteres!";
+  const passIsValid = confirmaNovaSenha.value === novaSenha.value && confirmaNovaSenha.value.trim().length >=6;
+
+  const span = confirmaNovaSenha.nextElementSibling;
+  span.innerText = "";
+
+  if(!passIsValid) {
+      confirmaNovaSenha.style.color = "red";
+      span.innerHTML = "A senha é diferente!";
       span.style.color = "red";
-      pass.insertAdjacentElement('afterend', span);
+      confirmaNovaSenha.insertAdjacentElement('afterend', span);
       return false;
-    }
-  
-    pass.style.color = "green";
-    return true;
   }
-  
-pass.onblur = passwordInputValidator;
 
-
-//Password confirm validator (o nome "password-confirm" esta dando problemas na validação)
-function password2InputValidator() {
-    const passIsValid = pass2.value === pass.value && pass2.value.trim().length >=6;
-  
-    const span = pass2.nextElementSibling;
-    span.innerText = "";
-
-    if(!passIsValid) {
-        pass2.style.color = "red";
-        span.innerHTML = "A senha é diferente!";
-        span.style.color = "red";
-        pass2.insertAdjacentElement('afterend', span);
-        return false;
-    }
-  
-    pass2.style.color = "green";
-    return true;
-  }
-  
-pass2.onblur = password2InputValidator;
+  confirmaNovaSenha.style.color = "green";
+  return true;
+}
